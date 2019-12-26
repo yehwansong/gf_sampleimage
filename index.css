@@ -1,0 +1,683 @@
+body, div, input, select, button {
+    font-family: 'Roboto mono', sans-serif;
+    margin: 0
+}
+body{overflow: hidden;}
+*{
+    color: #4a4a4a;}
+#top {
+    box-shadow: 0px 0px 4px 4px rgba(60, 64, 67, 0.18);
+    box-sizing: border-box;
+    display: inline-block;
+    padding-left: 24px;
+    height: 60px;
+    width: 100vw;
+    background: #EDEDED;
+    position: relative;
+    float: left;
+    left: 0;
+    z-index: 10;
+}
+#fontlist_wrapper{
+    display: inline-block;
+    min-height: 100%;
+    position: relative;
+    z-index: 10;
+    position: relative;
+}
+#select_fonts{
+    display: inline-block;
+    white-space: nowrap;
+    border-radius: 6px;
+    margin-top: 10px;
+    z-index: 10;
+    height: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding-left: 16px;
+    padding-right: 60px;
+    position: relative;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-image: url(dropdown.svg);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: right;
+    display: inline-block;
+}
+#select_fonts img{
+    width: 10px
+}
+#objectlist_wrapper{
+    padding-top: 10px;
+    box-shadow: 0px 0px 3px 3px rgba(60, 64, 67, 0.18);
+     opacity: 0; 
+    overflow: hidden;
+    background: #ffffff;
+    cursor: pointer;
+     pointer-events: none; 
+    height: 0px;
+    margin-top: -10px;
+    z-index: 100;
+    position: relative;
+    border-radius: 6px;
+}
+#fontlist_wrapper:hover #objectlist_wrapper{
+    pointer-events: all;
+    opacity: 1;
+    height: 420px;
+}
+#fontlist_wrapper:hover #select_fonts{
+    background-color: #cecece;
+}
+.ps-scrollbar-x-rail,.ps-scrollbar-y-rail{
+    pointer-events: none;
+}
+#objectlist_wrapper .fontlist{
+    font-size: 14px;
+    line-height: 40px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+#objectlist_wrapper .fontlist:hover{
+    background: #d2d2d2;
+    cursor: pointer;
+}
+#googlefont{
+    color: white;
+    background: #0086ea;
+    display: inline-block;
+    top: 0;
+    /* position: absolute; */
+    border-radius: 22px;
+    margin-top: 10px;
+    z-index: 10;
+    height: 40px;
+    line-height: 40px;
+    /* text-transform: uppercase; */
+    font-size: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    /* background-image: url(dropdown.svg); */
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: right;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    vertical-align: top;}
+#googlefont:hover{
+    background: #d2d2d2;
+}
+
+
+
+#table_wrapper{
+    width: 50%;
+    float: left;
+    height: calc(100vh - 60px)
+}
+*{
+    line-height: 1
+}
+.table{
+    width: calc(100% - 20px);
+    border-spacing: 0;
+    border-collapse: collapse;
+    height: 50vw;
+    height: 0;
+    margin-top: 50%;
+    transform: translateY(-50%);
+    margin-left: 10px;
+}
+.table *{
+                color: black;
+  border-collapse: collapse;
+    font-weight: 300;
+    font-size: 13px;
+    padding:0;
+    margin:0;
+    margin:0;padding:0 auto;box-sizing:border-box;
+}
+.table tr{
+    border-bottom: 1px solid gray
+}
+.table td,
+.table th{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    text-align: left;
+    cursor: pointer;
+}
+.table th{
+    padding-top: 20px;
+    padding-bottom: 20px}
+.table .y{
+    width: 100%;
+}
+.table .y div{
+    float: left;
+}
+.table .x{
+    float: left;
+    display: inline-block;
+}
+.hovered{background-color: #0086ea80 !important}
+
+/*.table{
+    border-collapse:collapse;
+    width:100%;
+    height:100%;
+    box-sizing:border-box;
+}
+.table td{
+    padding:0px !important;
+    vertical-align:top;
+}*/
+/*.table tr:last-child{
+    height:100%;
+}*/
+
+.x_1{
+    vertical-align: bottom;
+    min-width: 25%
+}
+.x_2{
+    min-width: 15%
+}
+.x_3{
+    min-width: 15%
+}
+.x_4{
+    min-width: 10%
+}
+.x_5{
+    min-width: 15%
+}
+.x_6{
+    min-width: 20%
+}
+.y_1 div{
+    display: block;
+}
+
+
+            .h1, .y_1 .x_1{ 
+            font-size:96px;
+            font-weight: 100;
+            text-transform: none;
+            letter-spacing: -1.5px;
+            }
+            .h2, .y_2 .x_1{ 
+            font-size:60px;
+            font-weight: 100;
+            text-transform: none;
+            letter-spacing: -0.5px;
+            }
+            .h3, .y_3 .x_1{ 
+            font-size:48px;
+            font-weight: 300;
+            text-transform: none;
+            letter-spacing: 0px;
+            }
+            .h4, .y_4 .x_1{  
+            font-size:34px;
+            font-weight: 300;
+            text-transform: none;
+            letter-spacing: 0.25px;
+            }
+            .h5, .y_5 .x_1{ 
+            font-size:24px;
+            font-weight: 300;
+            text-transform: none;
+            letter-spacing: 0;
+            }
+            .h6, .y_6 .x_1{ 
+            font-size:20px;
+            font-weight: 400;
+            text-transform: none;
+            letter-spacing: 0.15px;
+            }
+            .subtitle_1, .y_7 .x_1{  
+            font-size:16px;
+            font-weight: 300;
+            text-transform: none;
+            letter-spacing: 0.15px;
+            }
+            .subtitle_2, .y_8 .x_1{ 
+            font-size:14px;
+            font-weight: 400;
+            text-transform: none;
+            letter-spacing: 0.1px;
+            }
+            .body1, .y_9 .x_1{  
+            font-size:16px;
+            font-weight: 300;
+            text-transform: none;
+            letter-spacing: 0.5px;
+            }
+            .body2, .y_10 .x_1{ 
+            font-size:14px;
+            font-weight: 300;
+            text-transform: none;
+            letter-spacing: 0.25px;
+            }
+            .button, .y_11 .x_1{ 
+            font-size:14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 1.25px;
+            }
+            .caption, .y_12 .x_1{ 
+            font-size:12px;
+            font-weight: 300;
+            text-transform: none;
+            letter-spacing: 0.4px;
+            }
+            .overline, .y_13 .x_1{ 
+            font-size:10px;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            }
+
+.y_1,.y_0{
+    pointer-events: none;
+}
+tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption,.overline,
+#googlefont, #select_fonts{
+    transition: background-color 0.1s ease-in
+}
+#objectlist_wrapper{
+    transition: opacity 0.1s ease-in
+}
+            /*------------sketch_1-----------*/
+#sketch_wrapper{
+    width: 50%;
+    float: left;
+    height: calc(100vh - 60px);
+    position: relative;
+    background-color: #EDEDED;
+}
+.select_sketch{ 
+    position: absolute;
+    height: 25.5px;
+    width: 25.5px;
+    margin-top: -35px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px !important;
+    background-color: black;
+    cursor: pointer;
+    opacity: 0.5;
+    /* padding-left: 2px; */
+    /* box-sizing: border-box; */
+    text-indent: 1px;
+    color: white !important;
+}
+.select_sketch:hover{
+    opacity: 0.75;
+}
+#select_sketch_2{
+    margin-left: 35px;
+}
+#select_sketch_3{
+    margin-left: 70px;
+}
+.selected{
+    display: block !important;
+}
+.select_sketch.selected{
+    opacity: 1
+}
+.topbar{
+    width: 100%;
+    height: 22.5px;
+    position: absolute;
+    background-color: #EDEDED;
+    z-index: 10000;}
+            #sketch_wrapper *{
+                line-height: 1.4;
+                color: black
+            }
+            .ps-scrollbar-y-rail{
+                position: absolute;
+            }
+            #sketch_frame{
+                background-color: white;
+                width: 360px;
+                height: 640px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                box-shadow:0px 0px 4px 4px rgba(60,64,67,.08);
+    
+            }
+            #sketch_1, #sketch_2, #sketch_3{
+                background-color: white;
+                display: none;
+                width: 360px;
+                height: 640px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                overflow:hidden;
+
+            }
+            #sketch_1 .h2,#sketch_1 .h4,#sketch_1 .body1{
+                margin-bottom: 35px;
+                margin-left: 25px;
+                margin-right: 25px;
+            }
+            #sketch_1 .caption,
+            #sketch_1 .overline{
+                margin-bottom: 5px;
+                margin-left: 25px;
+                margin-right: 25px;
+            }
+            #sketch_1 .caption{
+                margin-bottom: 40px;
+            }
+            #sketch_1{
+                /*background-image: url(img/Untitled-4-01.png);*/
+                background-size: contain;
+                background-repeat: no-repeat;
+
+                box-sizing: border-box;
+            }
+            #sketch_1 .img_1,
+            #sketch_1 .img_2{
+                width: 100%;
+                margin-bottom: 15px;
+                box-sizing: border-box;
+                background-size: cover;
+            }
+            #sketch_1 .img_1{
+                background-image: url(img/img_1_1.png);
+                height: 90px;
+            }
+            #sketch_1 .img_2{
+                background-image: url(img/img_1_2.jpg);
+                height: 250px;
+            }
+            #sketch_1 .h2{
+                margin-bottom: 40px;
+                line-height: 1.2;
+            }
+            #sketch_1 .body1{
+                line-height: 1.4;
+            }
+            /*------------sketch_1-----------*/
+            /*------------sketch_2-----------*/
+            #sketch_2{
+                width: 360px;
+                /*background-image: url(img/Untitled-4-02.png);*/
+                background-size: contain;
+                background-repeat: no-repeat;
+
+                box-sizing: border-box;
+            }
+            #sketch_2 .img_1{
+                width: 100%;
+                height: 240px;
+                margin-bottom: 25px;
+                box-sizing: border-box;
+                background-image: url(img/img_2_1.png);
+                background-size: cover;
+            }
+            #sketch_2 .overline{
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+            #sketch_2 #icon{
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            display: inline-block;
+            border-radius: 50%;
+            vertical-align: middle;
+            margin-right: 12.5px;}
+            #sketch_2 .h5{
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            #sketch_2 .h6{
+    position: absolute;
+    right: 15px;
+    margin-top: -10px;
+    transform: translateY(-50%);
+            }
+            #sketch_2 .h5,#sketch_2 .body2,#sketch_2 .button,#sketch_2 .subtitle2{
+                margin-left: 15px;
+                margin-right: 15px
+            }
+            #sketch_2 .body2{
+                line-height: 1.4;
+            }
+            #sketch_2 .button{
+                margin-top: 15px;
+                height: 50px;
+                line-height: 50px;
+            }
+            #sketch_2 .dropdown_button{
+                background-image: url(dropdown.svg);
+                background-size: 40px;
+                background-repeat: no-repeat;
+                background-position: right;
+            }
+            #sketch_2 .subtitle1 {
+                margin-top: 0px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+            #sketch_2 .subtitle2 {
+                margin-top: 0px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+            #sketch_2 .roll_button{
+                display: flex;
+                padding-left: 15px;
+                padding-bottom: 25px;
+                margin-bottom: 5px;
+            }
+            #sketch_2 .roll_button div{
+                font-size: 14px;
+                margin-right: 11px;
+                width: 33px;
+                height: 33px;
+                border: 2px solid pink;
+                border-radius: 10px;
+                line-height: 33px;
+                text-align: center
+            }
+            #sketch_2 .divider{
+                width: calc(100% - 30px);
+                border-top: 1px solid #573b3c;
+                margin-left: 15px
+            }
+            #sketch_2 .color_button {
+                display: flex;
+                padding-left: 15px;
+                padding-bottom: 25px;
+            }
+            #sketch_2 .color_button div{
+                margin-right: 11px;
+                width: 33px;
+                height: 33px;
+                border-radius: 50%;
+                border: 2px solid black;
+                background: radial-gradient(#ffc0cc 57%, transparent 57%);
+            }
+            #sketch_2 .button_2{
+                text-align: center;
+                height: 50px;
+                line-height: 50px;
+                background-color: pink;
+                border-radius: 25px;
+                margin-left: 15px;
+                width: calc(100% - 30px);
+                box-sizing: border-box;
+                margin-bottom: 15px;
+    filter: drop-shadow(1px 3px 5px #d2d2d2);
+            }
+            #sketch_2 .img_wrapper{
+                display: flex;
+                margin-bottom: 50px;
+            }
+            #sketch_2 .img_wrapper>div{
+                margin-left: 15px;
+                margin-right: 15px
+            }
+            #sketch_2 .img_wrapper div .subtitle2{
+                margin-top: 25px;
+                height: auto;
+                line-height: 1;
+            }
+            #sketch_2 .img_wrapper div:nth-child(1) .img{
+                height: 250px;
+                width: 100%;
+                background-image: url(img/img_2_2.jpg);
+                background-size: cover;
+            }
+            #sketch_2 .img_wrapper div:nth-child(2) .img{
+                height: 250px;
+                width: 100%;
+                background-image: url(img/img_2_3.jpg);
+                background-size: cover;
+            }
+            /*------------sketch_2-----------*/
+            /*------------sketch_3-----------*/
+            
+        #sketch_3 .h2,#sketch_3 .h4,#sketch_3 .body1{
+            margin-bottom: 40px;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+        #sketch_3 .caption,
+        #sketch_3 .overline{
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        #sketch_3 .caption{
+            margin-bottom: 40px;
+        }
+        #sketch_3 .img_1,
+        #sketch_3 .img_2{
+            width: 100%;
+            height: 90px;
+            /*background: red;*/
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+        #sketch_3 .h3{
+            margin-left: 17.5px;
+            margin-right: 17.5px;
+            line-height: 1;
+            margin-bottom: 15px;
+            margin-top: 5px;
+        }
+        #sketch_3 .body1{
+            line-height: 1.4;
+        }
+        #sketch_3 .divider {
+            width: calc(100% - 30px);
+            border-top: 1px dotted #e6e6e6;
+            margin-left: 15px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        #sketch_3 .last_divider{
+            margin-bottom: 0px;
+        }
+        #sketch_3 .h6 {
+            margin-top: 5px;
+            margin-left: 17.5px;
+            margin-bottom: 15px;
+            margin-right: 107.5px;
+        }
+
+        #sketch_3 .body2{
+            margin-left: 17.5px;
+            margin-right: 107.5px;
+        }
+        #sketch_3 .wrapper .body2{
+            margin: 0;
+            padding: 0;
+        }
+        #sketch_3 .body2_top{
+            margin-left: 17.5px;
+            margin-right: 17.5px;
+        }
+        #sketch_3 .imgside{
+            width: 70px;
+            /*background: red;*/
+            height: 70px;
+            position: absolute;
+            right: 17.5px;
+        }
+        #sketch_3 .img_1{
+            background-image: url(img/img_3_1.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        #sketch_3 .imgside_1{
+            background-image: url(img/img_3_2.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        #sketch_3 .imgside_2{
+            background-image: url(img/img_3_3.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        #sketch_3 .img_2{
+            background-image: url(img/img_3_4.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        #sketch_3 .img_1{
+            width: 100%;
+            height: 250px;
+            /*background: red;*/
+            box-sizing: border-box;
+        }
+        #sketch_3 .wrapper{
+            overflow: hidden;
+            display: block;
+            margin-bottom: 50px;
+        }
+        #sketch_3 .wrapper>div{
+            float: left;
+            width: calc(33.33% - 35px);
+            padding-left: 17px;
+            padding-right: 17px;
+            border-right: 1px solid #e6e6e6;
+            position: relative;
+        }
+        #sketch_3 .wrapper>div:nth-last-child(1){
+            border-right: 0px solid #e6e6e6;
+        }
+        #sketch_3 .img_2{
+    height: 140px;
+    margin-top: 0px;
+    margin-left: 15px;
+    width: calc(100% - 30px);
+        }
+        #sketch_3 .button{
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+    border-bottom: 1px solid #e6e6e6;
+    font-family: Roboto;
+        }
+            /*------------sketch_3-----------*/
