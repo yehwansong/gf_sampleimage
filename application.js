@@ -16,8 +16,8 @@ var table_array = [['Scale Category', 'Typeface', 'Font', 'Size', 'Case', 'Lette
 	insert_sketch_1()
 	insert_sketch_2()
 	insert_sketch_3()
-	insert_table(table_array)
-	function insert_table(table_array){
+	insert_table()
+	function insert_table(){
         $('#table_wrapper').append('\
             <table class="table">\
               <tr class="y_0">\
@@ -136,7 +136,7 @@ var table_array = [['Scale Category', 'Typeface', 'Font', 'Size', 'Case', 'Lette
 	}
 	function insert_sketch_1(){
 		$('#sketch_frame').append('\
-			    <div id="sketch_1" class="sketch selected">\
+			    <div id="sketch_1" class="sketch">\
 			    	<div class="img img_1"></div>\
 			    	<div class="overline" contenteditable="true">News</div>\
 			    	<div class="h2" contenteditable="true">New Spring Styles</div>\
@@ -219,4 +219,15 @@ var table_array = [['Scale Category', 'Typeface', 'Font', 'Size', 'Case', 'Lette
 			    </div>\
 			`)
 	}
+  add_selected()
+  function add_selected(){
+      if($('.sketch').length > 2){
+          var ran = Math.floor(Math.random() * 3) + 1
+          $('#select_sketch_'+ran ).addClass('selected')
+          $('#sketch_'+ran ).addClass('selected')
+          console.log('#sketch_'+ Math.floor(Math.random() * 3) + 1)
+      }else{
+          setTimeout(function(){add_selected()}, 500);
+      }
+  }
 })

@@ -129,6 +129,8 @@ var a_counter = 0
             $('.y_13 .x_2').html(default_font)
             $('.y_8 .x_3').html('Medium')
             $('.y_11 .x_3').html('Medium')
+        }else{
+
         }
         if(hasmed){
             $('.y_6 .x_3').html('Medium')

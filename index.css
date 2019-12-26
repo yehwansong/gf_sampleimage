@@ -502,7 +502,7 @@ tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption
             }
             #sketch_2 .divider{
                 width: calc(100% - 30px);
-                border-top: 1px solid #573b3c;
+                border-top: 1px solid #6f535185;
                 margin-left: 15px
             }
             #sketch_2 .color_button {
@@ -515,7 +515,7 @@ tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption
                 width: 33px;
                 height: 33px;
                 border-radius: 50%;
-                border: 2px solid black;
+                border: 2px solid #714b48;
                 background: radial-gradient(#ffc0cc 57%, transparent 57%);
             }
             #sketch_2 .button_2{
@@ -627,7 +627,7 @@ tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption
         }
         #sketch_3 .img_1{
             background-image: url(img/img_3_1.png);
-            background-size: contain;
+            background-size: cover;
             background-repeat: no-repeat;
         }
         #sketch_3 .imgside_1{
