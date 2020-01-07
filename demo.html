@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>GF SampleImage</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="index.css" />
+        <script
+              src="https://code.jquery.com/jquery-3.4.1.min.js"
+              integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+              crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas2image@1.0.5/canvas2image.js" type="text/javascript"></script>
+    <script src="perfect-scrollbar.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$('document').ready(function(){
+		loading_loop()
+		function loading_loop(){
+			setTimeout(function(){ $('#loading').addClass('hide');
+									$('.loading_wrapper').removeClass('hide')
+									$('.loading_wrapper').removeClass('fadedown')
+			}, 3000);
+			setTimeout(function(){ $('#loading').removeClass('hide');
+									$('.loading_wrapper').addClass('hide')
+									$('.loading_wrapper').addClass('fadedown')
+			}, 5000);
+			setTimeout(function(){ loading_loop()
+			}, 6000);
+		}
+	})
+</script>
+</head>
+
+<body>
+			    <div id="sketch_2" class="sketch" style="display: block">
+			    	<div id="loading">
+			    		<div class="loadingbar">
+			    			<div class="loadingindicator"></div>
+			    		</div>
+			    		<div class="body1 loadingtext">Loading application</div>
+			    	</div>
+			    <div class="loading_wrapper hide fadedown">
+			    	<div class="img img_1"></div>
+			    	<div class="overline" contenteditable="true"><div id="icon"></div>LMBRJK</div>
+           			<div class="h6" contenteditable="true">$400</div>
+			    	<div class="h5" contenteditable="true">Flow Shirt Blouse</div>
+			    	<div class="body2" contenteditable="true">Pinstriped cornflower blue cotton blouse takes you on a walk to the park or just down the hall.e</div>
+			    	<div class="button dropdown_button" contenteditable="true">MORE DETAILS</div>
+			    	<div class="divider"></div>
+			    	<div class="subtitle1" contenteditable="true">Select size</div>
+			    	<div class="roll_button"><div>00</div><div>02</div><div>04</div><div>06</div><div>08</div><div>10</div><div>12</div></div>
+			    	<div class="divider"></div>
+			    	<div class="subtitle1" contenteditable="true">Color</div>
+			    	<div class="color_button"><div></div><div></div><div></div></div>
+			    	<div class="button button_2" contenteditable="true">ADD TO CART</div>
+			    	<div class="divider"></div>
+			    	<div class="h5" contenteditable="true">Youll also like</div>
+			    	<div class="img_wrapper">
+			    		<div><div class="img"></div><div class="subtitle2" contenteditable="true">Army Long Tunic</div></div>
+			    		<div><div class="img"></div><div class="subtitle2" contenteditable="true">White buttoned</div></div>
+			    	</div>
+					</div>
+				</div>
+</body>
+</html>

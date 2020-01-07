@@ -9,9 +9,25 @@ var default_font = 'roboto'
 
 var variants
 var hasreg
-var hasmed
-var haslig
+var hasMedium
+var hasLight
 // var theme_counter = 0
+var loading_loop_1
+var loading_loop_2
+var loading_loop_3
+function loading_loop(){
+        loading_loop_1 = setTimeout(function(){ $('#loading').addClass('hide');
+                            $('.loading_wrapper').removeClass('hide')
+                            $('.loading_wrapper').removeClass('fadedown')
+    }, 3000);
+        loading_loop_2 = setTimeout(function(){ $('#loading').removeClass('hide');
+                            $('.loading_wrapper').addClass('hide')
+                            $('.loading_wrapper').addClass('fadedown')
+    }, 4000);
+        loading_loop_3 = setTimeout(function(){ loading_loop()
+    }, 6000);
+}
+
 window.onload = function () {
 var a_counter = 0
     getGoogleFonts('AIzaSyCxzLzCFosJX6B9rOiy3xBu0J2TAlRBzXg');
@@ -22,10 +38,13 @@ var a_counter = 0
         xhr.open('get', 'https://www.googleapis.com/webfonts/v1/webfonts?key=' + apiKey, true);
         xhr.onloadend = function () {
             fonts = JSON.parse(xhr.responseText);
+            console.log(fonts)
             objectarray(JSON.parse(xhr.responseText).items, fonts)
         };
         xhr.send();
     };
+
+
     function objectarray(FontsInUseArray, fonts){
         for (var i =  0; i < FontsInUseArray.length; i++) {
             var FontsInUseObject = document.createElement("div");
@@ -73,16 +92,16 @@ var a_counter = 0
         variants = fonts.items[fontIndex].variants
 
         var variant_array =[]
-                haslig = false
-                hasmed = false
+                hasLight = false
+                hasMedium = false
                 hasreg = false
         console.log(variants)
         for (var i = variants.length - 1; i >= 0; i--) {
             if(variants[i] == '300'){
-                haslig = true
+                hasLight = true
                 variant_array.push('300')
             }else if(variants[i] == 'light'){
-                haslig = true
+                hasLight = true
                 variant_array.push('light')
             }else{
             }
@@ -97,14 +116,14 @@ var a_counter = 0
             }
             
             if(variants[i] == '500'){
-                hasmed = true
+                hasMedium = true
                 variant_array.push('500')
             }else if(variants[i] == 'medium'){
                 console.log('sdf')
-                hasmed = true
+                hasMedium = true
                 variant_array.push('medium')
             }else{
-                console.log(hasmed)
+                console.log(hasMedium)
             }
             if(i == 0){
                 variants = variant_array.join(',')
@@ -118,8 +137,9 @@ var a_counter = 0
     function change_table(family,category){
         $('td.x_3').html('Regular')
         $('td.x_2').html(family)
-        console.log(hasmed)
-        if(category === 'display' || category === 'handwriting') {
+        var SC = family.split(' ')[family.split(' ').length-1]
+        console.log(family.split(' '))
+        if(category === 'display' || category === 'handwriting' || SC === 'SC') {
             $('.y_7 .x_2').html(default_font)
             $('.y_8 .x_2').html(default_font)
             $('.y_9 .x_2').html(default_font)
@@ -132,12 +152,12 @@ var a_counter = 0
         }else{
 
         }
-        if(hasmed){
+        if(hasMedium){
             $('.y_6 .x_3').html('Medium')
             $('.y_8 .x_3').html('Medium')
             $('.y_11 .x_3').html('Medium')
         }
-        if(haslig){
+        if(hasLight){
             $('.y_1 .x_3').html('Light')
             $('.y_2 .x_3').html('Light')
         }
@@ -147,8 +167,6 @@ var a_counter = 0
                     onrendered: function(canvas) {
                         theCanvas = canvas;
                         $("#img-out").append(canvas);
-                        // Canvas2Image.saveAsPNG(canvas); 
-                        // $("#img-out").empty();
                         setTimeout(function(){ $("#img-out").append(canvas); }, 3000);
                     }
                 });
@@ -171,9 +189,10 @@ var a_counter = 0
         head = document.head || document.getElementsByTagName('head')[0],
         head.appendChild(fontlink);
 
+        var SC = family.split(' ')[family.split(' ').length-1]
         var style = document.createElement('style');
         document.getElementsByTagName('head')[0].appendChild(style);
-        if(category === 'display' || category === 'handwriting') {
+        if(category === 'display' || category === 'handwriting' || SC === 'SC') {
             $('.h1').css({'font-family':family})
             $('.h2').css({'font-family':family})
             $('.h3').css({'font-family':family})
@@ -226,7 +245,21 @@ var a_counter = 0
              $('.sketch').removeClass('selected')
              $('#sketch_3').addClass('selected')
         })
+        $('#select_sketch_4').click(function(){
+             $('.select_sketch').removeClass('selected')
+             $(this).addClass('selected')
+             $('.sketch').removeClass('selected')
+             $('#sketch_4').addClass('selected')
+             clearTimeout(loading_loop_1);
+             clearTimeout(loading_loop_2);
+             clearTimeout(loading_loop_3);
+             loading_loop()
+        })
     }
+
+
+
+
 fullload()
 function fullload(){
     if($('#sketch_3').length > 0){
