@@ -1,0 +1,145 @@
+
+            .shrine{
+                width: 360px;
+                /*background-image: url(img/Untitled-4-02.png);*/
+                background-size: contain;
+                background-repeat: no-repeat;
+
+                box-sizing: border-box;
+            }
+            .shrine .img_0{
+                padding-bottom: 20px
+            }
+            .shrine .img_1{
+                width: 100%;
+                height: 240px;
+                box-sizing: border-box;
+                background-image: url(img/clothes_1.png);
+                background-size: cover;
+            }
+            .shrine .overline{
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+            .shrine #icon{
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            display: inline-block;
+            border-radius: 50%;
+            vertical-align: middle;
+            margin-right: 12.5px;}
+            .shrine .h5{
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            .shrine .h6{
+    position: relative;
+    right: 15px;
+    margin-top: -10px;
+    transform: translateY(-50%);
+    float: right;
+            }
+            .shrine .h5,.shrine .body2,.shrine .button,.shrine .subtitle2{
+                margin-left: 15px;
+                margin-right: 15px
+            }
+            .shrine .body2{
+                line-height: 1.4;
+            }
+            .shrine .button{
+                margin-top: 15px;
+                height: 50px;
+                line-height: 50px;
+            }
+            .shrine .dropdown_button{
+                background-image: url(dropdown.svg);
+                background-size: 40px;
+                background-repeat: no-repeat;
+                background-position: right;
+            }
+            .shrine .subtitle1 {
+                margin-top: 0px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+            .shrine .subtitle2 {
+                margin-top: 0px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+            .shrine .roll_button{
+                display: flex;
+                padding-left: 30px;
+                padding-bottom: 25px;
+                margin-bottom: 5px;
+            }
+            .shrine .roll_button div{
+                font-size: 14px;
+                margin-right: 11px;
+                width: 33px;
+                height: 33px;
+                border: 2px solid pink;
+                border-radius: 10px;
+                line-height: 30px;
+                text-align: center
+            }
+            .shrine .divider{
+                width: calc(100% - 30px);
+                border-top: 1px solid #6f535121;
+                margin-left: 15px
+            }
+            .shrine .color_button {
+                display: flex;
+                padding-left: 15px;
+                padding-bottom: 25px;
+            }
+            .shrine .color_button div{
+                margin-right: 11px;
+                width: 33px;
+                height: 33px;
+                border-radius: 50%;
+                border: 2px solid #714b48;
+                background: radial-gradient(#ffc0cc 57%, transparent 57%);
+            }
+            .shrine .button_2{
+                text-align: center;
+                height: 50px;
+                line-height: 50px;
+                background-color: pink;
+                border-radius: 25px;
+                margin-left: 15px;
+                width: calc(100% - 30px);
+                box-sizing: border-box;
+                margin-bottom: 15px;
+    filter: drop-shadow(1px 3px 5px #d2d2d2);
+            }
+            .shrine .img_wrapper{
+                display: flex;
+                margin-bottom: 50px;
+            }
+            .shrine .img_wrapper>div{
+                width: 100%;
+                margin-left: 15px;
+                margin-right: 15px
+            }
+            .shrine .img_wrapper div .subtitle2{
+    margin-top: 20px;
+    height: auto;
+    line-height: 1;
+    text-align: center;
+            }
+            .shrine .img_wrapper div:nth-child(1) .img{
+                height: 250px;
+                width: 100%;
+                background-image: url(img/clothes_2.png);
+                background-size: cover;
+            }
+            .shrine .img_wrapper div:nth-child(2) .img{
+                height: 250px;
+                width: 100%;
+                background-image: url(img/clothes_3.png);
+                background-size: cover;
+            }

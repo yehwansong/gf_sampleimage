@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:500,400|Montserrat:600,500,700,400');
+
+/*
+{
+  width               : 100%;
+  min-width           : 360px;
+  height              : 100vh;
+  min-height          : 640px;
+  position            : relative;
+  overflow            : hidden;
+  margin              : 0px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color    : rgba(255, 251, 230, 1.0);
+}*/
+a {
+  text-decoration     : none;
+}
+div {
+  -webkit-text-size-adjust: none;
+}
+.anima-full-width-a {
+  width               : 100%;
+}
+.anima-full-height-a {
+  height              : 100%;
+}
+div {
+  -webkit-text-size-adjust: none;
+}
+.basil {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 652px;
+  width               : 372px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  overflow            : hidden;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.basil .mask {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 652px;
+  width               : 372px;
+  position            : absolute;
+  margin              : 0;
+  left                : -6px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.basil .img {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 115px;
+  height              : 350px;
+  width               : 296px;
+  position            : absolute;
+  margin              : 0;
+  left                : 38px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  opacity             : 0.2;
+}
+.basil .line9 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 587px;
+  height              : 1px;
+  width               : 360px;
+  position            : absolute;
+  margin              : 0;
+  left                : 6px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  opacity             : 0.2;
+}
+.basil .guiltfreeglutenfr {
+    background-color: rgba(255,255,255,0.0);
+    top: 0px;
+    height: auto;
+    width: 277px;
+    position: relative;
+    margin: 0;
+    left: 48px;
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    font-family: "San Francisco", Helvetica, Arial, serif;
+    font-size: 20.0px;
+    color: rgba(53, 104, 89, 1.0);
+    text-align: center;
+    letter-spacing: 0.61px;
+    line-height: 28.0px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.basil .ingredients {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 605px;
+  height              : auto;
+  width               : auto;
+  position            : fixed;
+  margin              : 0;
+  left                : 49px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "Montserrat", Helvetica, Arial, serif;
+  font-weight         : 500;
+  font-style          : normal;
+  font-size           : 14.0px;
+  color               : rgba(53, 104, 89, 1.0);
+  text-align          : left;
+  letter-spacing      : 0.35px;
+  line-height         : 18.0px;
+}
+.basil .directions {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 605px;
+  height              : auto;
+  width               : auto;
+  position            : fixed;
+  margin              : 0;
+  left                : 226px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "Montserrat", Helvetica, Arial, serif;
+  font-weight         : 500;
+  font-style          : normal;
+  font-size           : 14.0px;
+  color               : rgba(53, 104, 89, 1.0);
+  text-align          : left;
+  letter-spacing      : 0.35px;
+  line-height         : 18.0px;
+}
+.basil .syslgtbk {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 24px;
+  width               : 360px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.basil .syslgtbk .syslgtbk1 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 24px;
+  width               : 360px;
+  position            : relative;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.basil .syslgtbk .syslgtbk1 .fill47 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 24px;
+  width               : 360px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.basil .syslgtbk .syslgtbk1 .rectangle7 {
+  background-color    : rgba(143, 143, 143, 1.0);
+  top                 : 7px;
+  height              : 10px;
+  width               : 10px;
+  position            : absolute;
+  margin              : 0;
+  left                : 324px;
+  border-radius       : 5px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.basil .syslgtbk .syslgtbk1 .triangle {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 7px;
+  height              : 10px;
+  width               : 12px;
+  position            : absolute;
+  margin              : 0;
+  left                : 340px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.basil .syslgtbk .syslgtbk1 .rectangle7copy {
+  background-color    : rgba(143, 143, 143, 1.0);
+  top                 : 7px;
+  height              : 10px;
+  width               : 10px;
+  position            : absolute;
+  margin              : 0;
+  left                : 306px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.basil .rectangle {
+    background-color: rgba(55, 150, 111, 1.0);
+    top: 0px;
+    height: 1px;
+    width: 296px;
+    position: relative;
+    margin: 0;
+    left: 38px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.basil .nutrition {
+    background-color: rgb(255, 251, 229);
+  top                 : 0px;
+  height              : 104px;
+  width               : 296px;
+  position            : relative;
+  margin              : 0;
+  left                : 38px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.nutrition_sub_1,
+.nutrition_sub_2{
+  display: flex;
+  width: 100%
+}
+.nutrition_sub_1{
+    padding-top: 10px;
+  }
+.nutrition_sub_1 *{
+    display: block;
+    width: 100% !important;
+    text-align: center;
+    position: relative !important;
+    line-height:1.4;
+}
+.nutrition_sub_1>div{
+    border-right: 1px solid #c6ddc0;
+  }
+.nutrition_sub_1>div:nth-last-child(1){
+    border-right: 0px solid #c6ddc0
+  }
+.nutrition_sub_2 *{
+    display: block;
+    width: 100% !important;
+    text-align: center;
+    position: relative !important
+}
+.glutenu2013free img,
+.eggfree img{
+    width: 17px !important;
+    display: inline-block;
+    margin-top: 1px;
+    vertical-align: middle;
+    margin-right: 10px;
+    box-sizing: border-box !important;
+}
+.glutenu2013free span,
+.eggfree span{
+    display: inline-block;
+    width: auto !important;
+    vertical-align: middle;
+    height: 100%;
+    line-height: 25px;
+}
+.basil .nutrition .rectangle_2 {
+    background-color: rgba(55, 150, 111, 1.0);
+    top: 194px;
+    height: 1px;
+    width: 296px;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    position: relative;
+    left: 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+.basil .nutrition .rectangle3 {
+  background-color    : rgba(55, 150, 111, 1.0);
+  top                 : 63px;
+  height              : 1px;
+  width               : 296px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.basil .nutrition .rectangle1 {
+  background-color    : rgba(55, 150, 111, 0.3);
+  top                 : 0px;
+  height              : 44px;
+  width               : 1px;
+  position            : absolute;
+  margin              : 0;
+  left                : 88px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.basil .nutrition .rectangle2 {
+  background-color    : rgba(55, 150, 111, 0.3);
+  top                 : 0px;
+  height              : 44px;
+  width               : 1px;
+  position            : absolute;
+  margin              : 0;
+  left                : 208px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.basil .creamypestopasta {
+  background-color    : rgba(255,255,255,0.0);
+  margin              : 0;
+  margin-top                 : 61px;
+  height              : auto;
+  width               : auto;
+  position            : relative;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "Montserrat", Helvetica, Arial, serif;
+  font-weight         : 600;
+  font-style          : normal;
+  font-size           : 50.0px;
+  color               : rgba(253, 85, 35, 1.0);
+  text-align          : center;
+  line-height         : 56.0px;
+}
+.tap {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 583px;
+  height              : 60px;
+  width               : 60px;
+  position            : absolute;
+  margin              : 0;
+  left                : 65px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  opacity             : 0.5;
+}
+/* .anima-animate-appear prefix for appear animations */
+.anima-animate-appear {
+  opacity             : 0;
+  display             : block;
+  -webkit-animation   : anima-reveal 0.3s ease-in-out 1 normal forwards;
+  -moz-animation      : anima-reveal 0.3s ease-in 1 normal forwards;
+  -o-animation        : anima-reveal 0.3s ease-in-out 1 normal forwards;
+  animation           : anima-reveal 0.3s ease-in-out 1 normal forwards;
+}
+.anima-animate-disappear {
+  opacity             : 1;
+  display             : block;
+  -webkit-animation   : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+  -moz-animation      : anima-reveal 0.3s ease-in 1 normal forwards;
+  -o-animation        : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+  animation           : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+}
+.anima-animate-nodelay {
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay  : 0;
+  animation-delay     : 0;
+}
+@-webkit-keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@-moz-keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@-o-keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
