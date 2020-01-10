@@ -86,6 +86,7 @@ div {
   -ms-transform       : rotate(0deg); /* IE 9 */
   -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
   transform           : rotate(0deg);
+    padding-bottom: 15px;
 }
 .fortnightly .group .leadarticle .body .line {
   background-color    : rgba(255,255,255,0.0);

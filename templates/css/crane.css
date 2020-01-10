@@ -662,7 +662,7 @@ div {
 .a17h div{
     background-image: url(./img/casestudies-crane-brandattributes-copy-shape-18@2x.png);
     width: 13px !important;
-    height: 16px;
+    height: 18px;
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
@@ -686,7 +686,7 @@ div {
 .a1125a div, .a0221p div{
     opacity: 0.3;
     width: 15px !important;
-    height: 20px !important;
+    height: 18px !important;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -698,10 +698,10 @@ div {
   float: right;
 }
 .a1125a{
-    padding-right: 10%;
+    padding-right: 15%;
 }
 .a0221p{
-    padding-left: 10%;
+    padding-left: 15%;
 }
 .arrow{
     width: 45% !important;
