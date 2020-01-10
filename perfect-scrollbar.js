@@ -1579,10 +1579,10 @@ function add_pf_ob(){
         setTimeout(function(){add_pf_ob()}, 500);
     }
 }
-add_pf_1()
+// add_pf_1()
 function add_pf_1(){
     if($('#sketch_1').length > 0){
-        $('#sketch_1').perfectScrollbar({
+        $('#sketch_1>div>.content').perfectScrollbar({
         useBothWheelAxes: false,
         suppressScrollX: true
     })
@@ -1590,27 +1590,62 @@ function add_pf_1(){
         setTimeout(function(){add_pf_1()}, 500);
     }
 }
-add_pf_2()
+// add_pf_2()
 function add_pf_2(){
-    if($('#sketch_2').length > 0){
-        $('#sketch_2').perfectScrollbar({
+    // if($('#sketch_2').length > 0){
+    //     $('#sketch_2').perfectScrollbar({
+    //     useBothWheelAxes: false,
+    //     suppressScrollX: true
+    // })
+    //     console.log(($('#sketch_2').length > 0))
+    // }else{
+    //     setTimeout(function(){add_pf_2()}, 500);
+    // }
+}
+// add_pf_3()
+function add_pf_3(){
+    if($('#sketch_3>div>.content').length > 0){
+        $('#sketch_3>div>.content').perfectScrollbar({
         useBothWheelAxes: false,
         suppressScrollX: true
     })
-        console.log(($('#sketch_2').length > 0))
     }else{
-        setTimeout(function(){add_pf_2()}, 500);
+        setTimeout(function(){add_pf_3()}, 500);
     }
 }
-add_pf_3()
-function add_pf_3(){
-    if($('#sketch_3').length > 0){
-        $('#sketch_3').perfectScrollbar({
+// add_pf_4()
+function add_pf_4(){
+    if($('#sketch_4').length > 0){
+        $('#sketch_4').perfectScrollbar({
+        useBothWheelAxes: false,
+        suppressScrollX: true
+    })
+    }else{
+        setTimeout(function(){add_pf_4()}, 500);
+    }
+}
+function add_pf_5(){
+    if($('#sketch_5>div>.content').length > 0){
+      console.log($('#sketch_5'))
+      console.log($('#sketch_5>div'))
+      console.log($('#sketch_5>div>.content'))
+        $('#sketch_5>div>.content').perfectScrollbar({
+        useBothWheelAxes: false,
+        suppressScrollX: true
+    })
+    }else{
+        setTimeout(function(){add_pf_5()}, 500);
+    }
+}
+// add_pf_6()
+function add_pf_6(){
+    if($('#sketch_6 .shrine').length > 0){
+        $('#sketch_6 .shrine').perfectScrollbar({
         useBothWheelAxes: false,
         suppressScrollX: true
     })
         console.log(($('#sketch_3').length > 0))
     }else{
-        setTimeout(function(){add_pf_3()}, 500);
+        setTimeout(function(){add_pf_6()}, 500);
     }
 }

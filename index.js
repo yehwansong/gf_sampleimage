@@ -1,12 +1,13 @@
 // var makerjs = require('makerjs');
+// general functionss
 var fonts
 var fontlist 
 var counter
 var language_array=[]
 var multi_string
 var default_font_index
-var default_font = 'roboto'
-
+var default_font = 'Roboto'
+779
 var variants
 var hasreg
 var hasMedium
@@ -29,7 +30,7 @@ function loading_loop(){
 }
 
 window.onload = function () {
-var a_counter = 0
+    var a_counter = 0
     getGoogleFonts('AIzaSyCxzLzCFosJX6B9rOiy3xBu0J2TAlRBzXg');
     fontlist = document.getElementsByClassName('fontlist')
 
@@ -38,55 +39,58 @@ var a_counter = 0
         xhr.open('get', 'https://www.googleapis.com/webfonts/v1/webfonts?key=' + apiKey, true);
         xhr.onloadend = function () {
             fonts = JSON.parse(xhr.responseText);
-            console.log(fonts)
             objectarray(JSON.parse(xhr.responseText).items, fonts)
         };
         xhr.send();
     };
-
-
+    function init_font(){
+        if(window.location.hash) {
+            console.log(window.location.hash.split('#')[1])
+            for (var i = fonts.items.length - 1; i >= 0; i--) {
+                if(fonts.items[i].family == window.location.hash.split('#')[1].split('+').join(' ')){
+                    select_font('<div id="index_'+i+'" class="fontlist">'+fonts.items[i].family+'</div>')  
+                }
+            }
+        } else {
+            select_font('<div id="index_779" class="fontlist">Roboto</div>')  
+        }
+    }
     function objectarray(FontsInUseArray, fonts){
+        init_font()
+            // select_font('<div id="index_779" class="fontlist">Roboto</div>')    
         for (var i =  0; i < FontsInUseArray.length; i++) {
             var FontsInUseObject = document.createElement("div");
             FontsInUseObject.innerHTML += FontsInUseArray[i].family
-            if(FontsInUseArray[i].family == 'Roboto'){
-                default_font_index = i
-                console.log(default_font_index)
-                console.log(fonts)
-                render(i, 'regular')
-            }            
             FontsInUseObject.setAttribute("id",'index_'+i)
             FontsInUseObject.setAttribute("class",'fontlist')
             document.getElementById("objectlist_wrapper").appendChild(FontsInUseObject);
-            for (var j = FontsInUseArray[i].subsets.length - 1; j >= 0; j--) {
-                if (language_array.indexOf(FontsInUseArray[i].subsets[j]) === -1){
-                    if (FontsInUseArray[i].subsets[j] === 'latin' || FontsInUseArray[i].subsets[j] === 'latin-ext'){
-                    }else{
-                        language_array.push(FontsInUseArray[i].subsets[j]);
-                    }
-                } 
-            }
+            // for default    
+
+            // for (var j = FontsInUseArray[i].subsets.length - 1; j >= 0; j--) {
+            //     if (language_array.indexOf(FontsInUseArray[i].subsets[j]) === -1){
+            //         if (FontsInUseArray[i].subsets[j] === 'latin' || FontsInUseArray[i].subsets[j] === 'latin-ext'){
+            //         }else{
+            //             language_array.push(FontsInUseArray[i].subsets[j]);
+            //         }
+            //     } 
+            // }
             if(i == FontsInUseArray.length-1){
                 $('.fontlist').click(function(){
-                    render($(this).attr('id').split('_')[1],selected_variant)
-                    $('#select_fonts').html(fonts.items[$(this).attr('id').split('_')[1]].family)
-                    var defaultlink = 'https://fonts.google.com/specimen/'
-                    $('#googlefont').attr("href", defaultlink.concat(fonts.items[$(this).attr('id').split('_')[1]].family.replace(/ /g, `+`)))
+                    select_font(this)
                 })
             }
         }
     } 
 
-        var selected_theme = 'none'
-        var selected_color = 'salmon'
-        var selected_variant = 'regular'
-        var selected_ratio = '100-191'
-        var selected_content = 'Shining'
-        var selected_content_type = 'word'
-        var selected_imagesize = '600'
-        var selected_lineheight = '1.2'
 
-    function render(fontIndex, variant){
+    function select_font(selected){
+            check_variant($(selected).attr('id').split('_')[1])
+            $('#select_fonts').html(fonts.items[$(selected).attr('id').split('_')[1]].family)
+            var defaultlink = 'https://fonts.google.com/specimen/'
+            $('#googlefont').attr("href", defaultlink.concat(fonts.items[$(selected).attr('id').split('_')[1]].family.replace(/ /g, `+`)))
+    }
+
+    function check_variant(fontIndex){
         var family = fonts.items[fontIndex].family
         var category = fonts.items[fontIndex].category
         variants = fonts.items[fontIndex].variants
@@ -95,7 +99,6 @@ var a_counter = 0
                 hasLight = false
                 hasMedium = false
                 hasreg = false
-        console.log(variants)
         for (var i = variants.length - 1; i >= 0; i--) {
             if(variants[i] == '300'){
                 hasLight = true
@@ -119,12 +122,11 @@ var a_counter = 0
                 hasMedium = true
                 variant_array.push('500')
             }else if(variants[i] == 'medium'){
-                console.log('sdf')
                 hasMedium = true
                 variant_array.push('medium')
             }else{
-                console.log(hasMedium)
             }
+
             if(i == 0){
                 variants = variant_array.join(',')
                 change_table(family,category)
@@ -132,13 +134,14 @@ var a_counter = 0
         }
         var var_index
         var url
-        load_font(url,family,category)
+        change_font(url,family,category)
+        load_sketch(family,category)
+        console.log('2')
     }
     function change_table(family,category){
         $('td.x_3').html('Regular')
         $('td.x_2').html(family)
         var SC = family.split(' ')[family.split(' ').length-1]
-        console.log(family.split(' '))
         if(category === 'display' || category === 'handwriting' || SC === 'SC') {
             $('.y_7 .x_2').html(default_font)
             $('.y_8 .x_2').html(default_font)
@@ -162,25 +165,16 @@ var a_counter = 0
             $('.y_2 .x_3').html('Light')
         }
     }
-    function save_image(){
-                html2canvas($("#sketch_wrapper"), {
-                    onrendered: function(canvas) {
-                        theCanvas = canvas;
-                        $("#img-out").append(canvas);
-                        setTimeout(function(){ $("#img-out").append(canvas); }, 3000);
-                    }
-                });
-    }
-
-    function load_font(url,family,category){
+    function change_font(url,family,category){
+        window.location.hash = family.replace(/ /g, '+')
         var apiUrl = [];
         apiUrl.push(
             family.replace(/ /g, '+')
             +':'+variants + '&display=swap'
         );
-        for (var i = selected_variant.length - 1; i >= 0; i--) {
-            selected_variant[i]
-        }
+        // for (var i = selected_variant.length - 1; i >= 0; i--) {
+        //     selected_variant[i]
+        // }
         var joined = apiUrl.join('|')
         var url = 'https://fonts.googleapis.com/css?family=' + joined
         var fontlink = document.createElement('link'); 
@@ -192,7 +186,7 @@ var a_counter = 0
         var SC = family.split(' ')[family.split(' ').length-1]
         var style = document.createElement('style');
         document.getElementsByTagName('head')[0].appendChild(style);
-        if(category === 'display' || category === 'handwriting' || SC === 'SC') {
+        if(category === 'display' || category === 'handwriting' || SC === 'SC' || others_subcat.includes(family)) {
             $('.h1').css({'font-family':family})
             $('.h2').css({'font-family':family})
             $('.h3').css({'font-family':family})
@@ -225,6 +219,64 @@ var a_counter = 0
     function hasClass( target, className ) {
         return new RegExp('(\\s|^)' + className + '(\\s|$)').test(target.className);
     }
+    function load_sketch(family,category){
+        $('.selected').removeClass('selected')
+        $('.sketch').removeClass('selectable')
+        $('.sketch').removeClass('selectable_sketch')
+        $('.select_sketch').removeClass('selectable')
+        $('.select_sketch').removeClass('selectable_select_sketch')
+        if(category == 'handwriting'){
+            for (var i = handwriting_subcat.length - 1; i >= 0; i--) {
+                if(String(handwriting_subcat[i][0]) === String(family)){
+                    console.log($('.sketch.display_'+handwriting_subcat[i][1]))
+                    $('.sketch.display_'+handwriting_subcat[i][1]).addClass('selectable selectable_sketch')
+                    $('.select_sketch.display_'+handwriting_subcat[i][1]).addClass('selectable selectable_select_sketch')
+                }
+            }
+        }else if(category == 'display'){
+            for (var i = display_subcat.length - 1; i >= 0; i--) {
+                if(display_subcat[i][0] === family){
+                    console.log($('.sketch.display_'+display_subcat[i][1]))
+                    $('.sketch.display_'+display_subcat[i][1]).addClass('selectable selectable_sketch')
+                    $('.select_sketch.display_'+display_subcat[i][1]).addClass('selectable selectable_select_sketch')
+                }
+            }
+        }else if(category == 'serif'){
+            if(others_subcat.includes(family) || family.split(' ')[family.split(' ').length-1] === 'sc'){
+                    $('.sketch.display_1').addClass('selectable selectable_sketch')
+                    $('.select_sketch.display_1').addClass('selectable selectable_select_sketch')
+            }else{
+                $('.sketch.text').addClass('selectable selectable_sketch')
+                $('.select_sketch.text').addClass('selectable selectable_select_sketch')
+            }
+        }else{
+            if(others_subcat.includes(family) || family.split(' ')[family.split(' ').length-1] === 'sc'){
+                    $('.sketch.display_1').addClass('selectable selectable_sketch')
+                    $('.select_sketch.display_1').addClass('selectable selectable_select_sketch')
+            }else{
+                $('.sketch.text').addClass('selectable selectable_sketch')
+                $('.select_sketch.text').addClass('selectable selectable_select_sketch')
+                $('.sketch.utility').addClass('selectable selectable_sketch')
+                $('.select_sketch.utility').addClass('selectable selectable_select_sketch')
+            }
+        }
+        init_select_sketch()
+    }
+
+    function init_select_sketch(){
+        console.log($('.selectable_selectz_sketch'))
+        if($('.selectable').length > 0){
+            var selectable_sketch = document.getElementsByClassName('selectable_sketch')
+            var selectable_select_sketch = document.getElementsByClassName('selectable_select_sketch')
+            var random = Math.floor(Math.random() * selectable_sketch.length) 
+            $('.selected').removeClass('selected')
+            selectable_sketch[random].classList.add('selected');
+            selectable_select_sketch[random].classList.add('selected');
+        }else{
+            setTimeout(function(){init_select_sketch()}, 500);
+        }
+    }
+
     select_sketch()
     function select_sketch(){
         $('#select_sketch_1').click(function(){
@@ -250,10 +302,18 @@ var a_counter = 0
              $(this).addClass('selected')
              $('.sketch').removeClass('selected')
              $('#sketch_4').addClass('selected')
-             clearTimeout(loading_loop_1);
-             clearTimeout(loading_loop_2);
-             clearTimeout(loading_loop_3);
-             loading_loop()
+        })
+        $('#select_sketch_5').click(function(){
+             $('.select_sketch').removeClass('selected')
+             $(this).addClass('selected')
+             $('.sketch').removeClass('selected')
+             $('#sketch_5').addClass('selected')
+        })
+        $('#select_sketch_6').click(function(){
+             $('.select_sketch').removeClass('selected')
+             $(this).addClass('selected')
+             $('.sketch').removeClass('selected')
+             $('#sketch_6').addClass('selected')
         })
     }
 
@@ -270,55 +330,54 @@ function fullload(){
 }
     function grouping(){
         $('#sketch_wrapper .h1').hover(function(){ 
-            $(this).addClass('hovered')
+            // $(this).addClass('hovered')
             $('.table .h1').parent().addClass('hovered') }, function(){ $('.hovered').removeClass('hovered') })
         $('#sketch_wrapper .h2').hover(function(){ 
-            $(this).addClass('hovered')
+            // $(this).addClass('hovered')
             $('.table .h2').parent().addClass('hovered') }, function(){ $('.hovered').removeClass('hovered') })
         $('#sketch_wrapper .h3').hover(function(){ 
-            $(this).addClass('hovered')
+            // $(this).addClass('hovered')
             $('.table .h3').parent().addClass('hovered') }, function(){ $('.hovered').removeClass('hovered') })
         $('#sketch_wrapper .h4').hover(function(){ 
-            $(this).addClass('hovered')
+            // $(this).addClass('hovered')
             $('.table .h4').parent().addClass('hovered') }, function(){ $('.hovered').removeClass('hovered') })
         $('#sketch_wrapper .h5').hover(function(){ 
-            $(this).addClass('hovered')
+            // $(this).addClass('hovered')
             $('.table .h5').parent().addClass('hovered') }, function(){ $('.hovered').removeClass('hovered') })
         $('#sketch_wrapper .h6').hover(function(){ 
-            $(this).addClass('hovered')
+            // $(this).addClass('hovered')
             $('.table .h6').parent().addClass('hovered') }, function(){ $('.hovered').removeClass('hovered') })
 
         $('#sketch_wrapper .subtitle1').hover(function(){ 
-            $(this).addClass('hovered')
+            // $(this).addClass('hovered')
             $('.table .subtitle1').parent().addClass('hovered') }, function(){ $('.hovered').removeClass('hovered') })
         $('#sketch_wrapper .subtitle2').hover(function(){ 
-            $(this).addClass('hovered')
+            // $(this).addClass('hovered')
             $('.table .subtitle2').parent().addClass('hovered') }, function(){ $('.hovered').removeClass('hovered') })
 
         $('#sketch_wrapper .body1').hover(function(){ 
-            $(this).addClass('hovered')
+            // $(this).addClass('hovered')
             $('.table .body1').parent().addClass('hovered') }, function(){ $('.hovered').removeClass('hovered') })
         $('#sketch_wrapper .body2').hover(function(){ 
-            $(this).addClass('hovered')
+            // $(this).addClass('hovered')
             $('.table .body2').parent().addClass('hovered') }, function(){ $('.hovered').removeClass('hovered') })
         $('#sketch_wrapper .button').hover(function(){ 
-            $(this).addClass('hovered')
+            // $(this).addClass('hovered')
             $('.table .button').parent().addClass('hovered') }, function(){ $('.hovered').removeClass('hovered') })
         $('#sketch_wrapper .caption').hover(function(){ 
-            $(this).addClass('hovered')
+            // $(this).addClass('hovered')
             $('.table .caption').parent().addClass('hovered') }, function(){ $('.hovered').removeClass('hovered') })
         $('#sketch_wrapper .overline').hover(function(){ 
-            $(this).addClass('hovered')
+            // $(this).addClass('hovered')
             $('.table .overline').parent().addClass('hovered') }, function(){ $('.hovered').removeClass('hovered') 
             })
 
         $('.table tr').hover(function(){ 
-            console.log($(this).find('.x_1').attr('class').split(' ')[1])
             var hoveredelement = $(this).find('.x_1').attr('class').split(' ')[1]
-                $(this).addClass('hovered')
+                // $(this).addClass('hovered')
                 document.getElementById('sketch_wrapper').getElementsByClassName(hoveredelement)[0].classList.add("hovered");
             },function(){
-                $(this).removeClass('hovered') 
+                // $(this).removeClass('hovered') 
                 $('.hovered').removeClass('hovered')
             })
         $('.table tr').click(function(){ 
