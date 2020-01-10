@@ -30,12 +30,12 @@ add_pf_6()
 
 var table_array = [
                 ['Scale Category &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;', 'Typeface', 'Font', 'Size', 'Case', 'Letter spacing'],
-                ['H1 Headline', 'Roboto', 'Light', '96', 'Sentence', '-1.5'],
-                ['H2 Headline', 'Roboto', 'Light', '60', 'Sentence', '0.5'],
-                ['H3 Headline', 'Roboto', 'Regular', '48', 'Sentence', '0'],
-                ['H4 Headline', 'Roboto', 'Regular', '34', 'Sentence', '0.25'],
-                ['H5 Headline', 'Roboto', 'Regular', '24', 'Sentence', '0'],
-                ['H6 Headline', 'Roboto', 'Medium', '20', 'Sentence', '0.15'],
+                ['H1 <span class="headline">Headline</span>', 'Roboto', 'Light', '96', 'Sentence', '-1.5'],
+                ['H2 <span class="headline">Headline</span>', 'Roboto', 'Light', '60', 'Sentence', '0.5'],
+                ['H3 <span class="headline">Headline</span>', 'Roboto', 'Regular', '48', 'Sentence', '0'],
+                ['H4 <span class="headline">Headline</span>', 'Roboto', 'Regular', '34', 'Sentence', '0.25'],
+                ['H5 <span class="headline">Headline</span>', 'Roboto', 'Regular', '24', 'Sentence', '0'],
+                ['H6 <span class="headline">Headline</span>', 'Roboto', 'Medium', '20', 'Sentence', '0.15'],
                 ['Subtitle1', 'Roboto', 'Regular', '16', 'Sentence', '0.15'],
                 ['Subtitle2', 'Roboto', 'Medium', '14', 'Sentence', '0.1'],
                 ['Body1', 'Roboto', 'Regular', '16', 'Sentence', '0.5'],

@@ -215,6 +215,16 @@ window.onload = function () {
             $('.caption').css({'font-family':family})
             $('.overline').css({'font-family':family})
         }
+        setTimeout(function(){show_heading()},1000)
+    }
+    function show_heading(){
+        console.log($('.y_1 .x_1').height())
+        console.log($('.y_2 .x_1').outerHeight())
+        if ($('.y_1 .x_1').height()/2>$('.y_2 .x_1').outerHeight()){
+            $('.headline').hide()
+        }else{
+            $('.headline').show()
+        }
     }
     function hasClass( target, className ) {
         return new RegExp('(\\s|^)' + className + '(\\s|$)').test(target.className);

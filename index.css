@@ -136,7 +136,7 @@ body{overflow: hidden;}
     transform: translateY(-50%);
     margin-left: 10px;
 }
-.table *{
+.table>*{
                 color: black;
   border-collapse: collapse;
     font-weight: 300;
@@ -156,6 +156,9 @@ body{overflow: hidden;}
     padding-left: 20px;
     text-align: left;
     cursor: pointer;
+}
+.y_1 .x_1{
+    white-space:inherit !important;
 }
 .x_1{
     border-left: 1px dotted black;
@@ -319,10 +322,10 @@ body{overflow: hidden;}
                 padding-top: 100vh;
             }
             .y_1 .x_2{
-                padding-top: 100vh !important;
+                padding-top: 101vh !important;
             }
             .y_13 .x_1{
-                padding-top: 30px;
+                padding-top: 22.5px;
                 padding-bottom: 100vh;
             }
 tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption,.overline,
