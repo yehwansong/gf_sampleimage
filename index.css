@@ -146,7 +146,7 @@ body{overflow: hidden;}
     margin:0;padding:0 auto;box-sizing:border-box;
 }
 .table tr{
-    border-bottom: 1px solid gray
+    border-bottom: 1px solid #cccccc
 }
 .table td,
 .table th{
@@ -161,7 +161,7 @@ body{overflow: hidden;}
     white-space:inherit !important;
 }
 .x_1{
-    border-left: 1px dotted black;
+    border-left: 1px dotted #cccccc;
 }
 .table th{
     padding-top: 20px;
