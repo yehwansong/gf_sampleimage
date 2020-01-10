@@ -6,7 +6,7 @@ body{overflow: hidden;}
 *{
     color: #4a4a4a;}
 #top {
-    box-shadow: 0px 0px 4px 4px rgba(60, 64, 67, 0.18);
+    box-shadow: 0px 0px 4px 4px rgba(60, 64, 67, 0.33);
     box-sizing: border-box;
     display: inline-block;
     padding-left: 24px;
@@ -51,7 +51,7 @@ body{overflow: hidden;}
 }
 #objectlist_wrapper{
     padding-top: 10px;
-    box-shadow: 0px 0px 3px 3px rgba(60, 64, 67, 0.18);
+    box-shadow: 0px 0px 3px 3px rgba(60, 64, 67, 0.33);
      opacity: 0; 
     overflow: hidden;
     background: #ffffff;
@@ -360,7 +360,7 @@ tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption
     left: 25vw;
     }
 .sketch{
-    box-shadow: 0vh 0vh 7px rgba(60, 64, 67, 0.18);}
+    box-shadow: 0vh 0vh 7px rgba(60, 64, 67, 0.33);}
 .select_sketch{ 
     vertical-align: middle;
     position: relative;
@@ -463,22 +463,22 @@ tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption
                 box-sizing: border-box;
             }
             #sketch_1{
-                box-shadow:0vh 0vh 7px rgba(60, 64, 67, 0.18), 0vh 0vh 0px 100vh rgb(237, 237, 237)
+                box-shadow:0vh 0vh 7px rgba(60, 64, 67, 0.33), 0vh 0vh 0px 100vh rgb(237, 237, 237)
             }
             #sketch_2{
                 box-shadow:0vh 0vh 7px rgba(60, 64, 67, 0.45), 0vh 0vh 0px 100vh #f5d7e6
             }
             #sketch_3{
-                box-shadow:0vh 0vh 7px rgba(60, 64, 67, 0.18), 0vh 0vh 0px 100vh rgb(237, 237, 237)
+                box-shadow:0vh 0vh 7px rgba(60, 64, 67, 0.33), 0vh 0vh 0px 100vh rgb(237, 237, 237)
             }
             #sketch_4{
-                box-shadow:0vh 0vh 7px rgba(60, 64, 67, 0.18), 0vh 0vh 0px 100vh #def3e5
+                box-shadow:0vh 0vh 7px rgba(60, 64, 67, 0.33), 0vh 0vh 0px 100vh #def3e5
             }
             #sketch_5{
-                box-shadow:0vh 0vh 7px rgba(60, 64, 67, 0.18), 0vh 0vh 0px 100vh rgb(237, 237, 237)
+                box-shadow:0vh 0vh 7px rgba(60, 64, 67, 0.33), 0vh 0vh 0px 100vh rgb(237, 237, 237)
             }
             #sketch_6{
-                box-shadow:0vh 0vh 7px rgba(60, 64, 67, 0.18), 0vh 0vh 0px 100vh #feeae6
+                box-shadow:0vh 0vh 7px rgba(60, 64, 67, 0.33), 0vh 0vh 0px 100vh #feeae6
             }
 @-webkit-keyframes loading {
     0% {width: 0%;}
