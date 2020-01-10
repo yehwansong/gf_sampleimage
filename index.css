@@ -420,7 +420,7 @@ tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption
                 overflow:hidden;
                 opacity: 0;
                 pointer-events: none;
-                transition: opacity 0.3s
+                transition: opacity 0.5s
 
             } 
             #sketch_1>div, #sketch_2>div, #sketch_3>div, #sketch_4>div, #sketch_5>div, #sketch_6>div{
