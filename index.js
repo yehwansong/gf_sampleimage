@@ -29,6 +29,11 @@ function loading_loop(){
     }, 6000);
 }
 
+function exists(arr, search) {
+    return arr.some(row => row.includes(search));
+}
+
+
 window.onload = function () {
     var a_counter = 0
     getGoogleFonts('AIzaSyCxzLzCFosJX6B9rOiy3xBu0J2TAlRBzXg');
@@ -186,7 +191,11 @@ window.onload = function () {
         var SC = family.split(' ')[family.split(' ').length-1]
         var style = document.createElement('style');
         document.getElementsByTagName('head')[0].appendChild(style);
-        if(category === 'display' || category === 'handwriting' || SC === 'SC' || others_subcat.includes(family)) {
+        if(category === 'display' || category === 'handwriting' || SC === 'SC' || 
+                exists(serif_subcat, family) ||
+                exists(sansserif_subcat, family) ||
+                exists(mono_subcat, family)
+                    ) {
             $('.h1').css({'font-family':family})
             $('.h2').css({'font-family':family})
             $('.h3').css({'font-family':family})
@@ -252,7 +261,7 @@ window.onload = function () {
                 }
             }
         }else if(category == 'serif'){
-            if(others_subcat.includes(family) || family.split(' ')[family.split(' ').length-1] === 'sc'){
+            if(exists(serif_subcat, family) || family.split(' ')[family.split(' ').length-1] === 'sc'){
                     $('.sketch.display_1').addClass('selectable selectable_sketch')
                     $('.select_sketch.display_1').addClass('selectable selectable_select_sketch')
             }else{
@@ -260,7 +269,7 @@ window.onload = function () {
                 $('.select_sketch.text').addClass('selectable selectable_select_sketch')
             }
         }else{
-            if(others_subcat.includes(family) || family.split(' ')[family.split(' ').length-1] === 'sc'){
+            if(exists(sansserif_subcat, family) || exists(mono_subcat,family) || family.split(' ')[family.split(' ').length-1] === 'sc'){
                     $('.sketch.display_1').addClass('selectable selectable_sketch')
                     $('.select_sketch.display_1').addClass('selectable selectable_select_sketch')
             }else{
