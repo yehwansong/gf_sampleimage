@@ -4,48 +4,33 @@
 <style type="text/css">
   body{
     overflow: scroll !important;
-    padding-top: 13.8vw;
     padding-left: 1vw;
-  }
-  .row{
-    display: flex;
+    padding-top: 1vw
   }
   *{
     font-size: 0.85vw;
     line-height: 1;
     position: relative;
   }
-  #topbar,
-  #subcat,
-  #layout,
-  #grid{
+  .row{
     overflow: hidden;
     width: 97.8vw;
-    position: fixed;
     top: 0;
-    z-index: 5
+    z-index: 5;display: flex;
   }
-  #topbar,
-  #grid{
-    top:1vw;
-  }
-  #subcat{
-    top: 2.65vw;
-  }
-  #layout{
-    top: 4.3vw;
+  #subcat>div{
+    border-bottom: none!important
   }
   #grid{
-    box-shadow: 0vh 0vh 0.6vh rgba(60, 64, 67, 0.18), 0vh 0vh 0vh 2vw #ededed;
+    box-shadow: 0vh 0vh 0.4vh rgba(60, 64, 67, 0.31), 0vh 0vh 0vh 2vw #ededed;;
     pointer-events: none;
     width: 97.8vw;
     height: 100vh;
     left: 1vw;
+    top: 1vw;
+    position: fixed;
   }
-  #topbar>div,
-  #layout>div,
-  #subcat>div,
-  #grid>div{
+  .row>div{
     font-family: Roboto !important;
     background: white;
     padding: 0.4vw;
@@ -54,6 +39,18 @@
     border-right: 1px solid #e6e6e6;
     border-bottom: 1px solid #e6e6e6;
     text-transform: capitalize;
+    width: 16.3vw;
+    box-sizing: border-box;
+  }
+  #fonts>div{
+    padding: 0vw;
+  }
+  #topbar>div{
+    padding:0.8vw;
+  }
+  #description>div{
+      line-height: 1.5 !important;
+      height: 4.6vw
   }
   #grid>div{
     background: none;
@@ -61,42 +58,21 @@
     height: 100vh;
   }
   #topbar{
-    z-index: 10;}
+    z-index: 10;
+  }
   #layout>div{
     display: flex;
     background: #cccccc;
     height: 9.5vw;
   }
-  #serif_wrapper,
-  #sanserif_wrapper,
-  #mono_wrapper,
-  #display_wrapper,
-  #handwriting_wrapper{
-    background: white;
-    border-bottom: 1px solid #e6e6e6;
-    width: 97.8vw;
-  }
-  #layout>div>div{
-    width: 100%;
-    height: 100px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
   .elem,
-  #layout>div,
-  #topbar>div,
-  #subcat>div,
-  #grid>div{
-    width: 16.3vw;
-    box-sizing: border-box;
-}
+  .row>div{
+  }
   #layout>div{
     border-top: 1px solid #e6e6e6;
     padding: 1vw;
     display: flex;
-    background: #EDEDED;
-    box-shadow: inset 0px 0px 0px 5px white;
+    background: #535353;
   }
   #layout>div:nth-child(1){
     background: white;
@@ -110,6 +86,7 @@ img{
     box-shadow: 0px 0px 0px 0.2vw white;
 }
 .elem{
+  box-sizing: border-box;
     display: block;
     text-decoration: none;
     white-space: nowrap;
@@ -199,55 +176,58 @@ $('document').ready(function(){
     function add_frame_2(){
         for (var i = display_subcat.length - 1; i >= 0; i--) {
             if(display_subcat[i][1] === '1'){
-                $('#display_sub_wrapper_1').append('<a target="_blank" href="index.html#'+display_subcat[i][0].replace(/ /g, `+`)+'"  style="font-family:'+display_subcat[i][0]+'" class="elem display_'+display_subcat[i][1]+'">'+display_subcat[i][0]+'</a>')
+                $('#display_3').append('<a target="_blank" href="index.html#'+display_subcat[i][0].replace(/ /g, `+`)+'"  style="font-family:'+display_subcat[i][0]+'" class="elem display_'+display_subcat[i][1]+'">'+display_subcat[i][0]+'</a>')
             }
             if(display_subcat[i][1] === '2'){
-                $('#display_sub_wrapper_2').append('<a target="_blank" href="index.html#'+display_subcat[i][0].replace(/ /g, `+`)+'"  style="font-family:'+display_subcat[i][0]+'" class="elem display_'+display_subcat[i][1]+'">'+display_subcat[i][0]+'</a>')
+                $('#display_2').append('<a target="_blank" href="index.html#'+display_subcat[i][0].replace(/ /g, `+`)+'"  style="font-family:'+display_subcat[i][0]+'" class="elem display_'+display_subcat[i][1]+'">'+display_subcat[i][0]+'</a>')
             }
             if(display_subcat[i][1] === '3'){
-                $('#display_sub_wrapper_3').append('<a target="_blank" href="index.html#'+display_subcat[i][0].replace(/ /g, `+`)+'"  style="font-family:'+display_subcat[i][0]+'" class="elem display_'+display_subcat[i][1]+'">'+display_subcat[i][0]+'</a>')
+                $('#display_1').append('<a target="_blank" href="index.html#'+display_subcat[i][0].replace(/ /g, `+`)+'"  style="font-family:'+display_subcat[i][0]+'" class="elem display_'+display_subcat[i][1]+'">'+display_subcat[i][0]+'</a>')
             }
             // load_font(display_subcat[i][0],i)
         }
         for (var j = handwriting_subcat.length - 1; j >= 0; j--) {
             if(handwriting_subcat[j][1] === '1'){
-                $('#handwriting_sub_wrapper_1').append('<a target="_blank" href="index.html#'+handwriting_subcat[j][0].replace(/ /g, `+`)+'"  style="font-family:'+handwriting_subcat[j][0]+'" class="elem handwriting_'+handwriting_subcat[j][1]+'">'+handwriting_subcat[j][0]+'</a>')
+                $('#display_3').append('<a target="_blank" href="index.html#'+handwriting_subcat[j][0].replace(/ /g, `+`)+'"  style="font-family:'+handwriting_subcat[j][0]+'" class="elem handwriting_'+handwriting_subcat[j][1]+'">'+handwriting_subcat[j][0]+'</a>')
             }
             if(handwriting_subcat[j][1] === '2'){
-                $('#handwriting_sub_wrapper_2').append('<a target="_blank" href="index.html#'+handwriting_subcat[j][0].replace(/ /g, `+`)+'"  style="font-family:'+handwriting_subcat[j][0]+'" class="elem handwriting_'+handwriting_subcat[j][1]+'">'+handwriting_subcat[j][0]+'</a>')
+                $('#display_2').append('<a target="_blank" href="index.html#'+handwriting_subcat[j][0].replace(/ /g, `+`)+'"  style="font-family:'+handwriting_subcat[j][0]+'" class="elem handwriting_'+handwriting_subcat[j][1]+'">'+handwriting_subcat[j][0]+'</a>')
             }
             if(handwriting_subcat[j][1] === '3'){
-                $('#handwriting_sub_wrapper_3').append('<a target="_blank" href="index.html#'+handwriting_subcat[j][0].replace(/ /g, `+`)+'"  style="font-family:'+handwriting_subcat[j][0]+'" class="elem handwriting_'+handwriting_subcat[j][1]+'">'+handwriting_subcat[j][0]+'</a>')
+                $('#display_1').append('<a target="_blank" href="index.html#'+handwriting_subcat[j][0].replace(/ /g, `+`)+'"  style="font-family:'+handwriting_subcat[j][0]+'" class="elem handwriting_'+handwriting_subcat[j][1]+'">'+handwriting_subcat[j][0]+'</a>')
             }
         }
         for (var i = fonts.items.length - 1; i >= 0; i--) {
             if(fonts.items[i].category === "serif"){
                 if(others_subcat.includes(fonts.items[i].family)){
-                    $('#serif_sub_wrapper_2').append('<a target="_blank" href="index.html#'+fonts.items[i].family.replace(/ /g, `+`)+'"  class="elem" style="font-family:'+fonts.items[i].family+'">'+fonts.items[i].family+'</a>')
+                    $('#display_3').append('<a target="_blank" href="index.html#'+fonts.items[i].family.replace(/ /g, `+`)+'"  class="elem" style="font-family:'+fonts.items[i].family+'">'+fonts.items[i].family+'</a>')
                 }else{
-                    $('#serif_sub_wrapper_1').append('<a target="_blank" href="index.html#'+fonts.items[i].family.replace(/ /g, `+`)+'"  class="elem" style="font-family:'+fonts.items[i].family+'">'+fonts.items[i].family+'</a>')
+                    $('#text').append('<a target="_blank" href="index.html#'+fonts.items[i].family.replace(/ /g, `+`)+'"  class="elem" style="font-family:'+fonts.items[i].family+'">'+fonts.items[i].family+'</a>')
+                    $('#utility').append('<a target="_blank" href="index.html#'+fonts.items[i].family.replace(/ /g, `+`)+'"  class="elem" style="font-family:'+fonts.items[i].family+'">'+fonts.items[i].family+'</a>')
                 }
             }
             if(fonts.items[i].category === "sans-serif"){
                 if(others_subcat.includes(fonts.items[i].family)){
-                    $('#sans-serif_sub_wrapper_2').append('<a target="_blank" href="index.html#'+fonts.items[i].family.replace(/ /g, `+`)+'"  class="elem" style="font-family:'+fonts.items[i].family+'">'+fonts.items[i].family+'</a>')
+                    $('#display_3').append('<a target="_blank" href="index.html#'+fonts.items[i].family.replace(/ /g, `+`)+'"  class="elem" style="font-family:'+fonts.items[i].family+'">'+fonts.items[i].family+'</a>')
                 }else{
                     k++
-                    $('#sans-serif_sub_wrapper_1').append('<a target="_blank" href="index.html#'+fonts.items[i].family.replace(/ /g, `+`)+'"  class="elem orginial_elem_'+k+'" style="font-family:'+fonts.items[i].family+'">'+fonts.items[i].family+'</a>')
+                    $('#text').append('<a target="_blank" href="index.html#'+fonts.items[i].family.replace(/ /g, `+`)+'"  class="elem orginial_elem_'+k+'" style="font-family:'+fonts.items[i].family+'">'+fonts.items[i].family+'</a>')
                 }
             }
             if(fonts.items[i].category === "monospace"){
                 if(others_subcat.includes(fonts.items[i].family)){
-                    $('#monospace_sub_wrapper_2').append('<a target="_blank" href="index.html#'+fonts.items[i].family.replace(/ /g, `+`)+'"  class="elem" style="font-family:'+fonts.items[i].family+'">'+fonts.items[i].family+'</a>')
+                    $('#display_3').append('<a target="_blank" href="index.html#'+fonts.items[i].family.replace(/ /g, `+`)+'"  class="elem" style="font-family:'+fonts.items[i].family+'">'+fonts.items[i].family+'</a>')
                 }else{
                     k++
-                    $('#monospace_sub_wrapper_1').append('<a target="_blank" href="index.html#'+fonts.items[i].family.replace(/ /g, `+`)+'"  class="elem orginial_elem_'+k+'" style="font-family:'+fonts.items[i].family+'">'+fonts.items[i].family+'</a>')
+                    $('#text').append('<a target="_blank" href="index.html#'+fonts.items[i].family.replace(/ /g, `+`)+'"  class="elem orginial_elem_'+k+'" style="font-family:'+fonts.items[i].family+'">'+fonts.items[i].family+'</a>')
+                    $('#utility').append('<a target="_blank" href="index.html#'+fonts.items[i].family.replace(/ /g, `+`)+'"  class="elem orginial_elem_'+k+'" style="font-family:'+fonts.items[i].family+'">'+fonts.items[i].family+'</a>')
                 }
             }
         }
 
         load_font()
-        clone_for_utility()
+         fix_frame_1()
+        // clone_for_utility()
     }
     function clone_for_utility(){
             console.log(';sdlfk')
@@ -265,11 +245,23 @@ $('document').ready(function(){
     add_frame_1()
     function add_frame_1(){
         if(typeof fonts !== 'undefined'){
-            console.log(fonts.items)
             add_frame_2()
         }else{
               setTimeout(function(){add_frame_1()}, 500);
         }
+    }
+    function fix_frame_1(){
+      top_array = []
+      $('.row').each(function(index){
+        top_array.push($(this).offset().top)
+        if(index == $('.row').length){
+          fix_frame_2()
+        }
+      })
+    function fix_frame_2(top_array){
+        $(this).css({'margin-top': top_array[index]})
+        $(this).css({'position':'fixed'})
+      }
     }
     function load_font(){
         for (var i = fonts.items.length - 1; i >= 0; i--) {
@@ -288,7 +280,16 @@ $('document').ready(function(){
 
 })
     </script>
-    <div id="topbar">
+    <div>
+    <div class="row" id="grid">
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+    </div>
+    <div class="row" id="topbar">
         <div>&nbsp;</div>
         <div style="border-right: none;">display typeface</div>
         <div style="border-right: none;">&nbsp;</div>
@@ -296,7 +297,7 @@ $('document').ready(function(){
         <div>text typeface</div>
         <div>utility typeface</div>
     </div>
-    <div id="subcat">
+    <div class="row" id="subcat">
         <div>&nbsp;</div>
         <div>Very Expressive</div>
         <div>Expressive</div>
@@ -304,16 +305,8 @@ $('document').ready(function(){
         <div>&nbsp;</div>
         <div>&nbsp;</div>
     </div>
-    <div id="grid">
-        <div>&nbsp;</div>
-        <div>&nbsp;</div>
-        <div>&nbsp;</div>
-        <div>&nbsp;</div>
-        <div>&nbsp;</div>
-        <div>&nbsp;</div>
-    </div>
-    <div id="layout">
-        <div>recommended templates</div>
+    <div class="row" id="layout">
+        <div>Sample Image</div>
         <div>
             <img src="img_templates/tem_7.png"/>
         </div>
@@ -335,27 +328,30 @@ $('document').ready(function(){
             <img src="img_templates/tem_2.png"/>
         </div>
     </div>
-    <div id="sanserif_wrapper">
-        <div id="sans-serif_sub_wrapper_2"><div class="cat elem">Sans-serif typeface</div></div>
-        <div id="sans-serif_sub_wrapper_1"></div>
+    <div class="row" id="description">
+        <div>&nbsp;</div>
+        <div>
+          -Headline should be center aligned<br>
+          -Headline should be h3 or bigger<br>
+          -Roboto pairing
+        </div>
+        <div>
+          -Headline should be center aligned<br>
+          -Roboto pairing
+        </div>
+        <div>
+        </div>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
     </div>
-    <div id="mono_wrapper">
-        <div id="monospace_sub_wrapper_2"><div class="cat elem">mono typeface</div></div>
-        <div id="monospace_sub_wrapper_1"></div>
-    </div>
-    <div id="serif_wrapper">
-        <div id="serif_sub_wrapper_2"><div class="cat elem">serif typeface</div></div>
-        <div id="serif_sub_wrapper_1"></div>
-    </div>
-    <div id="handwriting_wrapper">
-        <div id="handwriting_sub_wrapper_3"><div class="cat elem">Handwriting typeface</div></div>
-        <div id="handwriting_sub_wrapper_2"></div>
-        <div id="handwriting_sub_wrapper_1"></div>
-    </div>
-    <div id="display_wrapper">
-        <div id="display_sub_wrapper_3"><div class="cat elem">Display typeface</div></div>
-        <div id="display_sub_wrapper_2"></div>
-        <div id="display_sub_wrapper_1"></div>
+    
+    <div class="row" id="fonts">
+        <div>&nbsp;</div>
+        <div id="display_1"></div>
+        <div id="display_2"></div>
+        <div id="display_3"></div>
+        <div id="text"></div>
+        <div id="utility"></div>
     </div>
 </body>
 </html>
