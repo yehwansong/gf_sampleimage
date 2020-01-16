@@ -27,53 +27,53 @@ $('document').ready(function(){
     </div>\
     <div id="table_wrapper">\
     </div>')
-        $( "#sketch_1" ).load( "templates/reply_singleapp.html .reply")
+        $( "#sketch_1" ).load( "reply_singleapp.html .reply")
         $( "#select_sketch_1" ).addClass('text')
         $( "#sketch_1" ).addClass('text')
         add_pf_1()
         // -=>perfectscrollbar
 
-        $( "#sketch_2" ).load( "templates/crane_singleapp.html .crane")
+        $( "#sketch_2" ).load( "crane_singleapp.html .crane")
         $( "#select_sketch_2" ).addClass('utility')
         $( "#sketch_2" ).addClass('utility')
 
-        $( "#sketch_3" ).load( "templates/fortnightly_singleapp.html .fortnightly")
+        $( "#sketch_3" ).load( "fortnightly_singleapp.html .fortnightly")
         $( "#select_sketch_3" ).addClass('text display_1')
         $( "#sketch_3" ).addClass('text display_1')
         add_pf_3()
 
-        $( "#sketch_4" ).load( "templates/basil_singleapp.html .basil")
+        $( "#sketch_4" ).load( "basil_singleapp.html .basil")
         $( "#select_sketch_4" ).addClass('display_1 display_2')
         $( "#sketch_4" ).addClass('display_1 display_2')
 
-        $( "#sketch_5" ).load( "templates/owl_singleapp.html .owl")
+        $( "#sketch_5" ).load( "owl_singleapp.html .owl")
         $( "#select_sketch_5" ).addClass('text display_1 display_2')
         $( "#sketch_5" ).addClass('text display_1 display_2')
         add_pf_5()
 
-        $( "#sketch_6" ).load( "templates/shrine_singleapp.html .shrine")
+        $( "#sketch_6" ).load( "shrine_singleapp.html .shrine")
         $( "#select_sketch_6" ).addClass('utility')
         $( "#sketch_6" ).addClass('utility')
         add_pf_6()
 
-        $( "#sketch_7" ).load( "templates/topics_singleapp.html .topics")
+        $( "#sketch_7" ).load( "topics_singleapp.html .topics")
         $( "#select_sketch_7" ).addClass('display_3')
         $( "#sketch_7" ).addClass('display_3')
         add_pf_6()
 
-        $( "#table_wrapper" ).load( "templates/table.html .table")
+        $( "#table_wrapper" ).load( "table.html .table")
   // // ----------------------------------------------------------------------------
-        $( "#container_2" ).load( "templates/reply_pattern.html .wrapper")
+        $( "#container_2" ).load( "reply_pattern.html .wrapper")
   // -------------------------------------------------------------------------------
-        $( "#container_3" ).load( "templates/reply_components.html .casestudiesreplycomponents")
+        $( "#container_3" ).load( "reply_components.html .casestudiesreplycomponents")
   // -------------------------------------------------------------------------------
-        $( "#container_4" ).load( "templates/device.html .device",function(data){
-            $('#device_1').load( "templates/reply_desktop.html .reply_desktop")
-            $('#device_2').load( "templates/reply_tablet.html .reply_tablet")
-            $('#device_3').load( "templates/reply_singleapp.html .reply")
+        $( "#container_4" ).load( "device.html .device",function(data){
+            $('#device_1').load( "reply_desktop.html .reply_desktop")
+            $('#device_2').load( "reply_tablet.html .reply_tablet")
+            $('#device_3').load( "reply_singleapp.html .reply")
         });
   // -------------------------------------------------------------------------------
-        // $( "#container_5" ).load( "templates/reply_components.html .casestudiesreplycomponents")
+        // $( "#container_5" ).load( "reply_components.html .casestudiesreplycomponents")
   // -------------------------------------------------------------------------------
     resize('container_2')
     resize('container_3')
