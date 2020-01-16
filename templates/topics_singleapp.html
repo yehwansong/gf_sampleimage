@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="./img/favicon.png" rel="shortcut icon"/>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport"/>
+        <link href="./css/topics.css" rel="stylesheet" type="text/css"/>
+        <meta content="Launchpad by Anima" name="author">
+        </meta>
+    </head>
+    <body style="margin: 0;
+ background: rgba(255, 223, 0, 1.0);">
+        <input id="anPageName" name="page" type="hidden" value="f1owlmobile03copy"/>
+        <div class="topics">
+            <div style="width: 360px; height: 100%; position:relative; margin:auto;">
+                <div class="f1owlmobile03">
+                    <div class="mask">
+                    </div>
+                    <div class="choosetopicsthati">
+                        <span class="span1 h4">Choose topics that interest you</span>
+                    </div>
+                    <div class="topic_wrapper">
+                    <div class="topic1">
+                        <img src="./img/owl_1.png" class="attached">
+                        <img src="./img/f1-owl-mobile-03-copy-fill-88-copy@2x.png" class="fill88copy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                        <div class="gaming subtitle1">
+                            Gaming
+                        </div>
+                        <div class="a164 body2">
+                            164
+                        </div>
+                    </div>
+                    <div class="topic2">
+                        <img src="./img/owl_2.png" class="attached">
+                        <img src="./img/f1-owl-mobile-03-copy-fill-88-copy-1@2x.png" class="fill88copy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                        <div class="music subtitle1">
+                            Music
+                        </div>
+                        <div class="a212 body2">
+                            212
+                        </div>
+                    </div>
+                    <div class="topic3">
+                        <img src="./img/f1-owl-mobile-03-copy-fill-88-copy-2@2x.png" class="fill88copy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                        <div class="illustration subtitle1">
+                            Illustration
+                        </div>
+                        <div class="a326 body2">
+                            326
+                        </div>
+                    </div>
+                    <div class="topic4">
+                        <img src="./img/owl_3.png" class="attached">
+                        <img src="./img/f1-owl-mobile-03-copy-rectangle@2x.png" class="rectangle" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                        <div class="photography subtitle1">
+                            Photography
+                        </div>
+                        <div class="a321 body2">
+                            321
+                        </div>
+                    </div>
+                    <div class="topic5">
+                        <img src="./img/f1-owl-mobile-03-copy-fill-88-copy-3@2x.png" class="fill88copy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                        <div class="architecture subtitle1">
+                            Architecture
+                        </div>
+                        <div class="a58 body2">
+                            58
+                        </div>
+                    </div>
+                    <div class="topic6">
+                        <img src="./img/owl_4.png" class="attached">
+                        <img src="./img/f1-owl-mobile-03-copy-rectangle-1@2x.png" class="rectangle" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                        <div class="technology subtitle1">
+                            Technology
+                        </div>
+                        <div class="a118 body2">
+                            118
+                        </div>
+                    </div>
+                    </div>
+                    <div class="syslgtbk">
+                        <div class="syslgtbk1">
+                            <div class="fill47"></div>
+                            <div class="rectangle7">
+                            </div>
+                            <img src="./img/casestudies-crane-productarch-tabsbackdrop-mobile-copy-2-triangle@2x.png" class="triangle">
+                            <div class="rectangle7copy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Scripts -->
+        <script>
+            anima_isHidden = function(e) {
+                if (!(e instanceof HTMLElement)) return !1;
+                if (getComputedStyle(e).display == "none") return !0; else if (e.parentNode && anima_isHidden(e.parentNode)) return !0;
+                return !1;
+            };
+            anima_loadAsyncSrcForTag = function(tag) {
+                var elements = document.getElementsByTagName(tag);
+                var toLoad = [];
+                for (var i = 0; i < elements.length; i++) {
+                    var e = elements[i];
+                    var src = e.getAttribute("src");
+                    var loaded = (src != undefined && src.length > 0 && src != 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+                    if (loaded) continue;
+                    var asyncSrc = e.getAttribute("src");
+                    if (asyncSrc == undefined || asyncSrc.length == 0) continue;
+                    if (anima_isHidden(e)) continue;
+                    toLoad.push(e);
+                }
+                toLoad.sort(function(a, b) {
+                    return anima_getTop(a) - anima_getTop(b);
+                });
+                for (var i = 0; i < toLoad.length; i++) {
+                    var e = toLoad[i];
+                    var asyncSrc = e.getAttribute("src");
+                    e.setAttribute("src", asyncSrc);
+                }
+            };
+            anima_pauseHiddenVideos = function(tag) {
+                var elements = document.getElementsByTagName("video");
+                for (var i = 0; i < elements.length; i++) {
+                    var e = elements[i];
+                    var isPlaying = !!(e.currentTime > 0 && !e.paused && !e.ended && e.readyState > 2);
+                    var isHidden = anima_isHidden(e);
+                    if (!isPlaying && !isHidden && e.getAttribute("autoplay") == "autoplay") {
+                        e.play();
+                    } else if (isPlaying && isHidden) {
+                        e.pause();
+                    }
+                }
+            };
+            anima_loadAsyncSrc = function(tag) {
+                anima_loadAsyncSrcForTag("img");
+                anima_loadAsyncSrcForTag("iframe");
+                anima_loadAsyncSrcForTag("video");
+                anima_pauseHiddenVideos();
+            };
+            var anima_getTop = function(e) {
+                var top = 0;
+                do {
+                    top += e.offsetTop || 0;
+                    e = e.offsetParent;
+                } while (e);
+                return top;
+            };
+            anima_loadAsyncSrc();
+            anima_old_onResize = window.onresize;
+            anima_new_onResize = undefined;
+            anima_updateOnResize = function() {
+                if (anima_new_onResize == undefined || window.onresize != anima_new_onResize) {
+                    anima_new_onResize = function(x) {
+                        if (anima_old_onResize != undefined) anima_old_onResize(x);
+                        anima_loadAsyncSrc();
+                    };
+                    window.onresize = anima_new_onResize;
+                    setTimeout(function() {
+                        anima_updateOnResize();
+                    }, 3000);
+                }
+            };
+            anima_updateOnResize();
+            setTimeout(function() {
+                anima_loadAsyncSrc();
+            }, 200);
+        </script>
+        <!-- End of Scripts -->
+    </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <script
+          src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+          crossorigin="anonymous"></script>
+        <link href="./css/reply_desktop.css" rel="stylesheet" type="text/css"/>
+        <link href="./css/reply_tablet.css" rel="stylesheet" type="text/css"/>
+        <link href="./css/reply.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript">
+		$('document').ready(function(){
+    		$('#device_1').load( "reply_desktop.html .reply_desktop")
+    		$('#device_2').load( "reply_tablet.html .reply_tablet")
+    		$('#device_3').load( "reply_singleapp.html .reply")
+		})
+	</script>
+	<style type="text/css">
+		*{
+			margin:0;
+			z-index: 1
+		}
+		body{
+			width: 100vw;
+			height: 100vh;
+			position: absolute;
+			left: 0;
+			top: 0;
+			background-image: url(./../bgs/3.png);
+			background-size: contain;
+		}
+		img{
+			position: absolute;
+		}
+	.device{
+		transform: scale(0.6);
+    	width: 2500px;
+    	height: 1250px;
+    	background: #393939;
+    	transform-origin: left top;
+    }
+    #device_1{
+    z-index: 11;
+    top: 110px;
+    position: absolute;
+    left: 350px;}
+    #device_2{
+    	z-index: 13;
+    top: 300px;
+    position: absolute;
+    left: 1200px;}
+    #device_3>div{
+    	box-shadow: none !important
+    }
+    #device_3{
+    z-index: 15;
+	    left: 90px;
+	    position: absolute;
+	    top: 505px;
+	}
+
+    #device_1_frame{
+    left: 260px;
+    z-index: 10;
+    top: 20px;
+    width: 1430px;}
+    #device_2_frame{
+    z-index: 12;
+    width: 1275px;
+    left: 1130px;
+    top: 280px;}
+    #device_3_frame{
+    width: 480px;
+    z-index: 14;
+    left: 30px;
+    top: 400px;
+	}
+	</style>
+</head>
+<body>
+	<div class="device">
+		<img id="device_1_frame" src='./../img/desktop_frame-01.png'>
+		<img id="device_2_frame" src='./../img/tablet_frame-01.png'>
+		<img id="device_3_frame" src='./../img/mobile_frame-01.png'>
+		<div id="device_1"></div>
+		<div id="device_2"></div>
+		<div id="device_3"></div>
+	</div>
+</body>
+</html>
