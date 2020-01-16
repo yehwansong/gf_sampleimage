@@ -1,5 +1,6 @@
 
             .shrine{
+    box-shadow:0vh 0vh 7px rgba(60, 64, 67, 0.33), 0vh 0vh 0px 100vh #def3e5 !important;
                 width: 360px;
                 /*background-image: url(img/Untitled-4-02.png);*/
                 background-size: contain;

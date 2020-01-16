@@ -7,38 +7,38 @@ var language_array=[]
 var multi_string
 var default_font_index
 var default_font = 'Roboto'
-779
 var variants
 var hasreg
 var hasMedium
 var hasLight
-// var theme_counter = 0
-var loading_loop_1
-var loading_loop_2
-var loading_loop_3
-function loading_loop(){
-        loading_loop_1 = setTimeout(function(){ $('#loading').addClass('hide');
-                            $('.loading_wrapper').removeClass('hide')
-                            $('.loading_wrapper').removeClass('fadedown')
-    }, 3000);
-        loading_loop_2 = setTimeout(function(){ $('#loading').removeClass('hide');
-                            $('.loading_wrapper').addClass('hide')
-                            $('.loading_wrapper').addClass('fadedown')
-    }, 4000);
-        loading_loop_3 = setTimeout(function(){ loading_loop()
-    }, 6000);
-}
 
+// extra functions
 function exists(arr, search) {
     return arr.some(row => row.includes(search));
 }
+function hasClass( target, className ) {
+    return new RegExp('(\\s|^)' + className + '(\\s|$)').test(target.className);
+}
+
 
 
 window.onload = function () {
+
+
+$(".select_layout").click(function(e) {
+    $('.select_layout').removeClass('active');
+    $(this).addClass('active');
+    $('.container').hide()
+    $('#container_'+$(this).attr('id').split('_')[2]).show()
+    console.log($('#container_'+$(this).attr('id').split('_')[2]))
+    console.log('#container_'+$(this).attr('id').split('_')[2])
+});
+
     var a_counter = 0
     getGoogleFonts('AIzaSyCxzLzCFosJX6B9rOiy3xBu0J2TAlRBzXg');
     fontlist = document.getElementsByClassName('fontlist')
 
+// load font api
     function getGoogleFonts(apiKey){
         var xhr = new XMLHttpRequest();
         xhr.open('get', 'https://www.googleapis.com/webfonts/v1/webfonts?key=' + apiKey, true);
@@ -48,6 +48,9 @@ window.onload = function () {
         };
         xhr.send();
     };
+
+
+// set detault->roboto
     function init_font(){
         if(window.location.hash) {
             console.log(window.location.hash.split('#')[1])
@@ -60,25 +63,17 @@ window.onload = function () {
             select_font('<div id="index_779" class="fontlist">Roboto</div>')  
         }
     }
+
+
+// load font dropdown list
     function objectarray(FontsInUseArray, fonts){
-        init_font()
-            // select_font('<div id="index_779" class="fontlist">Roboto</div>')    
+        init_font()  
         for (var i =  0; i < FontsInUseArray.length; i++) {
             var FontsInUseObject = document.createElement("div");
             FontsInUseObject.innerHTML += FontsInUseArray[i].family
             FontsInUseObject.setAttribute("id",'index_'+i)
             FontsInUseObject.setAttribute("class",'fontlist')
             document.getElementById("objectlist_wrapper").appendChild(FontsInUseObject);
-            // for default    
-
-            // for (var j = FontsInUseArray[i].subsets.length - 1; j >= 0; j--) {
-            //     if (language_array.indexOf(FontsInUseArray[i].subsets[j]) === -1){
-            //         if (FontsInUseArray[i].subsets[j] === 'latin' || FontsInUseArray[i].subsets[j] === 'latin-ext'){
-            //         }else{
-            //             language_array.push(FontsInUseArray[i].subsets[j]);
-            //         }
-            //     } 
-            // }
             if(i == FontsInUseArray.length-1){
                 $('.fontlist').click(function(){
                     select_font(this)
@@ -88,13 +83,14 @@ window.onload = function () {
     } 
 
 
+// when user selects font step_1
     function select_font(selected){
             check_variant($(selected).attr('id').split('_')[1])
             $('#select_fonts').html(fonts.items[$(selected).attr('id').split('_')[1]].family)
             var defaultlink = 'https://fonts.google.com/specimen/'
             $('#googlefont').attr("href", defaultlink.concat(fonts.items[$(selected).attr('id').split('_')[1]].family.replace(/ /g, `+`)))
     }
-
+// when user selects font step_2
     function check_variant(fontIndex){
         var family = fonts.items[fontIndex].family
         var category = fonts.items[fontIndex].category
@@ -134,42 +130,19 @@ window.onload = function () {
 
             if(i == 0){
                 variants = variant_array.join(',')
-                change_table(family,category)
             }
         }
         var var_index
         var url
         change_font(url,family,category)
-        load_sketch(family,category)
-        console.log('2')
-    }
-    function change_table(family,category){
-        $('td.x_3').html('Regular')
-        $('td.x_2').html(family)
-        var SC = family.split(' ')[family.split(' ').length-1]
-        if(category === 'display' || category === 'handwriting' || SC === 'SC') {
-            $('.y_7 .x_2').html(default_font)
-            $('.y_8 .x_2').html(default_font)
-            $('.y_9 .x_2').html(default_font)
-            $('.y_10 .x_2').html(default_font)
-            $('.y_11 .x_2').html(default_font)
-            $('.y_12 .x_2').html(default_font)
-            $('.y_13 .x_2').html(default_font)
-            $('.y_8 .x_3').html('Medium')
-            $('.y_11 .x_3').html('Medium')
-        }else{
+        // if singleapp
+        sort_sketch(family,category)
+        change_table(family,category)
 
-        }
-        if(hasMedium){
-            $('.y_6 .x_3').html('Medium')
-            $('.y_8 .x_3').html('Medium')
-            $('.y_11 .x_3').html('Medium')
-        }
-        if(hasLight){
-            $('.y_1 .x_3').html('Light')
-            $('.y_2 .x_3').html('Light')
-        }
+
+        // if pattern
     }
+// when user selects font step_4 -- change application font
     function change_font(url,family,category){
         window.location.hash = family.replace(/ /g, '+')
         var apiUrl = [];
@@ -177,9 +150,6 @@ window.onload = function () {
             family.replace(/ /g, '+')
             +':'+variants + '&display=swap'
         );
-        // for (var i = selected_variant.length - 1; i >= 0; i--) {
-        //     selected_variant[i]
-        // }
         var joined = apiUrl.join('|')
         var url = 'https://fonts.googleapis.com/css?family=' + joined
         var fontlink = document.createElement('link'); 
@@ -226,6 +196,39 @@ window.onload = function () {
         }
         setTimeout(function(){show_heading()},1000)
     }
+
+
+// //////singleapp//////
+
+
+// when user selects font step_3 -- change table font
+    function change_table(family,category){
+        $('td.x_3').html('Regular')
+        $('td.x_2').html(family)
+        var SC = family.split(' ')[family.split(' ').length-1]
+        if(category === 'display' || category === 'handwriting' || SC === 'SC') {
+            $('.y_7 .x_2').html(default_font)
+            $('.y_8 .x_2').html(default_font)
+            $('.y_9 .x_2').html(default_font)
+            $('.y_10 .x_2').html(default_font)
+            $('.y_11 .x_2').html(default_font)
+            $('.y_12 .x_2').html(default_font)
+            $('.y_13 .x_2').html(default_font)
+            $('.y_8 .x_3').html('Medium')
+            $('.y_11 .x_3').html('Medium')
+        }else{
+        }
+        if(hasMedium){
+            $('.y_6 .x_3').html('Medium')
+            $('.y_8 .x_3').html('Medium')
+            $('.y_11 .x_3').html('Medium')
+        }
+        if(hasLight){
+            $('.y_1 .x_3').html('Light')
+            $('.y_2 .x_3').html('Light')
+        }
+    }
+// if table is too narrow(fond is superwide)remove 'heading'
     function show_heading(){
         console.log($('.y_1 .x_1').height())
         console.log($('.y_2 .x_1').outerHeight())
@@ -235,10 +238,10 @@ window.onload = function () {
             $('.headline').show()
         }
     }
-    function hasClass( target, className ) {
-        return new RegExp('(\\s|^)' + className + '(\\s|$)').test(target.className);
-    }
-    function load_sketch(family,category){
+
+
+
+    function sort_sketch(family,category){
         $('.selected').removeClass('selected')
         $('.sketch').removeClass('selectable')
         $('.sketch').removeClass('selectable_sketch')
@@ -283,7 +286,6 @@ window.onload = function () {
     }
 
     function init_select_sketch(){
-        console.log($('.selectable_selectz_sketch'))
         if($('.selectable').length > 0){
             var selectable_sketch = document.getElementsByClassName('selectable_sketch')
             var selectable_select_sketch = document.getElementsByClassName('selectable_select_sketch')
@@ -335,8 +337,6 @@ window.onload = function () {
              $('#sketch_6').addClass('selected')
         })
     }
-
-
 
 
 fullload()

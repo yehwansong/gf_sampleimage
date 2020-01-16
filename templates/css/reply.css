@@ -29,6 +29,7 @@ div {
   -webkit-text-size-adjust: none;
 }
 .reply {
+    box-shadow:0vh 0vh 7px rgba(60, 64, 67, 0.33), 0vh 0vh 0px 100vh #def3e5 !important;
   background-color    : rgba(255,255,255,0.0);
   height              : 652px;
   width               : 372px;

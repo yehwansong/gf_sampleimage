@@ -2,9 +2,15 @@ body, div, input, select, button {
     font-family: 'Roboto mono', sans-serif;
     margin: 0
 }
-body{overflow: hidden;}
+body{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
 *{
-    color: #4a4a4a;}
+    line-height: 1;
+    color: #4a4a4a;
+}
 #top {
     box-shadow: 0px 0px 4px 4px rgba(60, 64, 67, 0.33);
     box-sizing: border-box;
@@ -19,11 +25,38 @@ body{overflow: hidden;}
     z-index: 10;
 }
 #fontlist_wrapper{
+    float: left;
     display: inline-block;
     min-height: 100%;
     position: relative;
     z-index: 10;
     position: relative;
+}
+.select_layout{
+    float: left;
+    color: white;
+    background: #0086ea;
+    display: inline-block;
+    top: 0;
+    border-radius: 22px;
+    margin-top: 10px;
+    z-index: 10;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: right;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    vertical-align: top;
+    float: right;
+    margin-right: 24px;
 }
 #select_fonts{
     display: inline-block;
@@ -111,20 +144,24 @@ body{overflow: hidden;}
     text-decoration: none;
     vertical-align: top;
     float: right;
-    margin-right: 24px;}
+    margin-right: 24px;
+}
 #googlefont:hover{
     background: #d2d2d2;
 }
 
+
+/*----------------------------table----------------------------*/
+/*----------------------------table----------------------------*/
+/*----------------------------table----------------------------*/
+/*----------------------------table----------------------------*/
+/*----------------------------table----------------------------*/
 
 
 #table_wrapper{
     width: 50%;
     float: left;
     height: calc(100vh - 60px)
-}
-*{
-    line-height: 1
 }
 .table{
     width: calc(100% - 20px);
@@ -139,8 +176,8 @@ body{overflow: hidden;}
     position: absolute;
 }
 .table>*{
-                color: black;
-  border-collapse: collapse;
+    color: black;
+    border-collapse: collapse;
     font-weight: 300;
     font-size: 11px;
     padding:0;
@@ -179,22 +216,6 @@ body{overflow: hidden;}
     display: inline-block;
 }
 .hovered{background-color: #0086ea80 !important}
-
-
-/*.table{
-    border-collapse:collapse;
-    width:100%;
-    height:100%;
-    box-sizing:border-box;
-}
-.table td{
-    padding:0px !important;
-    vertical-align:top;
-}*/
-/*.table tr:last-child{
-    height:100%;
-}*/
-
 .x_1{
     vertical-align: bottom;
     min-width: 25%
@@ -217,8 +238,6 @@ body{overflow: hidden;}
 .y_1 div{
     display: block;
 }
-
-
 .x_2,
 .x_3,
 .x_4{
@@ -227,123 +246,139 @@ body{overflow: hidden;}
     padding: 0 !important;
     display: block;
     padding-right: 15px !important;
-    min-width: 50px;}
+    min-width: 50px;
+}
 .x_2{
     padding-top: 0.1vh !important;
 }
 .x_4{
     padding-bottom: 0.1vh !important;
 }
-            .h1, .y_1 .x_1{ 
-            font-size:96px !important;
-            font-weight: 100 !important;
-            text-transform: none !important;
-            letter-spacing: -1.5px !important;
-            }
-            .h2, .y_2 .x_1{ 
-            font-size:60px !important;
-            font-weight: 100 !important;
-            text-transform: none !important;
-            letter-spacing: -0.5px !important;
-            }
-            .h3, .y_3 .x_1{ 
-            font-size:48px !important;
-            font-weight: 300 !important;
-            text-transform: none !important;
-            letter-spacing: 0px !important;
-            }
-            .h4, .y_4 .x_1{  
-            font-size:34px !important;
-            font-weight: 300 !important;
-            text-transform: none !important;
-            letter-spacing: 0.25px !important;
-            }
-            .h5, .y_5 .x_1{ 
-            font-size:24px !important;
-            font-weight: 300 !important;
-            text-transform: none !important;
-            letter-spacing: 0 !important;
-            }
-            .h6, .y_6 .x_1{ 
-            font-size:20px !important;
-            font-weight: 400 !important;
-            text-transform: none !important;
-            letter-spacing: 0.15px !important;
-            }
-            .subtitle1, .y_7 .x_1{  
-            font-size:16px !important;
-            font-weight: 300 !important;
-            text-transform: none !important;
-            letter-spacing: 0.15px !important;
-            }
-            .subtitle2, .y_8 .x_1{ 
-            font-size:14px !important;
-            font-weight: 400 !important;
-            text-transform: none !important;
-            letter-spacing: 0.1px !important;
-            }
-            .body1, .y_9 .x_1{  
-            font-size:16px !important;
-            font-weight: 300 !important;
-            text-transform: none !important;
-            letter-spacing: 0.5px !important;
-            }
-            .body2, .y_10 .x_1{ 
-            font-size:14px !important;
-            font-weight: 300 !important;
-            text-transform: none !important;
-            letter-spacing: 0.25px !important;
-            }
-            .button, .y_11 .x_1{ 
-            font-size:14px !important;
-            font-weight: 400 !important;
-            text-transform: uppercase !important;
-            letter-spacing: 1.25px !important;
-            }
-            .caption, .y_12 .x_1{ 
-            font-size:12px !important;
-            font-weight: 300 !important;
-            text-transform: none !important;
-            letter-spacing: 0.4px !important;
-            }
-            .overline, .y_13 .x_1{ 
-            font-size:10px !important;
-            font-weight: 300 !important;
-            text-transform: uppercase !important;
-            letter-spacing: 1.5px;
-            }
-
+.h1, .y_1 .x_1{ 
+font-size:96px !important;
+font-weight: 100 !important;
+text-transform: none !important;
+letter-spacing: -1.5px !important;
+}
+.h2, .y_2 .x_1{ 
+font-size:60px !important;
+font-weight: 100 !important;
+text-transform: none !important;
+letter-spacing: -0.5px !important;
+}
+.h3, .y_3 .x_1{ 
+font-size:48px !important;
+font-weight: 300 !important;
+text-transform: none !important;
+letter-spacing: 0px !important;
+}
+.h4, .y_4 .x_1{  
+font-size:34px !important;
+font-weight: 300 !important;
+text-transform: none !important;
+letter-spacing: 0.25px !important;
+}
+.h5, .y_5 .x_1{ 
+font-size:24px !important;
+font-weight: 300 !important;
+text-transform: none !important;
+letter-spacing: 0 !important;
+}
+.h6, .y_6 .x_1{ 
+font-size:20px !important;
+font-weight: 400 !important;
+text-transform: none !important;
+letter-spacing: 0.15px !important;
+}
+.subtitle1, .y_7 .x_1{  
+font-size:16px !important;
+font-weight: 300 !important;
+text-transform: none !important;
+letter-spacing: 0.15px !important;
+}
+.subtitle2, .y_8 .x_1{ 
+font-size:14px !important;
+font-weight: 400 !important;
+text-transform: none !important;
+letter-spacing: 0.1px !important;
+}
+.body1, .y_9 .x_1{  
+font-size:16px !important;
+font-weight: 300 !important;
+text-transform: none !important;
+letter-spacing: 0.5px !important;
+}
+.body2, .y_10 .x_1{ 
+font-size:14px !important;
+font-weight: 300 !important;
+text-transform: none !important;
+letter-spacing: 0.25px !important;
+}
+.button, .y_11 .x_1{ 
+font-size:14px !important;
+font-weight: 400 !important;
+text-transform: uppercase !important;
+letter-spacing: 1.25px !important;
+}
+.caption, .y_12 .x_1{ 
+font-size:12px !important;
+font-weight: 300 !important;
+text-transform: none !important;
+letter-spacing: 0.4px !important;
+}
+.overline, .y_13 .x_1{ 
+font-size:10px !important;
+font-weight: 300 !important;
+text-transform: uppercase !important;
+letter-spacing: 1.5px;
+}
 .y_1,.y_0{
-    /*border-top: 1px solid gray;*/
     pointer-events: none;
 }
 .y_13{
     border-bottom: 0px solid gray !important
 }
-            .y_1 .x_1{
-                padding-top: 100vh;
-            }
-            .y_1 .x_2{
-                padding-top: 101vh !important;
-            }
-            .y_13 .x_1{
-                padding-top: 22.5px;
-                padding-bottom: 100vh;
-            }
 tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption,.overline,
 #googlefont, #select_fonts{
     transition: background-color 0.1s ease-in
 }
+
+
+
+
+/*----------------------------sketch----------------------------*/
+/*----------------------------sketch----------------------------*/
+/*----------------------------sketch----------------------------*/
+/*----------------------------sketch----------------------------*/
+/*----------------------------sketch----------------------------*/
 #objectlist_wrapper{
     transition: opacity 0.1s ease-in
 }
-.topbar{
+#container_2{background-color:rgb(230, 230, 230)}
+#container_1,
+#container_2,
+#container_3,
+#container_4{
+    /*background-image: url('bgs/3.png');*/
+    background-size: contain;
+    background-position: center;
     width: 100%;
-    height: 22.5px;
+    height: calc(100% - 60px);
+    margin-top: 60px;
     position: absolute;
-    background-color: #EDEDED;
-    z-index: 10000;}
-            /*------------sketch_1-----------*/
+    display: none;
+}
+#container_1{
+    display: block;
+}
+#container_2>div,
+#container_3>div,
+#container_4>div{
+    left: 50%;
+    top: 50%;
+    position: absolute;
+}
+
 #sketch_wrapper{
     overflow: hidden;
     width: 50%;
@@ -353,16 +388,17 @@ tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption
     background-color: #EDEDED;
 }
 #select_sketch_frame{
-    transform: translateY(100%) translateX(-50%);
+    transform: translateX(-50%);
     position: absolute;
     vertical-align: top;
     height: 100%;
     display: inline-block;
     overflow: hidden;
     left: 25vw;
+    top: 0;
+    z-index: 100000;
     }
-.sketch{
-    box-shadow: 0vh 0vh 7px rgba(60, 64, 67, 0.33);}
+.sketch{}
 .select_sketch{ 
     vertical-align: middle;
     position: relative;
@@ -395,93 +431,101 @@ tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption
 .selectable{
     display: block !important;
 }
-            #sketch_wrapper *{
-                box-sizing: border-box;
-            }
-            .ps-scrollbar-y-rail{
-                position: absolute;
-            }
-            #sketch_frame{ 
-    height: 652px;
-    width: 372px;
+#sketch_wrapper *{
+    box-sizing: border-box;
+}
+.ps-scrollbar-y-rail{
+    position: absolute;
+}
+#sketch_frame{ 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);\
+}
+.sketch{
+    background-color: white;
+    display: none;
+    width: 100%;
+    height: 100%;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
-    
-            }
-            #sketch_1, #sketch_2, #sketch_3, #sketch_4, #sketch_5, #sketch_6{
-                background-color: white;
-                display: none;
-                width: 360px;
-                height: 640px;
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                transform: translateX(-50%) translateY(-50%);
-                overflow:hidden;
-                opacity: 0;
-                pointer-events: none;
-                transition: opacity 0.5s
+    overflow:hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s
 
-            } 
-            #sketch_1>div, #sketch_2>div, #sketch_3>div, #sketch_4>div, #sketch_5>div, #sketch_6>div{
-                width: 360px;
-                height: 640px;
-                overflow:hidden;
-            }
-            #sketch_1>div>.content, #sketch_2>div>.content, #sketch_3>div>.content, #sketch_4>div>.content, #sketch_5>div>.content, #sketch_6>div>.content{ 
-                width: 360px !important;
-                height: 640px !important;
-                overflow:hidden;
-            }
-            #sketch_1{
-                /*background-image: url(img/Untitled-4-01.png);*/
-                background-size: contain;
-                background-repeat: no-repeat;
+} 
+.sketch>div{
+    position: absolute;
+    width: 360px;
+    height: 640px;
+    overflow:hidden;
+    box-shadow: 0vh 0vh 7px rgba(60, 64, 67, 0.33);
+    left: 50%;
+    top: 50%;
+    transform:translateX(-50%) translateY(-50%);
+}
+.sketch>div>.content{ 
+    width: 360px !important;
+    height: 640px !important;
+    overflow:hidden;
+}
 
-                box-sizing: border-box;
-            }
-            /*------------sketch_1-----------*/
-            /*------------sketch_2-----------*/
-            #sketch_2{
-                width: 360px;
-                /*background-image: url(img/Untitled-4-02.png);*/
-                background-size: contain;
-                background-repeat: no-repeat;
 
-                box-sizing: border-box;
-            }
-            /*------------sketch_2-----------*/
-            /*------------sketch_3-----------*/
-            /*------------sketch_3-----------*/
-            /*------------sketch_4-----------*/
-            #sketch_4{
-                width: 360px;
-                /*background-image: url(img/Untitled-4-02.png);*/
-                background-size: contain;
-                background-repeat: no-repeat;
 
-                box-sizing: border-box;
-            }
-            #sketch_1{
-                box-shadow:0vh 0vh 7px rgba(60, 64, 67, 0.33), 0vh 0vh 0px 100vh rgb(237, 237, 237)
-            }
-            #sketch_2{
-                box-shadow:0vh 0vh 7px rgba(60, 64, 67, 0.45), 0vh 0vh 0px 100vh #f5d7e6
-            }
-            #sketch_3{
-                box-shadow:0vh 0vh 7px rgba(60, 64, 67, 0.33), 0vh 0vh 0px 100vh rgb(237, 237, 237)
-            }
-            #sketch_4{
-                box-shadow:0vh 0vh 7px rgba(60, 64, 67, 0.33), 0vh 0vh 0px 100vh #def3e5
-            }
-            #sketch_5{
-                box-shadow:0vh 0vh 7px rgba(60, 64, 67, 0.33), 0vh 0vh 0px 100vh rgb(237, 237, 237)
-            }
-            #sketch_6{
-                box-shadow:0vh 0vh 7px rgba(60, 64, 67, 0.33), 0vh 0vh 0px 100vh #feeae6
-            }
+
+
+/*----------------------------sketch_each----------------------------*/
+/*----------------------------sketch_each----------------------------*/
+/*----------------------------sketch_each----------------------------*/
+/*----------------------------sketch_each----------------------------*/
+/*----------------------------sketch_each----------------------------*/
+#sketch_1{
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    box-sizing: border-box;
+}
+#sketch_2{
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    box-sizing: border-box;
+}
+#sketch_4{
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    box-sizing: border-box;
+}
+#sketch_1{
+    box-shadow:0vh 0vh 7px rgba(60, 64, 67, 0.33), 0vh 0vh 0px 100vh rgb(237, 237, 237)
+}
+#sketch_2{
+    box-shadow:0vh 0vh 7px rgba(60, 64, 67, 0.45), 0vh 0vh 0px 100vh #f5d7e6
+}
+#sketch_3{
+    box-shadow:0vh 0vh 7px rgba(60, 64, 67, 0.33), 0vh 0vh 0px 100vh rgb(237, 237, 237) !importants
+}
+#sketch_4{
+    box-shadow:0vh 0vh 7px rgba(60, 64, 67, 0.33), 0vh 0vh 0px 100vh #def3e5 !importants
+}
+#sketch_5{
+    box-shadow:0vh 0vh 7px rgba(60, 64, 67, 0.33), 0vh 0vh 0px 100vh rgb(237, 237, 237) !importants
+}
+#sketch_6{
+    box-shadow:0vh 0vh 7px rgba(60, 64, 67, 0.33), 0vh 0vh 0px 100vh #feeae6 !importants
+}
+
+
+
+
+
 @-webkit-keyframes loading {
     0% {width: 0%;}
     60% {width: 100%;}
