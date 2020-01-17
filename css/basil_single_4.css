@@ -11,7 +11,7 @@
   -ms-transform       : rotate(0deg); /* IE 9 */
   -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
   transform           : rotate(0deg);
-  background-color    : rgba(237, 240, 242, 1.0);
+  background-color    : rgb(255, 251, 229);
 }
 .basil_single_4 .mask {
   background-color    : rgba(255,255,255,0.0);
@@ -63,8 +63,8 @@
 }
 .basil_single_4 .potpie {
     background-color: rgba(255,255,255,0.0);
-    top: 450px;
-    height: auto;
+    bottom: 30px;
+    height: 190px;
     width: 370px;
     position: absolute;
     margin: 0;
@@ -79,10 +79,20 @@
     color: rgba(253, 85, 35, 1.0);
     text-align: center;
     line-height: 56.0px;
-    transform: translateY(-50%);
     z-index: 1000;
     line-height: 1.2;
-    text-transform: uppercase !important; 
+    text-transform: uppercase !important;
+}
+.basil_single_4 .potpie>span {
+    color: #fd5523;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    left: 0;
+    line-height: 1.4;
+  
 }
 .basil_single_4 .img {
   background-color    : rgba(255,255,255,0.0);

@@ -74,9 +74,9 @@ $('document').ready(function(){
         });
         $( "#container_2>div:nth-child(2)" ).load( "basil_pattern.html .basil_pattern",function(data){
             $('#container_2>div:nth-child(2) #contaier_1').load( "basil_single_1.html .basil_single_1")
-            $('#container_2>div:nth-child(2) #contaier_2').load( "basil_single_2.html .basil_single_2")
+            $('#container_2>div:nth-child(2) #contaier_2').load( "basil_single_4.html .basil_single_4")
             $('#container_2>div:nth-child(2) #contaier_3').load( "basil_single_3.html .basil_single_3")
-            $('#container_2>div:nth-child(2) #contaier_4').load( "basil_single_4.html .basil_single_4")
+            $('#container_2>div:nth-child(2) #contaier_4').load( "basil_single_2.html .basil_single_2")
         });
         $( "#container_2>div:nth-child(3)" ).load( "topics_pattern.html .topics_pattern",function(data){
             $('#container_2>div:nth-child(3) #contaier_1').load( "topics_single_1.html .topics_single_1")
@@ -107,20 +107,26 @@ $('document').ready(function(){
         $( "#container_4" ).load( "reply_components.html .casestudiesreplycomponents")
   // -------------------------------------------------------------------------------
         // $( "#container_5" ).load( "reply_components.html .casestudiesreplycomponents")
-  // -------------------------------------------------------------------------------
-    resize('container_2')
-    resize('container_3')
-    resize('container_4')
-    function resize(elem){
-        if($('#'+elem+'>div>div').length>0){
-            if ($('#'+elem).outerWidth()>$('#'+elem).outerHeight()*2){
-                $('#'+elem+'>div>div').css({transform:'scale('+$('#'+elem).outerHeight()/$('#'+elem+'>div>div').outerHeight()+')'})
+  // -------------------------------------------------------------------------------\
+  resize()
+    function resize(){
+        console.log('sdf;lkdjadl;skfj')
+        if($('#container_3>div>div').length>0 && $('#container_2>div>div').length>0 ){
+            if ($('.container').outerWidth()>$('.container').outerHeight()*2){
+                console.log($('.container').outerHeight()/$('#container_2>div>div').outerHeight())
+                $('#container_2>div>div').css({transform:'translate(-50%, -50%) scale('+$('.container').outerHeight()/$('#container_2>div>div').outerHeight()+')'})
+                $('#container_3>div>div').css({transform:'translate(-50%, -50%) scale('+$('.container').outerHeight()/$('#container_3>div>div').outerHeight()+')'})
+                $('#container_4>div').css({transform:'translate(-50%, -50%) scale('+$('.container').outerHeight()/$('#container_4>div').outerHeight()+')'})
             }else{
-                console.log('translate(-50%, -50%) scale('+$('#'+elem).outerWidth()/$('#'+elem+'>div>div').outerWidth()+')')
-                $('#'+elem+'>div>div').css({transform:'translate(-50%, -50%) scale('+$('#'+elem).outerWidth()/$('#'+elem+'>div>div').outerWidth()+')'})
+        console.log($('#reply_pattern').outerWidth(true))
+        console.log($('.container').outerWidth(true))
+        console.log($('.container').outerWidth(true)/$('#container_2>div>div').outerWidth(true))
+                $('#container_2>div>div').css({transform:'translate(-50%, -50%) scale('+$('.container').outerWidth()/$('#container_2>div>div').outerWidth()+')'})
+                $('#container_3>div>div').css({transform:'translate(-50%, -50%) scale('+$('.container').outerWidth()/$('#container_3>div>div').outerWidth()+')'})
+                $('#container_4>div').css({transform:'translate(-50%, -50%) scale('+$('.container').outerWidth()/$('#container_4>div').outerWidth()+')'})
             }
         }else{
-            setTimeout(function(){resize(elem)}, 300);
+            setTimeout(function(){resize()}, 300);
         }
     
     }

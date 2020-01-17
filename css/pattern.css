@@ -1,0 +1,35 @@
+#container_2 .wrapper {
+    width: 1000px;
+    height: 500px;
+    position: absolute;
+}
+           .rotate>div {
+    box-shadow: 0vh 0vh 1vh rgb(154, 159, 163);
+                background-color    : rgb(237, 240, 242);
+                width:                360px;
+                height:               640px;
+                position            : fixed;
+                margin              : 0;
+                overflow            : hidden;
+                left: calc(50% - 180px);
+                top: calc(50% - 320px);
+            }
+            .rotate {
+    width: 100%;
+    transform: rotate(-45deg);
+    height: 100%;
+    position: absolute;
+}
+            .rotate>div:nth-child(1) {
+                transform: translate(-420px, 0px);
+            }
+            .rotate>div:nth-child(2) {
+    transform: translate(0px, -340px);
+            }
+            .rotate>div:nth-child(3) {
+
+    transform: translate(420px, 0px);
+}
+            .rotate>div:nth-child(4) {
+    transform: translate(0px, 340px);
+            }
