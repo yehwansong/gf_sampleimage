@@ -11,10 +11,10 @@
 	position: absolute;
 	left: 350px;}
 #device_2{
-	z-index: 13;
-	top: 300px;
-	position: absolute;
-	left: 1200px;}
+    z-index: 13;
+    top: 355px;
+    position: absolute;
+    left: 1235px;}
 #device_3>div{
 	box-shadow: none !important
 }

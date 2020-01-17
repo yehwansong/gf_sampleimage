@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <script
+          src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+          crossorigin="anonymous"></script>
+        <link href="./css/topics_desktop.css" rel="stylesheet" type="text/css"/>
+        <link href="./css/topics_tablet.css" rel="stylesheet" type="text/css"/>
+        <link href="./css/topics_single_1.css" rel="stylesheet" type="text/css"/>
+        <link href="./css/device.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript">
+		$('document').ready(function(){
+    		$('#device_1').load( "topics_desktop.html .topics_desktop")
+    		$('#device_2').load( "topics_tablet.html .topics_tablet")
+    		$('#device_3').load( "topics_single_1.html .topics_single_1")
+		})
+	</script>
+</head>
+<body>
+	<div class="device topics_device">
+		<img id="device_1_frame" src='img/desktop_frame-01.png'>
+		<img id="device_2_frame" src='img/tablet_frame-01.png'>
+		<img id="device_3_frame" src='img/mobile_frame-01.png'>
+		<div id="device_1"></div>
+		<div id="device_2"></div>
+		<div id="device_3"></div>
+	</div>
+</body>
+</html>

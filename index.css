@@ -374,9 +374,27 @@ tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption
 #container_2>div,
 #container_3>div,
 #container_4>div{
+    position: absolute;
+    width: 100%;
+    height: 100%
+}
+#container_2>div>div,
+#container_3>div>div,
+#container_4>div>div{
     left: 50%;
     top: 50%;
     position: absolute;
+}
+.reply_device,
+.basil_device,
+.topics_device,
+.reply_pattern,
+.basil_pattern,
+.topics_pattern{
+    opacity: 0
+}
+.showable{
+    opacity: 1
 }
 
 #sketch_wrapper{
@@ -387,7 +405,9 @@ tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption
     position: relative;
     background-color: #EDEDED;
 }
-#select_sketch_frame{
+#select_sketch_frame,
+#select_layout_pattern_frame,
+#select_layout_device_frame{
     transform: translateX(-50%);
     position: absolute;
     vertical-align: top;
@@ -397,9 +417,15 @@ tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption
     left: 25vw;
     top: 0;
     z-index: 100000;
-    }
+    },
+#select_layout_device_frame,
+#select_layout_pattern_frame{
+    left: 50vw;
+}
 .sketch{}
-.select_sketch{ 
+.select_sketch,
+.select_layout_pattern,
+.select_layout_device{ 
     vertical-align: middle;
     position: relative;
     height: 25px;
@@ -418,7 +444,6 @@ tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption
     margin-left: 8px;
     padding-right: 1px;
     box-sizing: border-box;
-
 }
 .select_sketch:hover{
     opacity: 0.75;
@@ -521,7 +546,6 @@ tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption
 #sketch_6{
     box-shadow:0vh 0vh 7px rgba(60, 64, 67, 0.33), 0vh 0vh 0px 100vh #feeae6 !importants
 }
-
 
 
 

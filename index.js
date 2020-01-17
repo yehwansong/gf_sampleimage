@@ -24,15 +24,84 @@ function hasClass( target, className ) {
 
 window.onload = function () {
 
+    // select_sketch()
+    // function select_sketch(){
+    $(document).ready(function(){
+        $('#select_sketch_1').click(function(){
+        console.log(1)
+             $('.select_sketch').removeClass('selected')
+             $(this).addClass('selected')
+             $('.sketch').removeClass('selected')
+             $('#sketch_1').addClass('selected')
+        })
+        $('#select_sketch_2').click(function(){
+        console.log(1)
+             $('.select_sketch').removeClass('selected')
+             $(this).addClass('selected')
+             $('.sketch').removeClass('selected')
+             $('#sketch_2').addClass('selected')
+        })
+        $('#select_sketch_3').click(function(){
+        console.log(1)
+             $('.select_sketch').removeClass('selected')
+             $(this).addClass('selected')
+             $('.sketch').removeClass('selected')
+             $('#sketch_3').addClass('selected')
+        })
+        $('#select_sketch_4').click(function(){
+        console.log(1)
+             $('.select_sketch').removeClass('selected')
+             $(this).addClass('selected')
+             $('.sketch').removeClass('selected')
+             $('#sketch_4').addClass('selected')
+        })
+        $('#select_sketch_5').click(function(){
+        console.log(1)
+             $('.select_sketch').removeClass('selected')
+             $(this).addClass('selected')
+             $('.sketch').removeClass('selected')
+             $('#sketch_5').addClass('selected')
+        })
+        $('#select_sketch_6').click(function(){
+        console.log(1)
+             $('.select_sketch').removeClass('selected')
+             $(this).addClass('selected')
+             $('.sketch').removeClass('selected')
+             $('#sketch_6').addClass('selected')
+        })
 
-$(".select_layout").click(function(e) {
-    $('.select_layout').removeClass('active');
-    $(this).addClass('active');
-    $('.container').hide()
-    $('#container_'+$(this).attr('id').split('_')[2]).show()
-    console.log($('#container_'+$(this).attr('id').split('_')[2]))
-    console.log('#container_'+$(this).attr('id').split('_')[2])
-});
+
+        $('#select_layout_device_1').click(function(){
+             $('.select_layout_device').removeClass('selected')
+             $(this).addClass('selected')
+             $('#container_3 .showable').removeClass('showable')
+             $('#container_3 .basil_device').addClass('showable')
+        })
+        $('#select_layout_device_2').click(function(){
+             $('.select_layout_device').removeClass('selected')
+             $(this).addClass('selected')
+             $('#container_3 .showable').removeClass('showable')
+             $('#container_3 .topics_device').addClass('showable')
+        })
+
+        $('#select_layout_pattern_1').click(function(){
+             $('.select_layout_pattern').removeClass('selected')
+             $(this).addClass('selected')
+             $('#container_2 .showable').removeClass('showable')
+             $('#container_2 .basil_pattern').addClass('showable')
+        })
+        $('#select_layout_pattern_2').click(function(){
+             $('.select_layout_pattern').removeClass('selected')
+             $(this).addClass('selected')
+             $('#container_2 .showable').removeClass('showable')
+             $('#container_2 .topics_pattern').addClass('showable')
+        })
+
+
+    })
+    // }
+
+
 
     var a_counter = 0
     getGoogleFonts('AIzaSyCxzLzCFosJX6B9rOiy3xBu0J2TAlRBzXg');
@@ -138,6 +207,7 @@ $(".select_layout").click(function(e) {
         // if singleapp
         sort_sketch(family,category)
         change_table(family,category)
+        show_layouts(family,category)
 
 
         // if pattern
@@ -240,6 +310,38 @@ $(".select_layout").click(function(e) {
     }
 
 
+    function show_layouts(family,category){
+        var SC = family.split(' ')[family.split(' ').length-1]
+        if(category === 'display' || category === 'handwriting' || SC === 'SC' || exists(serif_subcat, family) || exists(sansserif_subcat, family) || exists(mono_subcat, family)) {
+            $('.basil_device').addClass('showable')
+            // random
+            // $('.topics_device').addClass('showable')
+            $('.reply_device').removeClass('showable')
+
+            $('.basil_pattern').addClass('showable')
+            // $('.topics_pattern').addClass('showable')
+            $('.reply_pattern').removeClass('showable')
+
+            $('.select_layout_device').show()
+            $('.select_layout_pattern').show()
+        }else{
+            $('.basil_device').removeClass('showable')
+            // $('.topics_device').removeClass('showable')
+            $('.reply_device').addClass('showable')
+
+            $('.basil_pattern').removeClass('showable')
+            // $('.topics_pattern').removeClass('showable')
+            $('.reply_pattern').addClass('showable')
+
+            $('.select_layout_device').hide()
+            $('.select_layout_pattern').hide()
+        }
+    }
+    $(".select_layout").click(function(e) {
+        $('.container').hide()
+        $('#container_'+$(this).attr('id').split('_')[2]).show()
+    });
+
 
     function sort_sketch(family,category){
         $('.selected').removeClass('selected')
@@ -298,48 +400,8 @@ $(".select_layout").click(function(e) {
         }
     }
 
-    select_sketch()
-    function select_sketch(){
-        $('#select_sketch_1').click(function(){
-             $('.select_sketch').removeClass('selected')
-             $(this).addClass('selected')
-             $('.sketch').removeClass('selected')
-             $('#sketch_1').addClass('selected')
-        })
-        $('#select_sketch_2').click(function(){
-             $('.select_sketch').removeClass('selected')
-             $(this).addClass('selected')
-             $('.sketch').removeClass('selected')
-             $('#sketch_2').addClass('selected')
-        })
-        $('#select_sketch_3').click(function(){
-             $('.select_sketch').removeClass('selected')
-             $(this).addClass('selected')
-             $('.sketch').removeClass('selected')
-             $('#sketch_3').addClass('selected')
-        })
-        $('#select_sketch_4').click(function(){
-             $('.select_sketch').removeClass('selected')
-             $(this).addClass('selected')
-             $('.sketch').removeClass('selected')
-             $('#sketch_4').addClass('selected')
-        })
-        $('#select_sketch_5').click(function(){
-             $('.select_sketch').removeClass('selected')
-             $(this).addClass('selected')
-             $('.sketch').removeClass('selected')
-             $('#sketch_5').addClass('selected')
-        })
-        $('#select_sketch_6').click(function(){
-             $('.select_sketch').removeClass('selected')
-             $(this).addClass('selected')
-             $('.sketch').removeClass('selected')
-             $('#sketch_6').addClass('selected')
-        })
-    }
 
-
-fullload()
+// fullload()
 function fullload(){
     if($('#sketch_3').length > 0){
         grouping()
