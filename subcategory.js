@@ -20,7 +20,11 @@ var sansserif_subcat = [
 ['Lacquer','2'],
 ['Black And White Picture','2'],
 ['Aclonica','2'],
-['Wendy One','2']
+['Wendy One','2'],
+['Wire One','2'],
+['Paytone One','2'],
+['Dorsa','2'],
+['Black Han Sans','2']
 ]
 var handwriting_subcat = [
 	['Zhi Mang Xing','2'],

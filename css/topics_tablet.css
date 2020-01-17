@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik:500,700');
-
+.topics_tablet * {
+    line-height: 1;
+    color: #ffffff !important;
+}
 .topics_tablet  {
   background-image: url(../bgs/5.png);
   background-size: contain;
@@ -130,7 +133,7 @@
   width               : auto;
   position            : absolute;
   margin              : 0;
-  left                : 108px;
+  left                : 88px;
   opacity             : 0.6;
   font-family         : "Rubik", Helvetica, Arial, serif;
   font-weight         : 500;
@@ -215,7 +218,7 @@
   width               : auto;
   position            : absolute;
   margin              : 0;
-  left                : 108px;
+  left                : 88px;
   opacity             : 0.6;
   font-family         : "Rubik", Helvetica, Arial, serif;
   font-weight         : 500;
@@ -311,7 +314,7 @@
   width               : auto;
   position            : absolute;
   margin              : 0;
-  left                : 108px;
+  left                : 88px;
   opacity             : 0.6;
   font-family         : "Rubik", Helvetica, Arial, serif;
   font-weight         : 500;
@@ -355,13 +358,13 @@
     height: auto;
     width: 100%;
     position: relative;
-    padding-right: 250px;
+    padding-right: 130px;
     font-size: 55.0px;
     color: rgba(255, 255, 255, 0.87);
     text-align: right;
     line-height: 36.0px;
     box-sizing: border-box;
-    padding-left: 250px;
+    padding-left: 130px;
     line-height: 1.2;
 }
 .topics_tablet  .owlcopy3 .icgear {

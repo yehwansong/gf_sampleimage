@@ -1,16 +1,16 @@
 
 .topics_single_4  {
-  background-color    : rgba(28, 29, 36, 1.0);
-  top                 : 0px;
-  height              : 641px;
-  width               : 360px;
-  position            : relative;
-  margin              : 0;
-  left                : 0px;
-  overflow            : hidden;
-  -ms-transform       : rotate(0deg); /* IE 9 */
-  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
-  transform           : rotate(0deg);
+    background-color: #F80667;
+    top: 0px;
+    height: 641px;
+    width: 360px;
+    position: relative;
+    margin: 0;
+    left: 0px;
+    overflow: hidden;
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
 }
 .topics_single_4 .timer {
   background-color    : rgba(255,255,255,0.0);
@@ -219,7 +219,7 @@
   transform           : rotate(0deg);
   padding-top: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #292a31; 
+  border-bottom: 1px solid #bc0b4f; 
 }
 .topics_single_4 .category_wrap_1{
   margin-top                 : 80px;

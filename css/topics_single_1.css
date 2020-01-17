@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik:500,700');
 
-
+.topics_single_1  *{color:#1E1E1E !important;}
 .casestudiesowlsection1 {
   width               : 100%;
   min-width           : 360px;
@@ -157,7 +157,7 @@ div {
   width               : auto;
   position            : absolute;
   margin              : 0;
-  left                : 108px;
+  left                : 88px;
   opacity             : 0.6;
   font-family         : "Rubik", Helvetica, Arial, serif;
   font-weight         : 500;
@@ -241,7 +241,7 @@ div {
   width               : auto;
   position            : absolute;
   margin              : 0;
-  left                : 108px;
+  left                : 88px;
   opacity             : 0.6;
   font-family         : "Rubik", Helvetica, Arial, serif;
   font-weight         : 500;
@@ -335,7 +335,7 @@ div {
   width               : auto;
   position            : absolute;
   margin              : 0;
-  left                : 108px;
+  left                : 88px;
   opacity             : 0.6;
   font-family         : "Rubik", Helvetica, Arial, serif;
   font-weight         : 500;
@@ -383,9 +383,9 @@ div {
     font-size: 28.0px;
     color: rgba(255, 255, 255, 0.87);
     text-align: right;
-    line-height: 36.0px;
-    padding-left: 30PX;
-    padding-right: 10px;
+    line-height: 1.3;
+    padding-left: 20PX;
+    padding-right: 20px;
     box-sizing: border-box;
 }
 .topics_single_1  .owlcopy3 .icgear {

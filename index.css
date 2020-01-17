@@ -159,9 +159,12 @@ body{
 
 
 #table_wrapper{
+    box-shadow: 0vh 0vh 0.8vh #ededed;
     width: 50%;
     float: left;
-    height: calc(100vh - 60px)
+    height: calc(100vh - 60px);
+    z-index: 1000;
+    position: relative;
 }
 .table{
     width: calc(100% - 20px);
@@ -219,8 +222,9 @@ body{
 }
 .hovered{background-color: #0086ea80 !important}
 .x_1{
+    padding-left: 15px;
     vertical-align: bottom;
-    min-width: 25%
+    min-width: 25%;s
 }
 .x_2{
     min-width: 15%

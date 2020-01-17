@@ -29,12 +29,12 @@ div {
   -webkit-text-size-adjust: none;
 }
 .reply_tablet {
-  top                 : 57px;
+  top                 : 0px;
   height              : 780px;
   width               : 1065px;
   position            : relative;;
   margin              : 0;
-  left                : 54px;
+  left                : 0px;
   overflow            : hidden;
     background: rgb(237, 240, 242);
 }

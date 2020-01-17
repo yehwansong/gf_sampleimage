@@ -70,7 +70,7 @@ $('document').ready(function(){
             $('#container_2>div:nth-child(1) #contaier_1').load( "reply_single_1.html .reply_tile_1")
             $('#container_2>div:nth-child(1) #contaier_2').load( "reply_single_2.html .reply_tile_3")
             $('#container_2>div:nth-child(1) #contaier_3').load( "reply_single_3.html .reply_tile_4")
-            $('#container_2>div:nth-child(1) #contaier_4').load( "reply_single_4.html .reply_tile_2")
+            $('#container_2>div:nth-child(1) #contaier_4').load( "reply_single_2.html .reply_tile_3")
         });
         $( "#container_2>div:nth-child(2)" ).load( "basil_pattern.html .basil_pattern",function(data){
             $('#container_2>div:nth-child(2) #contaier_1').load( "basil_single_1.html .basil_single_1")
