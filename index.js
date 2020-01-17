@@ -313,24 +313,24 @@ window.onload = function () {
     function show_layouts(family,category){
         var SC = family.split(' ')[family.split(' ').length-1]
         if(category === 'display' || category === 'handwriting' || SC === 'SC' || exists(serif_subcat, family) || exists(sansserif_subcat, family) || exists(mono_subcat, family)) {
-            $('.basil_device').addClass('showable')
+            // $('.basil_device').addClass('showable')
             // random
-            // $('.topics_device').addClass('showable')
+            $('.topics_device').addClass('showable')
             $('.reply_device').removeClass('showable')
 
-            $('.basil_pattern').addClass('showable')
-            // $('.topics_pattern').addClass('showable')
+            // $('.basil_pattern').addClass('showable')
+            $('.topics_pattern').addClass('showable')
             $('.reply_pattern').removeClass('showable')
 
             $('.select_layout_device').show()
             $('.select_layout_pattern').show()
         }else{
-            $('.basil_device').removeClass('showable')
-            // $('.topics_device').removeClass('showable')
+            // $('.basil_device').removeClass('showable')
+            $('.topics_device').removeClass('showable')
             $('.reply_device').addClass('showable')
 
-            $('.basil_pattern').removeClass('showable')
-            // $('.topics_pattern').removeClass('showable')
+            // $('.basil_pattern').removeClass('showable')
+            $('.topics_pattern').removeClass('showable')
             $('.reply_pattern').addClass('showable')
 
             $('.select_layout_device').hide()
