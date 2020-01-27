@@ -1,25 +1,25 @@
 *{margin:0;}
-.casestudiesreplycomponents{
+.reply_components{
   width: 1120px;
   height: 560px;
     background: #b4c1cc;
     box-shadow: 0vh 0vh 0vh 20vh #b4c1cc;
 }
-.casestudiesreplycomponents .star_feed {
+.reply_components .star_feed {
     top: 160px;
     width: 360px;
     position: absolute;
     left: 620px;
     background: white;
 }
-.casestudiesreplycomponents .star_feed .bg {
+.reply_components .star_feed .bg {
   top                 : 0px;
   height              : 72px;
   width               : 352px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .star_feed .icstar {
+.reply_components .star_feed .icstar {
     height: 100%;
     top: 18px;
     /* height: 36px; */
@@ -29,28 +29,28 @@
     top: 0;
     background: #faaa1b;
 }
-.casestudiesreplycomponents .star_feed .icstar .rectangle5copy {
+.reply_components .star_feed .icstar .rectangle5copy {
   top                 : 0px;
   height              : 36px;
   width               : 36px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .star_feed .icstar .color17262a {
+.reply_components .star_feed .icstar .color17262a {
   top                 : 0px;
   height              : 100%;
   width               : 100%; 
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .star_feed .icstar .color17262a .color17262a1 {
+.reply_components .star_feed .icstar .color17262a .color17262a1 {
   /*top                 : 0px;*/
   height              : 24px;
   width               : 24px;
   position            : absolute;
   /*left                : 0px;*/
 }
-.casestudiesreplycomponents .star_feed .mask {
+.reply_components .star_feed .mask {
   top                 : 0px;
   height              : 72px;
   width               : 292px;
@@ -60,7 +60,7 @@
   -webkit-transform   : rotate(-180deg); /* Chrome, Safari, Opera */
   transform           : rotate(-180deg);
 }
-.casestudiesreplycomponents .star_feed .trevorhansenu201412h {
+.reply_components .star_feed .trevorhansenu201412h {
   margin-top                 : 20px;
   height              : auto;
   width               : auto;
@@ -72,7 +72,7 @@
   letter-spacing      : 0.17px;
   line-height         : 14.0px;
 }
-.casestudiesreplycomponents .star_feed .loading{
+.reply_components .star_feed .loading{
   top                 : 33px;
   height              : auto;
   width               : auto;
@@ -83,7 +83,7 @@
   letter-spacing      : 0.18px;
   line-height         : 19.0px;
 }
-.casestudiesreplycomponents .menu {
+.reply_components .menu {
     top: 380px;
   height              : 396px;
   width               : 360px;
@@ -92,224 +92,224 @@
   border-radius       : 12px;
   overflow            : hidden;
 }
-.casestudiesreplycomponents .menu .mask {
+.reply_components .menu .mask {
   top                 : 0px;
   height              : 396px;
   width               : 360px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .navbgdip {
+.reply_components .menu .navbgdip {
   top                 : 14px;
   height              : 382px;
   width               : 360px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .list {
+.reply_components .menu .list {
   top                 : 46px;
   height              : 604px;
   width               : 204px;
   position            : absolute;
   left                : 24px;
 }
-.casestudiesreplycomponents .menu .list .icfolder {
+.reply_components .menu .list .icfolder {
   top                 : 340px;
   height              : 24px;
   width               : 24px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .list .icfolder .rectangle5copy6 {
+.reply_components .menu .list .icfolder .rectangle5copy6 {
   top                 : 0px;
   height              : 24px;
   width               : 24px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .list .icfolder .color17262a {
+.reply_components .menu .list .icfolder .color17262a {
   top                 : 6px;
   height              : 13px;
   width               : 16px;
   position            : absolute;
   left                : 4px;
 }
-.casestudiesreplycomponents .menu .list .icfolder .color17262a .color17262a1 {
+.reply_components .menu .list .icfolder .color17262a .color17262a1 {
   top                 : 0px;
   height              : 13px;
   width               : 16px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .list .icdraft {
+.reply_components .menu .list .icdraft {
   top                 : 240px;
   height              : 24px;
   width               : 24px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .list .icdraft .rectangle5copy5 {
+.reply_components .menu .list .icdraft .rectangle5copy5 {
   top                 : 0px;
   height              : 24px;
   width               : 24px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .list .icdraft .color17262a {
+.reply_components .menu .list .icdraft .color17262a {
   top                 : 5px;
   height              : 15px;
   width               : 16px;
   position            : absolute;
   left                : 4px;
 }
-.casestudiesreplycomponents .menu .list .icdraft .color17262a .color17262a1 {
+.reply_components .menu .list .icdraft .color17262a .color17262a1 {
   top                 : 0px;
   height              : 15px;
   width               : 16px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .list .icspam {
+.reply_components .menu .list .icspam {
   top                 : 192px;
   height              : 24px;
   width               : 24px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .list .icspam .rectangle5copy4 {
+.reply_components .menu .list .icspam .rectangle5copy4 {
   top                 : 0px;
   height              : 24px;
   width               : 24px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .list .icspam .color17262a {
+.reply_components .menu .list .icspam .color17262a {
   top                 : 5px;
   height              : 14px;
   width               : 14px;
   position            : absolute;
   left                : 5px;
 }
-.casestudiesreplycomponents .menu .list .icspam .color17262a .color17262a1 {
+.reply_components .menu .list .icspam .color17262a .color17262a1 {
   top                 : 0px;
   height              : 14px;
   width               : 14px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .list .ictrash {
+.reply_components .menu .list .ictrash {
   top                 : 144px;
   height              : 24px;
   width               : 24px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .list .ictrash .rectangle5copy3 {
+.reply_components .menu .list .ictrash .rectangle5copy3 {
   top                 : 0px;
   height              : 24px;
   width               : 24px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .list .ictrash .color17262a {
+.reply_components .menu .list .ictrash .color17262a {
   top                 : 4px;
   height              : 16px;
   width               : 12px;
   position            : absolute;
   left                : 6px;
 }
-.casestudiesreplycomponents .menu .list .ictrash .color17262a .color17262a1 {
+.reply_components .menu .list .ictrash .color17262a .color17262a1 {
   top                 : 0px;
   height              : 16px;
   width               : 12px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .list .icsent {
+.reply_components .menu .list .icsent {
   top                 : 96px;
   height              : 24px;
   width               : 24px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .list .icsent .rectangle5copy2 {
+.reply_components .menu .list .icsent .rectangle5copy2 {
   top                 : 0px;
   height              : 24px;
   width               : 24px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .list .icsent .color17262a {
+.reply_components .menu .list .icsent .color17262a {
   top                 : 5px;
   height              : 14px;
   width               : 16px;
   position            : absolute;
   left                : 4px;
 }
-.casestudiesreplycomponents .menu .list .icsent .color17262a .color17262a1 {
+.reply_components .menu .list .icsent .color17262a .color17262a1 {
   top                 : 0px;
   height              : 14px;
   width               : 16px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .list .icstar {
+.reply_components .menu .list .icstar {
   top                 : 48px;
   height              : 24px;
   width               : 24px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .list .icstar .rectangle5copy {
+.reply_components .menu .list .icstar .rectangle5copy {
   top                 : 0px;
   height              : 24px;
   width               : 24px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .list .icstar .color17262a {
+.reply_components .menu .list .icstar .color17262a {
   top                 : 4px;
   height              : 16px;
   width               : 16px;
   position            : absolute;
   left                : 4px;
 }
-.casestudiesreplycomponents .menu .list .icstar .color17262a .color17262a1 {
+.reply_components .menu .list .icstar .color17262a .color17262a1 {
   top                 : 0px;
   height              : 16px;
   width               : 16px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .list .icinbox {
+.reply_components .menu .list .icinbox {
   top                 : 0px;
   height              : 24px;
   width               : 24px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .list .icinbox .rectangle5 {
+.reply_components .menu .list .icinbox .rectangle5 {
   top                 : 0px;
   height              : 24px;
   width               : 24px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .list .icinbox .color17262a {
+.reply_components .menu .list .icinbox .color17262a {
   top                 : 5px;
   height              : 14px;
   width               : 14px;
   position            : absolute;
   left                : 5px;
 }
-.casestudiesreplycomponents .menu .list .icinbox .color17262a .color17262a1 {
+.reply_components .menu .list .icinbox .color17262a .color17262a1 {
   top                 : 0px;
   height              : 14px;
   width               : 14px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .list .menubutton {
+.reply_components .menu .list .menubutton {
   top                 : 20px;
   height              : auto;
   width               : auto;
@@ -318,11 +318,11 @@
   left                : 20px;
     padding-bottom: 33.5px;
 }
-.casestudiesreplycomponents .menu .list .menubutton img{
+.reply_components .menu .list .menubutton img{
     width: 14px;
     padding-right: 25px;
 }
-.casestudiesreplycomponents .menu .list .rectangle {
+.reply_components .menu .list .rectangle {
   background-color    : rgba(73, 100, 115, 1.0);
   top                 : 280px;
   height              : 1px;
@@ -330,161 +330,161 @@
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .list .icfolder1 {
+.reply_components .menu .list .icfolder1 {
   top                 : 388px;
   height              : 24px;
   width               : 24px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .list .icfolder1 .rectangle5copy6 {
+.reply_components .menu .list .icfolder1 .rectangle5copy6 {
   top                 : 0px;
   height              : 24px;
   width               : 24px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .list .icfolder1 .color17262a {
+.reply_components .menu .list .icfolder1 .color17262a {
   top                 : 6px;
   height              : 13px;
   width               : 16px;
   position            : absolute;
   left                : 4px;
 }
-.casestudiesreplycomponents .menu .list .icfolder1 .color17262a .color17262a1 {
+.reply_components .menu .list .icfolder1 .color17262a .color17262a1 {
   top                 : 0px;
   height              : 13px;
   width               : 16px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .list .icfolder2 {
+.reply_components .menu .list .icfolder2 {
   top                 : 436px;
   height              : 24px;
   width               : 24px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .list .icfolder2 .rectangle5copy6 {
+.reply_components .menu .list .icfolder2 .rectangle5copy6 {
   top                 : 0px;
   height              : 24px;
   width               : 24px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .list .icfolder2 .color17262a {
+.reply_components .menu .list .icfolder2 .color17262a {
   top                 : 6px;
   height              : 13px;
   width               : 16px;
   position            : absolute;
   left                : 4px;
 }
-.casestudiesreplycomponents .menu .list .icfolder2 .color17262a .color17262a1 {
+.reply_components .menu .list .icfolder2 .color17262a .color17262a1 {
   top                 : 0px;
   height              : 13px;
   width               : 16px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .list .icfolder3 {
+.reply_components .menu .list .icfolder3 {
   top                 : 484px;
   height              : 24px;
   width               : 24px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .list .icfolder3 .rectangle5copy6 {
+.reply_components .menu .list .icfolder3 .rectangle5copy6 {
   top                 : 0px;
   height              : 24px;
   width               : 24px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .list .icfolder3 .color17262a {
+.reply_components .menu .list .icfolder3 .color17262a {
   top                 : 6px;
   height              : 13px;
   width               : 16px;
   position            : absolute;
   left                : 4px;
 }
-.casestudiesreplycomponents .menu .list .icfolder3 .color17262a .color17262a1 {
+.reply_components .menu .list .icfolder3 .color17262a .color17262a1 {
   top                 : 0px;
   height              : 13px;
   width               : 16px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .list .icfolder4 {
+.reply_components .menu .list .icfolder4 {
   top                 : 532px;
   height              : 24px;
   width               : 24px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .list .icfolder4 .rectangle5copy6 {
+.reply_components .menu .list .icfolder4 .rectangle5copy6 {
   top                 : 0px;
   height              : 24px;
   width               : 24px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .list .icfolder4 .color17262a {
+.reply_components .menu .list .icfolder4 .color17262a {
   top                 : 6px;
   height              : 13px;
   width               : 16px;
   position            : absolute;
   left                : 4px;
 }
-.casestudiesreplycomponents .menu .list .icfolder4 .color17262a .color17262a1 {
+.reply_components .menu .list .icfolder4 .color17262a .color17262a1 {
   top                 : 0px;
   height              : 13px;
   width               : 16px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .list .icfolder5 {
+.reply_components .menu .list .icfolder5 {
   top                 : 580px;
   height              : 24px;
   width               : 24px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .list .icfolder5 .rectangle5copy6 {
+.reply_components .menu .list .icfolder5 .rectangle5copy6 {
   top                 : 0px;
   height              : 24px;
   width               : 24px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .list .icfolder5 .color17262a {
+.reply_components .menu .list .icfolder5 .color17262a {
   top                 : 6px;
   height              : 13px;
   width               : 16px;
   position            : absolute;
   left                : 4px;
 }
-.casestudiesreplycomponents .menu .list .icfolder5 .color17262a .color17262a1 {
+.reply_components .menu .list .icfolder5 .color17262a .color17262a1 {
   top                 : 0px;
   height              : 13px;
   width               : 16px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .navmobilelogo {
+.reply_components .menu .navmobilelogo {
   top                 : 340px;
   height              : 56px;
   width               : 360px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .navmobilelogo .nav {
+.reply_components .menu .navmobilelogo .nav {
   top                 : 0px;
   height              : 56px;
   width               : 360px;
   position            : relative;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .navmobilelogo .nav .bgnav {
+.reply_components .menu .navmobilelogo .nav .bgnav {
   top                 : -152px;
   height              : 360px;
   width               : 56px;
@@ -494,35 +494,35 @@
   -webkit-transform   : rotate(-90deg); /* Chrome, Safari, Opera */
   transform           : rotate(-90deg);
 }
-.casestudiesreplycomponents .menu .navmobilelogo .nav .icmorevert {
+.reply_components .menu .navmobilelogo .nav .icmorevert {
   top                 : 16px;
   height              : 24px;
   width               : 24px;
   position            : absolute;
   left                : 320px;
 }
-.casestudiesreplycomponents .menu .navmobilelogo .nav .icmorevert .shape {
+.reply_components .menu .navmobilelogo .nav .icmorevert .shape {
   top                 : 0px;
   height              : 24px;
   width               : 24px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .navmobilelogo .nav .icmorevert .color17262a {
+.reply_components .menu .navmobilelogo .nav .icmorevert .color17262a {
   top                 : 2px;
   height              : 20px;
   width               : 20px;
   position            : absolute;
   left                : 2px;
 }
-.casestudiesreplycomponents .menu .navmobilelogo .nav .icmorevert .color17262a .color17262a1 {
+.reply_components .menu .navmobilelogo .nav .icmorevert .color17262a .color17262a1 {
   top                 : 0px;
   height              : 20px;
   width               : 20px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .navmobilelogo .nav .inbox {
+.reply_components .menu .navmobilelogo .nav .inbox {
   top                 : 20px;
   height              : auto;
   width               : auto;
@@ -534,35 +534,35 @@
   letter-spacing      : 0.03px;
   line-height         : 16.0px;
 }
-.casestudiesreplycomponents .menu .navmobilelogo .nav .icarrowup {
+.reply_components .menu .navmobilelogo .nav .icarrowup {
   top                 : 20px;
   height              : 16px;
   width               : 16px;
   position            : absolute;
   left                : 12px;
 }
-.casestudiesreplycomponents .menu .navmobilelogo .nav .icarrowup .shape {
+.reply_components .menu .navmobilelogo .nav .icarrowup .shape {
   top                 : 0px;
   height              : 16px;
   width               : 16px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .navmobilelogo .nav .icarrowup .color17262a {
+.reply_components .menu .navmobilelogo .nav .icarrowup .color17262a {
   top                 : 6px;
   height              : 4px;
   width               : 8px;
   position            : absolute;
   left                : 4px;
 }
-.casestudiesreplycomponents .menu .navmobilelogo .nav .icarrowup .color17262a .color17262a1 {
+.reply_components .menu .navmobilelogo .nav .icarrowup .color17262a .color17262a1 {
   top                 : 0px;
   height              : 4px;
   width               : 8px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .navmobilelogo .nav .logo {
+.reply_components .menu .navmobilelogo .nav .logo {
   top                 : 18px;
   height              : 20px;
   width               : 21px;
@@ -570,119 +570,119 @@
   left                : 32px;
   overflow            : hidden;
 }
-.casestudiesreplycomponents .menu .navmobilelogo .nav .logo .background {
+.reply_components .menu .navmobilelogo .nav .logo .background {
   top                 : 0px;
   height              : 20px;
   width               : 21px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .navmobilelogo .nav .logo .fill1 {
+.reply_components .menu .navmobilelogo .nav .logo .fill1 {
   top                 : 2px;
   height              : 1px;
   width               : 1px;
   position            : absolute;
   left                : 19px;
 }
-.casestudiesreplycomponents .menu .navmobilelogo .nav .logo .fill3 {
+.reply_components .menu .navmobilelogo .nav .logo .fill3 {
   top                 : 0px;
   height              : 19px;
   width               : 21px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .menu .navmobilelogo .nav .logo .fill6 {
+.reply_components .menu .navmobilelogo .nav .logo .fill6 {
   top                 : 3px;
   height              : 9px;
   width               : 8px;
   position            : absolute;
   left                : 6px;
 }
-.casestudiesreplycomponents .menu .navmobilelogo .nav .logo .fill8 {
+.reply_components .menu .navmobilelogo .nav .logo .fill8 {
   top                 : 16px;
   height              : 1px;
   width               : 1px;
   position            : absolute;
   left                : 9px;
 }
-.casestudiesreplycomponents .menu .navmobilelogo .nav .logo .fill10 {
+.reply_components .menu .navmobilelogo .nav .logo .fill10 {
   top                 : 17px;
   height              : 1px;
   width               : 1px;
   position            : absolute;
   left                : 10px;
 }
-.casestudiesreplycomponents .menu .navmobilelogo .nav .logo .fill12 {
+.reply_components .menu .navmobilelogo .nav .logo .fill12 {
   top                 : 16px;
   height              : 1px;
   width               : 1px;
   position            : absolute;
   left                : 7px;
 }
-.casestudiesreplycomponents .menu .navmobilelogo .nav .logo .fill14 {
+.reply_components .menu .navmobilelogo .nav .logo .fill14 {
   top                 : 16px;
   height              : 1px;
   width               : 1px;
   position            : absolute;
   left                : 5px;
 }
-.casestudiesreplycomponents .menu .navmobilelogo .nav .logo .fill16 {
+.reply_components .menu .navmobilelogo .nav .logo .fill16 {
   top                 : 17px;
   height              : 1px;
   width               : 1px;
   position            : absolute;
   left                : 6px;
 }
-.casestudiesreplycomponents .menu .navmobilelogo .nav .logo .fill18 {
+.reply_components .menu .navmobilelogo .nav .logo .fill18 {
   top                 : 17px;
   height              : 1px;
   width               : 1px;
   position            : absolute;
   left                : 8px;
 }
-.casestudiesreplycomponents .menu .navmobilelogo .nav .logo .fill20 {
+.reply_components .menu .navmobilelogo .nav .logo .fill20 {
   top                 : 16px;
   height              : 1px;
   width               : 1px;
   position            : absolute;
   left                : 3px;
 }
-.casestudiesreplycomponents .menu .navmobilelogo .nav .logo .fill22 {
+.reply_components .menu .navmobilelogo .nav .logo .fill22 {
   top                 : 16px;
   height              : 1px;
   width               : 1px;
   position            : absolute;
   left                : 1px;
 }
-.casestudiesreplycomponents .menu .navmobilelogo .nav .logo .fill24 {
+.reply_components .menu .navmobilelogo .nav .logo .fill24 {
   top                 : 17px;
   height              : 1px;
   width               : 1px;
   position            : absolute;
   left                : 2px;
 }
-.casestudiesreplycomponents .menu .navmobilelogo .nav .logo .fill26 {
+.reply_components .menu .navmobilelogo .nav .logo .fill26 {
   top                 : 17px;
   height              : 1px;
   width               : 1px;
   position            : absolute;
   left                : 4px;
 }
-.casestudiesreplycomponents .menu .avatardark {
+.reply_components .menu .avatardark {
   top                 : 6px;
   height              : 34px;
   width               : 34px;
   position            : absolute;
   left                : 163px;
 }
-.casestudiesreplycomponents .menu .avatardark .avatar {
+.reply_components .menu .avatardark .avatar {
   top                 : 0px;
   height              : 34px;
   width               : 34px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .feed4 {
+.reply_components .feed4 {
     top: 159px;
     height: 88px;
     width: 360px;
@@ -690,42 +690,42 @@
     left: 620px;
     overflow: hidden;
 }
-.casestudiesreplycomponents .rectangle2 {
+.reply_components .rectangle2 {
   top                 : 0px;
   height              : 72px;
   width               : 352px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .buttoncheckmark36px {
+.reply_components .buttoncheckmark36px {
   top                 : 16px;
   height              : 36px;
   width               : 36px;
   position            : absolute;
   left                : 304px;
 }
-.casestudiesreplycomponents .buttoncheckmark36px .fill1 {
+.reply_components .buttoncheckmark36px .fill1 {
   top                 : 0px;
   height              : 36px;
   width               : 36px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .buttoncheckmark36px .fill3 {
+.reply_components .buttoncheckmark36px .fill3 {
   top                 : 13px;
   height              : 10px;
   width               : 14px;
   position            : absolute;
   left                : 11px;
 }
-.casestudiesreplycomponents .buttoncheckmark36px .ovalcopy {
+.reply_components .buttoncheckmark36px .ovalcopy {
   top                 : 0px;
   height              : 36px;
   width               : 36px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .trevorhansenu20141h {
+.reply_components .trevorhansenu20141h {
   top                 : 17px;
   height              : auto;
   width               : auto;
@@ -738,7 +738,7 @@
   letter-spacing      : 0.17px;
   line-height         : 14.0px;
 }
-.casestudiesreplycomponents .highschoolreunion {
+.reply_components .highschoolreunion {
   margin-top                 : 10px;
   height              : auto;
   width               : auto;
@@ -751,7 +751,7 @@
   line-height         : 19.0px;
   padding-bottom: 20px;
 }
-.casestudiesreplycomponents .group {
+.reply_components .group {
     background-color: rgba(238, 241, 243, 1.0);
     top: 290px;
     height: 28px;
@@ -759,7 +759,7 @@
     left: 620px;
     border-radius: 14px;
 }
-.casestudiesreplycomponents .group .rectangle11copy4 {
+.reply_components .group .rectangle11copy4 {
   background-color    : rgba(238, 241, 243, 1.0);
   top                 : 0px;
   height              : 28px;
@@ -767,7 +767,7 @@
   left                : 0px;
   border-radius       : 14px;
 }
-.casestudiesreplycomponents .group .trevorhansencopy2 {
+.reply_components .group .trevorhansencopy2 {
   top                 : 6px;
   height              : auto;
   width               : auto;
@@ -778,7 +778,7 @@
   letter-spacing      : 0.04px;
   line-height         : 12.0px;
 }
-.casestudiesreplycomponents .group .span1 {
+.reply_components .group .span1 {
   line-height: 28px;
   padding-left: 35px;
   padding-right: 10px;
@@ -786,35 +786,35 @@
   text-align          : justify;
   white-space: nowrap;
 }
-.casestudiesreplycomponents .group .avatar0436pxcopy4 {
+.reply_components .group .avatar0436pxcopy4 {
   top                 : 0px;
   height              : 28px;
   width               : 28px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .group .avatar0436pxcopy4 .group71 {
+.reply_components .group .avatar0436pxcopy4 .group71 {
   top                 : 0px;
   height              : 28px;
   width               : 28px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .group .avatar0436pxcopy4 .group71 .group72 {
+.reply_components .group .avatar0436pxcopy4 .group71 .group72 {
   top                 : 0px;
   height              : 28px;
   width               : 28px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .group .avatar0436pxcopy4 .ovalcopy3 {
+.reply_components .group .avatar0436pxcopy4 .ovalcopy3 {
   top                 : 0px;
   height              : 28px;
   width               : 28px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .profilelist {
+.reply_components .profilelist {
     top: -35px;
     background: #16262a;
     height: 150px;
@@ -823,14 +823,14 @@
     border-radius: 20px;
     left: 50px;
 }
-.casestudiesreplycomponents .profilelist .rectangle8 {
+.reply_components .profilelist .rectangle8 {
   top                 : 0px;
   height              : 150px;
   width               : 304px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .profilelist .list {
+.reply_components .profilelist .list {
     margin-top: 17.5px;
     margin-bottom: 17.5px;
   height              : auto;
@@ -843,21 +843,21 @@
   white-space: nowrap;
     float: left;
 }
-.casestudiesreplycomponents .profilelist .avatarprofile01 {
+.reply_components .profilelist .avatarprofile01 {
   top                 : 6px;
   height              : 34px;
   width               : 34px;
   position            : absolute;
   left                : 10px;
 }
-.casestudiesreplycomponents .profilelist .avatarprofile01 .avatar {
+.reply_components .profilelist .avatarprofile01 .avatar {
   top                 : 2px;
   height              : 30px;
   width               : 30px;
   position            : absolute;
   left                : 2px;
 }
-.casestudiesreplycomponents .profilelist .avatarprofile01 .oval3 {
+.reply_components .profilelist .avatarprofile01 .oval3 {
   top                 : 0px;
   height              : 34px;
   width               : 34px;
@@ -865,84 +865,84 @@
   left                : 0px;
   opacity             : 0.24;
 }
-.casestudiesreplycomponents .profilelist .avatarprofile02 {
+.reply_components .profilelist .avatarprofile02 {
   top                 : 56px;
   height              : 34px;
   width               : 34px;
   position            : absolute;
   left                : 10px;
 }
-.casestudiesreplycomponents .profilelist .avatarprofile02 .avatar {
+.reply_components .profilelist .avatarprofile02 .avatar {
   top                 : 2px;
   height              : 30px;
   width               : 30px;
   position            : absolute;
   left                : 2px;
 }
-.casestudiesreplycomponents .profilelist .avatarprofile02 .a642394445 {
+.reply_components .profilelist .avatarprofile02 .a642394445 {
   top                 : 0px;
   height              : 34px;
   width               : 34px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .profilelist .avatarprofile02 .a642394445 .a6423944451 {
+.reply_components .profilelist .avatarprofile02 .a642394445 .a6423944451 {
   top                 : 0px;
   height              : 34px;
   width               : 34px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .profilelist .avatarprofile03 {
+.reply_components .profilelist .avatarprofile03 {
   top                 : 106px;
   height              : 34px;
   width               : 34px;
   position            : absolute;
   left                : 10px;
 }
-.casestudiesreplycomponents .profilelist .avatarprofile03 .avatar {
+.reply_components .profilelist .avatarprofile03 .avatar {
   top                 : 2px;
   height              : 30px;
   width               : 30px;
   position            : absolute;
   left                : 2px;
 }
-.casestudiesreplycomponents .profilelist .avatarprofile03 .stocksycomp795618 {
+.reply_components .profilelist .avatarprofile03 .stocksycomp795618 {
   top                 : 0px;
   height              : 34px;
   width               : 34px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .profilelist .avatarprofile03 .stocksycomp795618 .stocksycomp7956181 {
+.reply_components .profilelist .avatarprofile03 .stocksycomp795618 .stocksycomp7956181 {
   top                 : 0px;
   height              : 34px;
   width               : 34px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .profilelist .iccheckmark {
+.reply_components .profilelist .iccheckmark {
   top                 : 11px;
   height              : 24px;
   width               : 24px;
   position            : absolute;
   left                : 268px;
 }
-.casestudiesreplycomponents .profilelist .iccheckmark .rectangle {
+.reply_components .profilelist .iccheckmark .rectangle {
   top                 : 0px;
   height              : 24px;
   width               : 24px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .profilelist .iccheckmark .fill3 {
+.reply_components .profilelist .iccheckmark .fill3 {
   top                 : 6px;
   height              : 12px;
   width               : 16px;
   position            : absolute;
   left                : 4px;
 }
-.casestudiesreplycomponents .bodytext {
+.reply_components .bodytext {
   background: white;
   top: 160px;
   height              : 612px;
@@ -951,7 +951,7 @@
   left                : 200px;
 }
 
-.casestudiesreplycomponents .bodytext .bg {
+.reply_components .bodytext .bg {
   background-color: rgba(255, 255, 255, 0);
   top: 20px;
   height: 612px;
@@ -960,7 +960,7 @@
   left: 4px;
 }
 
-.casestudiesreplycomponents .bodytext .avatar {
+.reply_components .bodytext .avatar {
   background-color: rgba(255, 255, 255, 0);
   height: 38px;
   width: 38px;
@@ -970,7 +970,7 @@
   float: right
 }
 
-.casestudiesreplycomponents .bodytext .avatar .avatar1 {
+.reply_components .bodytext .avatar .avatar1 {
   background-color: rgba(255, 255, 255, 0);
   top: 0;
   height: 38px;
@@ -979,7 +979,7 @@
   left: 0;
 }
 
-.casestudiesreplycomponents .bodytext .hifriendsiwasat {
+.reply_components .bodytext .hifriendsiwasat {
   background-color: rgba(255, 255, 255, 0);
   height: auto;
   width: 320px;
@@ -995,7 +995,7 @@
   padding-bottom: 100px
 }
 
-.casestudiesreplycomponents .bodytext .highschoolreunion {
+.reply_components .bodytext .highschoolreunion {
   background-color: rgba(255, 255, 255, 0);
   height: auto;
   width: 244px;
@@ -1010,7 +1010,7 @@
   top: 0
 
 }
-.casestudiesreplycomponents .bodytext .img{
+.reply_components .bodytext .img{
     vertical-align: -webkit-baseline-middle;
     position: relative;
     width: 100px;
@@ -1019,7 +1019,7 @@
     padding-right: 30px;
     padding-bottom: 0px;
     width: 100px;}
-.casestudiesreplycomponents .bodytext .icexpand {
+.reply_components .bodytext .icexpand {
   background-color: rgba(255, 255, 255, 0);
   top: 55px;
   height: 24px;
@@ -1028,7 +1028,7 @@
   left: 326px;
 }
 
-.casestudiesreplycomponents .bodytext .icexpand .shape {
+.reply_components .bodytext .icexpand .shape {
   background-color: rgba(255, 255, 255, 0);
   top: 0;
   height: 24px;
@@ -1037,7 +1037,7 @@
   left: 0;
 }
 
-.casestudiesreplycomponents .bodytext .icexpand .color17262a {
+.reply_components .bodytext .icexpand .color17262a {
   background-color: rgba(255, 255, 255, 0);
   top: 8px;
   height: 8px;
@@ -1046,7 +1046,7 @@
   left: 6px;
 }
 
-.casestudiesreplycomponents .bodytext .icexpand .color17262a .color17262a1 {
+.reply_components .bodytext .icexpand .color17262a .color17262a1 {
   background-color: rgba(255, 255, 255, 0);
   top: 0;
   height: 8px;
@@ -1055,7 +1055,7 @@
   left: 0;
 }
 
-.casestudiesreplycomponents .bodytext .navmobiledip {
+.reply_components .bodytext .navmobiledip {
   background-color: rgba(255, 255, 255, 0);
   top: 552px;
   height: 88px;
@@ -1065,7 +1065,7 @@
   overflow: hidden;
 }
 
-.casestudiesreplycomponents .bodytext .navmobiledip .background {
+.reply_components .bodytext .navmobiledip .background {
   background-color: rgba(255, 255, 255, 0);
   top: 0;
   height: 88px;
@@ -1074,7 +1074,7 @@
   left: 0;
 }
 
-.casestudiesreplycomponents .bodytext .navmobiledip .bgnav {
+.reply_components .bodytext .navmobiledip .bgnav {
   background-color: rgba(255, 255, 255, 0);
   top: 32px;
   height: 56px;
@@ -1083,7 +1083,7 @@
   left: 0;
 }
 
-.casestudiesreplycomponents .bodytext .navmobiledip .buttonnav {
+.reply_components .bodytext .navmobiledip .buttonnav {
   background-color: rgba(255, 255, 255, 0);
   top: -1px;
   height: 60px;
@@ -1092,7 +1092,7 @@
   left: 151px;
 }
 
-.casestudiesreplycomponents .bodytext .navmobiledip .buttonnav .oval {
+.reply_components .bodytext .navmobiledip .buttonnav .oval {
   background-color: rgba(255, 255, 255, 0);
   top: 0;
   height: 60px;
@@ -1101,7 +1101,7 @@
   left: 0;
 }
 
-.casestudiesreplycomponents .bodytext .navmobiledip .buttonnav .icedit {
+.reply_components .bodytext .navmobiledip .buttonnav .icedit {
   background-color: rgba(255, 255, 255, 0);
   top: 17px;
   height: 24px;
@@ -1110,7 +1110,7 @@
   left: 17px;
 }
 
-.casestudiesreplycomponents .bodytext .navmobiledip .buttonnav .icedit .shape {
+.reply_components .bodytext .navmobiledip .buttonnav .icedit .shape {
   background-color: rgba(255, 255, 255, 0);
   top: 0;
   height: 24px;
@@ -1119,7 +1119,7 @@
   left: 0;
 }
 
-.casestudiesreplycomponents .bodytext .navmobiledip .buttonnav .icedit .color17262a {
+.reply_components .bodytext .navmobiledip .buttonnav .icedit .color17262a {
   background-color: rgba(255, 255, 255, 0);
   top: 5px;
   height: 14px;
@@ -1128,7 +1128,7 @@
   left: 3px;
 }
 
-.casestudiesreplycomponents .bodytext .navmobiledip .buttonnav .icedit .color17262a .color17262a1 {
+.reply_components .bodytext .navmobiledip .buttonnav .icedit .color17262a .color17262a1 {
   background-color: rgba(255, 255, 255, 0);
   top: 0;
   height: 14px;
@@ -1138,7 +1138,7 @@
   transform: none;
 }
 
-.casestudiesreplycomponents .bodytext .navmobiledip .icarrowup {
+.reply_components .bodytext .navmobiledip .icarrowup {
   background-color: rgba(255, 255, 255, 0);
   top: 50px;
   height: 20px;
@@ -1147,7 +1147,7 @@
   left: 12px;
 }
 
-.casestudiesreplycomponents .bodytext .navmobiledip .icarrowup .shape {
+.reply_components .bodytext .navmobiledip .icarrowup .shape {
   background-color: rgba(255, 255, 255, 0);
   top: 0;
   height: 20px;
@@ -1156,7 +1156,7 @@
   left: 0;
 }
 
-.casestudiesreplycomponents .bodytext .navmobiledip .icarrowup .color17262a {
+.reply_components .bodytext .navmobiledip .icarrowup .color17262a {
   background-color: rgba(255, 255, 255, 0);
   top: 8px;
   height: 5px;
@@ -1165,7 +1165,7 @@
   left: 5px;
 }
 
-.casestudiesreplycomponents .bodytext .navmobiledip .icarrowup .color17262a .color17262a1 {
+.reply_components .bodytext .navmobiledip .icarrowup .color17262a .color17262a1 {
   background-color: rgba(255, 255, 255, 0);
   top: 0;
   height: 5px;
@@ -1174,7 +1174,7 @@
   left: 0;
 }
 
-.casestudiesreplycomponents .bodytext .navmobiledip .logo {
+.reply_components .bodytext .navmobiledip .logo {
   background-color: rgba(255, 255, 255, 0);
   top: 50px;
   height: 21px;
@@ -1184,7 +1184,7 @@
   overflow: hidden;
 }
 
-.casestudiesreplycomponents .bodytext .navmobiledip .logo .background1 {
+.reply_components .bodytext .navmobiledip .logo .background1 {
   background-color: rgba(255, 255, 255, 0);
   top: 0;
   height: 20px;
@@ -1193,7 +1193,7 @@
   left: 0;
 }
 
-.casestudiesreplycomponents .bodytext .navmobiledip .logo .fill1 {
+.reply_components .bodytext .navmobiledip .logo .fill1 {
   background-color: rgba(255, 255, 255, 0);
   top: 2px;
   height: 1px;
@@ -1202,7 +1202,7 @@
   left: 19px;
 }
 
-.casestudiesreplycomponents .bodytext .navmobiledip .logo .fill3 {
+.reply_components .bodytext .navmobiledip .logo .fill3 {
   background-color: rgba(255, 255, 255, 0);
   top: 0;
   height: 19px;
@@ -1211,7 +1211,7 @@
   left: 0;
 }
 
-.casestudiesreplycomponents .bodytext .navmobiledip .logo .fill6 {
+.reply_components .bodytext .navmobiledip .logo .fill6 {
   background-color: rgba(255, 255, 255, 0);
   top: 3px;
   height: 9px;
@@ -1220,7 +1220,7 @@
   left: 6px;
 }
 
-.casestudiesreplycomponents .bodytext .navmobiledip .logo .fill8 {
+.reply_components .bodytext .navmobiledip .logo .fill8 {
   background-color: rgba(255, 255, 255, 0);
   top: 16px;
   height: 1px;
@@ -1229,7 +1229,7 @@
   left: 9px;
 }
 
-.casestudiesreplycomponents .bodytext .navmobiledip .logo .fill10 {
+.reply_components .bodytext .navmobiledip .logo .fill10 {
   background-color: rgba(255, 255, 255, 0);
   top: 17px;
   height: 1px;
@@ -1238,7 +1238,7 @@
   left: 10px;
 }
 
-.casestudiesreplycomponents .bodytext .navmobiledip .logo .fill12 {
+.reply_components .bodytext .navmobiledip .logo .fill12 {
   background-color: rgba(255, 255, 255, 0);
   top: 16px;
   height: 1px;
@@ -1247,7 +1247,7 @@
   left: 7px;
 }
 
-.casestudiesreplycomponents .bodytext .navmobiledip .logo .fill14 {
+.reply_components .bodytext .navmobiledip .logo .fill14 {
   background-color: rgba(255, 255, 255, 0);
   top: 16px;
   height: 1px;
@@ -1256,7 +1256,7 @@
   left: 5px;
 }
 
-.casestudiesreplycomponents .bodytext .navmobiledip .logo .fill16 {
+.reply_components .bodytext .navmobiledip .logo .fill16 {
   background-color: rgba(255, 255, 255, 0);
   top: 17px;
   height: 1px;
@@ -1265,7 +1265,7 @@
   left: 6px;
 }
 
-.casestudiesreplycomponents .bodytext .navmobiledip .logo .fill18 {
+.reply_components .bodytext .navmobiledip .logo .fill18 {
   background-color: rgba(255, 255, 255, 0);
   top: 17px;
   height: 1px;
@@ -1274,7 +1274,7 @@
   left: 8px;
 }
 
-.casestudiesreplycomponents .bodytext .navmobiledip .logo .fill20 {
+.reply_components .bodytext .navmobiledip .logo .fill20 {
   background-color: rgba(255, 255, 255, 0);
   top: 16px;
   height: 1px;
@@ -1283,7 +1283,7 @@
   left: 3px;
 }
 
-.casestudiesreplycomponents .bodytext .navmobiledip .logo .fill22 {
+.reply_components .bodytext .navmobiledip .logo .fill22 {
   background-color: rgba(255, 255, 255, 0);
   top: 16px;
   height: 1px;
@@ -1292,7 +1292,7 @@
   left: 2px;
 }
 
-.casestudiesreplycomponents .bodytext .navmobiledip .logo .fill24 {
+.reply_components .bodytext .navmobiledip .logo .fill24 {
   background-color: rgba(255, 255, 255, 0);
   top: 17px;
   height: 1px;
@@ -1301,7 +1301,7 @@
   left: 2px;
 }
 
-.casestudiesreplycomponents .bodytext .navmobiledip .logo .fill26 {
+.reply_components .bodytext .navmobiledip .logo .fill26 {
   background-color: rgba(255, 255, 255, 0);
   top: 17px;
   height: 1px;
@@ -1310,7 +1310,7 @@
   left: 4px;
 }
 
-.casestudiesreplycomponents .bodytext .navmobiledip .icstar {
+.reply_components .bodytext .navmobiledip .icstar {
   background-color: rgba(255, 255, 255, 0);
   top: 48px;
   height: 24px;
@@ -1319,7 +1319,7 @@
   left: 280px;
 }
 
-.casestudiesreplycomponents .bodytext .navmobiledip .icstar .rectangle5copy {
+.reply_components .bodytext .navmobiledip .icstar .rectangle5copy {
   background-color: rgba(255, 255, 255, 0);
   top: 0;
   height: 24px;
@@ -1328,7 +1328,7 @@
   left: 0;
 }
 
-.casestudiesreplycomponents .bodytext .navmobiledip .icstar .color17262a {
+.reply_components .bodytext .navmobiledip .icstar .color17262a {
   background-color: rgba(255, 255, 255, 0);
   top: 4px;
   height: 16px;
@@ -1337,7 +1337,7 @@
   left: 4px;
 }
 
-.casestudiesreplycomponents .bodytext .navmobiledip .icstar .color17262a .color17262a1 {
+.reply_components .bodytext .navmobiledip .icstar .color17262a .color17262a1 {
   background-color: rgba(255, 255, 255, 0);
   top: 0;
   height: 16px;
@@ -1346,7 +1346,7 @@
   left: 0;
 }
 
-.casestudiesreplycomponents .bodytext .navmobiledip .icmorevert {
+.reply_components .bodytext .navmobiledip .icmorevert {
   background-color: rgba(255, 255, 255, 0);
   top: 48px;
   height: 24px;
@@ -1355,7 +1355,7 @@
   left: 320px;
 }
 
-.casestudiesreplycomponents .bodytext .navmobiledip .icmorevert .shape {
+.reply_components .bodytext .navmobiledip .icmorevert .shape {
   background-color: rgba(255, 255, 255, 0);
   top: 0;
   height: 24px;
@@ -1364,7 +1364,7 @@
   left: 0;
 }
 
-.casestudiesreplycomponents .bodytext .navmobiledip .icmorevert .color17262a {
+.reply_components .bodytext .navmobiledip .icmorevert .color17262a {
   background-color: rgba(255, 255, 255, 0);
   top: 4px;
   height: 16px;
@@ -1373,7 +1373,7 @@
   left: 10px;
 }
 
-.casestudiesreplycomponents .bodytext .navmobiledip .icmorevert .color17262a .color17262a1 {
+.reply_components .bodytext .navmobiledip .icmorevert .color17262a .color17262a1 {
   background-color: rgba(255, 255, 255, 0);
   top: 0;
   height: 16px;
@@ -1382,98 +1382,100 @@
   left: 0;
 }
 
-.casestudiesreplycomponents .buttonnavedit {
+.reply_components .buttonnavedit {
+  box-shadow: none;
     top: 275px;
     height: 60px;
     width: 60px;
     position: absolute;
     left: 800px;
 }
-.casestudiesreplycomponents .buttonnavedit .oval {
+.reply_components .buttonnavedit .oval {
   top                 : 0px;
   height              : 60px;
   width               : 60px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .buttonnavedit .icedit24px {
+.reply_components .buttonnavedit .icedit24px {
   top                 : 17px;
   height              : 24px;
   width               : 24px;
   position            : absolute;
   left                : 17px;
 }
-.casestudiesreplycomponents .buttonnavedit .icedit24px .shape {
+.reply_components .buttonnavedit .icedit24px .shape {
   top                 : 0px;
   height              : 24px;
   width               : 24px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .buttonnavedit .icedit24px .shape1 {
+.reply_components .buttonnavedit .icedit24px .shape1 {
   top                 : 3px;
   height              : 18px;
   width               : 18px;
   position            : absolute;
   left                : 3px;
 }
-.casestudiesreplycomponents .buttonnavreply {
+.reply_components .buttonnavreply {
+  box-shadow: none;
     top: 275px;
     height: 60px;
     width: 60px;
     position: absolute;
     left: 900px;
 }
-.casestudiesreplycomponents .buttonnavreply .oval {
+.reply_components .buttonnavreply .oval {
   top                 : 0px;
   height              : 60px;
   width               : 60px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .buttonnavreply .icreplyblack {
+.reply_components .buttonnavreply .icreplyblack {
   top                 : 17px;
   height              : 24px;
   width               : 24px;
   position            : absolute;
   left                : 17px;
 }
-.casestudiesreplycomponents .buttonnavreply .icreplyblack .shape {
+.reply_components .buttonnavreply .icreplyblack .shape {
   top                 : 0px;
   height              : 24px;
   width               : 24px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .buttonnavreply .icreplyblack .fill1 {
+.reply_components .buttonnavreply .icreplyblack .fill1 {
   top                 : 5px;
   height              : 14px;
   width               : 24px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .group7 {
+.reply_components .group7 {
   top: -120px;
   height              : 232px;
   width               : 360px;
   position            : absolute;
   left                : 410px;
 }
-.casestudiesreplycomponents .group7 .profiles {
+.reply_components .group7 .profiles {
   top                 : 0px;
   height              : 232px;
   width               : 360px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .group7 .profiles .bg {
+.reply_components .group7 .profiles .bg {
   top                 : 0px;
   height              : 232px;
   width               : 360px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .group7 .profiles .jeffersoncgmailcom {
+.reply_components .group7 .profiles .jeffersoncgmailcom {
   top                 : 129px;
   height              : auto;
   width               : auto;
@@ -1484,7 +1486,7 @@
   text-align          : left;
   line-height         : 14.0px;
 }
-.casestudiesreplycomponents .group7 .profiles .jeffersonloveshiking {
+.reply_components .group7 .profiles .jeffersonloveshiking {
   top                 : 81px;
   height              : auto;
   width               : auto;
@@ -1498,7 +1500,7 @@
   text-align          : left;
   line-height         : 14.0px;
 }
-.casestudiesreplycomponents .group7 .profiles .hikingfangmailcom {
+.reply_components .group7 .profiles .hikingfangmailcom {
   top                 : 33px;
   height              : auto;
   width               : auto;
@@ -1509,49 +1511,49 @@
   text-align          : left;
   line-height         : 14.0px;
 }
-.casestudiesreplycomponents .group7 .profiles .avatardark {
+.reply_components .group7 .profiles .avatardark {
   top                 : 22px;
   height              : 36px;
   width               : 36px;
   position            : absolute;
   left                : 22px;
 }
-.casestudiesreplycomponents .group7 .profiles .avatardark .avatar {
+.reply_components .group7 .profiles .avatardark .avatar {
   top                 : 0px;
   height              : 36px;
   width               : 36px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .group7 .profiles .avatardark1 {
+.reply_components .group7 .profiles .avatardark1 {
   top                 : 70px;
   height              : 36px;
   width               : 36px;
   position            : absolute;
   left                : 22px;
 }
-.casestudiesreplycomponents .group7 .profiles .avatardark1 .avatar {
+.reply_components .group7 .profiles .avatardark1 .avatar {
   top                 : 0px;
   height              : 36px;
   width               : 36px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .group7 .profiles .avatardark2 {
+.reply_components .group7 .profiles .avatardark2 {
   top                 : 118px;
   height              : 36px;
   width               : 36px;
   position            : absolute;
   left                : 22px;
 }
-.casestudiesreplycomponents .group7 .profiles .avatardark2 .avatar {
+.reply_components .group7 .profiles .avatardark2 .avatar {
   top                 : 0px;
   height              : 36px;
   width               : 36px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .group7 .profiles .iccheckmark {
+.reply_components .group7 .profiles .iccheckmark {
   top                 : 76px;
   height              : 24px;
   width               : 24px;
@@ -1559,28 +1561,28 @@
   left                : 312px;
   overflow            : hidden;
 }
-.casestudiesreplycomponents .group7 .profiles .iccheckmark .background {
+.reply_components .group7 .profiles .iccheckmark .background {
   top                 : 0px;
   height              : 24px;
   width               : 24px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .group7 .profiles .iccheckmark .color17262a {
+.reply_components .group7 .profiles .iccheckmark .color17262a {
   top                 : 6px;
   height              : 13px;
   width               : 16px;
   position            : absolute;
   left                : 4px;
 }
-.casestudiesreplycomponents .group7 .profiles .iccheckmark .color17262a .color17262a1 {
+.reply_components .group7 .profiles .iccheckmark .color17262a .color17262a1 {
   top                 : 0px;
   height              : 13px;
   width               : 16px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .group7 .navmobilelogoalt {
+.reply_components .group7 .navmobilelogoalt {
   top                 : 176px;
   height              : 56px;
   width               : 360px;
@@ -1588,14 +1590,14 @@
   left                : 0px;
   overflow            : hidden;
 }
-.casestudiesreplycomponents .group7 .navmobilelogoalt .background {
+.reply_components .group7 .navmobilelogoalt .background {
   top                 : 0px;
   height              : 56px;
   width               : 360px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .group7 .navmobilelogoalt .navbg {
+.reply_components .group7 .navmobilelogoalt .navbg {
   top                 : -155px;
   height              : 368px;
   width               : 64px;
@@ -1605,35 +1607,35 @@
   -webkit-transform   : rotate(-90deg); /* Chrome, Safari, Opera */
   transform           : rotate(-90deg);
 }
-.casestudiesreplycomponents .group7 .navmobilelogoalt .icarrowup {
+.reply_components .group7 .navmobilelogoalt .icarrowup {
   top                 : 18px;
   height              : 20px;
   width               : 20px;
   position            : absolute;
   left                : 12px;
 }
-.casestudiesreplycomponents .group7 .navmobilelogoalt .icarrowup .shape {
+.reply_components .group7 .navmobilelogoalt .icarrowup .shape {
   top                 : 0px;
   height              : 20px;
   width               : 20px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .group7 .navmobilelogoalt .icarrowup .color17262a {
+.reply_components .group7 .navmobilelogoalt .icarrowup .color17262a {
   top                 : 9px;
   height              : 5px;
   width               : 10px;
   position            : absolute;
   left                : 5px;
 }
-.casestudiesreplycomponents .group7 .navmobilelogoalt .icarrowup .color17262a .color17262a1 {
+.reply_components .group7 .navmobilelogoalt .icarrowup .color17262a .color17262a1 {
   top                 : 0px;
   height              : 5px;
   width               : 10px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .group7 .navmobilelogoalt .logo {
+.reply_components .group7 .navmobilelogoalt .logo {
   top                 : 18px;
   height              : 21px;
   width               : 21px;
@@ -1641,196 +1643,196 @@
   left                : 36px;
   overflow            : hidden;
 }
-.casestudiesreplycomponents .group7 .navmobilelogoalt .logo .background1 {
+.reply_components .group7 .navmobilelogoalt .logo .background1 {
   top                 : 0px;
   height              : 20px;
   width               : 21px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .group7 .navmobilelogoalt .logo .fill1 {
+.reply_components .group7 .navmobilelogoalt .logo .fill1 {
   top                 : 2px;
   height              : 1px;
   width               : 1px;
   position            : absolute;
   left                : 19px;
 }
-.casestudiesreplycomponents .group7 .navmobilelogoalt .logo .fill3 {
+.reply_components .group7 .navmobilelogoalt .logo .fill3 {
   top                 : 0px;
   height              : 19px;
   width               : 21px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .group7 .navmobilelogoalt .logo .fill6 {
+.reply_components .group7 .navmobilelogoalt .logo .fill6 {
   top                 : 3px;
   height              : 9px;
   width               : 8px;
   position            : absolute;
   left                : 6px;
 }
-.casestudiesreplycomponents .group7 .navmobilelogoalt .logo .fill8 {
+.reply_components .group7 .navmobilelogoalt .logo .fill8 {
   top                 : 16px;
   height              : 1px;
   width               : 1px;
   position            : absolute;
   left                : 9px;
 }
-.casestudiesreplycomponents .group7 .navmobilelogoalt .logo .fill10 {
+.reply_components .group7 .navmobilelogoalt .logo .fill10 {
   top                 : 17px;
   height              : 1px;
   width               : 1px;
   position            : absolute;
   left                : 10px;
 }
-.casestudiesreplycomponents .group7 .navmobilelogoalt .logo .fill12 {
+.reply_components .group7 .navmobilelogoalt .logo .fill12 {
   top                 : 16px;
   height              : 1px;
   width               : 1px;
   position            : absolute;
   left                : 7px;
 }
-.casestudiesreplycomponents .group7 .navmobilelogoalt .logo .fill14 {
+.reply_components .group7 .navmobilelogoalt .logo .fill14 {
   top                 : 16px;
   height              : 1px;
   width               : 1px;
   position            : absolute;
   left                : 5px;
 }
-.casestudiesreplycomponents .group7 .navmobilelogoalt .logo .fill16 {
+.reply_components .group7 .navmobilelogoalt .logo .fill16 {
   top                 : 17px;
   height              : 1px;
   width               : 1px;
   position            : absolute;
   left                : 6px;
 }
-.casestudiesreplycomponents .group7 .navmobilelogoalt .logo .fill18 {
+.reply_components .group7 .navmobilelogoalt .logo .fill18 {
   top                 : 17px;
   height              : 1px;
   width               : 1px;
   position            : absolute;
   left                : 8px;
 }
-.casestudiesreplycomponents .group7 .navmobilelogoalt .logo .fill20 {
+.reply_components .group7 .navmobilelogoalt .logo .fill20 {
   top                 : 16px;
   height              : 1px;
   width               : 1px;
   position            : absolute;
   left                : 3px;
 }
-.casestudiesreplycomponents .group7 .navmobilelogoalt .logo .fill22 {
+.reply_components .group7 .navmobilelogoalt .logo .fill22 {
   top                 : 16px;
   height              : 1px;
   width               : 1px;
   position            : absolute;
   left                : 2px;
 }
-.casestudiesreplycomponents .group7 .navmobilelogoalt .logo .fill24 {
+.reply_components .group7 .navmobilelogoalt .logo .fill24 {
   top                 : 17px;
   height              : 1px;
   width               : 1px;
   position            : absolute;
   left                : 2px;
 }
-.casestudiesreplycomponents .group7 .navmobilelogoalt .logo .fill26 {
+.reply_components .group7 .navmobilelogoalt .logo .fill26 {
   top                 : 17px;
   height              : 1px;
   width               : 1px;
   position            : absolute;
   left                : 4px;
 }
-.casestudiesreplycomponents .navmobiledipcopy {
+.reply_components .navmobiledipcopy {
     top: 410px;
   height              : 73px;
   width               : 352px;
   position            : absolute;
   left                : -212px;
 }
-.casestudiesreplycomponents .navmobiledipcopy .background {
+.reply_components .navmobiledipcopy .background {
   top                 : 0px;
   height              : 88px;
   width               : 360px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .navmobiledipcopy .bgnav {
+.reply_components .navmobiledipcopy .bgnav {
   top                 : 32px;
   height              : 56px;
   width               : 360px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .navmobiledipcopy .buttonnav {
+.reply_components .navmobiledipcopy .buttonnav {
   top                 : -1px;
   height              : 60px;
   width               : 60px;
   position            : absolute;
   left                : 151px;
 }
-.casestudiesreplycomponents .navmobiledipcopy .buttonnav .oval {
+.reply_components .navmobiledipcopy .buttonnav .oval {
   top                 : 0px;
   height              : 60px;
   width               : 60px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .navmobiledipcopy .buttonnav .icedit {
+.reply_components .navmobiledipcopy .buttonnav .icedit {
   top                 : 17px;
   height              : 24px;
   width               : 24px;
   position            : absolute;
   left                : 17px;
 }
-.casestudiesreplycomponents .navmobiledipcopy .buttonnav .icedit .shape {
+.reply_components .navmobiledipcopy .buttonnav .icedit .shape {
   top                 : 0px;
   height              : 24px;
   width               : 24px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .navmobiledipcopy .buttonnav .icedit .color17262a {
+.reply_components .navmobiledipcopy .buttonnav .icedit .color17262a {
   top                 : 5px;
   height              : 14px;
   width               : 18px;
   position            : absolute;
   left                : 3px;
 }
-.casestudiesreplycomponents .navmobiledipcopy .buttonnav .icedit .color17262a .color17262a1 {
+.reply_components .navmobiledipcopy .buttonnav .icedit .color17262a .color17262a1 {
   top                 : 0px;
   height              : 14px;
   width               : 18px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .navmobiledipcopy .icarrowup {
+.reply_components .navmobiledipcopy .icarrowup {
   top                 : 50px;
   height              : 20px;
   width               : 20px;
   position            : absolute;
   left                : 12px;
 }
-.casestudiesreplycomponents .navmobiledipcopy .icarrowup .shape {
+.reply_components .navmobiledipcopy .icarrowup .shape {
   top                 : 0px;
   height              : 20px;
   width               : 20px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .navmobiledipcopy .icarrowup .color17262a {
+.reply_components .navmobiledipcopy .icarrowup .color17262a {
   top                 : 8px;
   height              : 5px;
   width               : 10px;
   position            : absolute;
   left                : 5px;
 }
-.casestudiesreplycomponents .navmobiledipcopy .icarrowup .color17262a .color17262a1 {
+.reply_components .navmobiledipcopy .icarrowup .color17262a .color17262a1 {
   top                 : 0px;
   height              : 5px;
   width               : 10px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .navmobiledipcopy .logo {
+.reply_components .navmobiledipcopy .logo {
   top                 : 50px;
   height              : 21px;
   width               : 21px;
@@ -1838,161 +1840,161 @@
   left                : 36px;
   overflow            : hidden;
 }
-.casestudiesreplycomponents .navmobiledipcopy .logo .background1 {
+.reply_components .navmobiledipcopy .logo .background1 {
   top                 : 0px;
   height              : 20px;
   width               : 21px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .navmobiledipcopy .logo .fill1 {
+.reply_components .navmobiledipcopy .logo .fill1 {
   top                 : 2px;
   height              : 1px;
   width               : 1px;
   position            : absolute;
   left                : 19px;
 }
-.casestudiesreplycomponents .navmobiledipcopy .logo .fill3 {
+.reply_components .navmobiledipcopy .logo .fill3 {
   top                 : 0px;
   height              : 19px;
   width               : 21px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .navmobiledipcopy .logo .fill6 {
+.reply_components .navmobiledipcopy .logo .fill6 {
   top                 : 3px;
   height              : 9px;
   width               : 8px;
   position            : absolute;
   left                : 6px;
 }
-.casestudiesreplycomponents .navmobiledipcopy .logo .fill8 {
+.reply_components .navmobiledipcopy .logo .fill8 {
   top                 : 16px;
   height              : 1px;
   width               : 1px;
   position            : absolute;
   left                : 9px;
 }
-.casestudiesreplycomponents .navmobiledipcopy .logo .fill10 {
+.reply_components .navmobiledipcopy .logo .fill10 {
   top                 : 17px;
   height              : 1px;
   width               : 1px;
   position            : absolute;
   left                : 10px;
 }
-.casestudiesreplycomponents .navmobiledipcopy .logo .fill12 {
+.reply_components .navmobiledipcopy .logo .fill12 {
   top                 : 16px;
   height              : 1px;
   width               : 1px;
   position            : absolute;
   left                : 7px;
 }
-.casestudiesreplycomponents .navmobiledipcopy .logo .fill14 {
+.reply_components .navmobiledipcopy .logo .fill14 {
   top                 : 16px;
   height              : 1px;
   width               : 1px;
   position            : absolute;
   left                : 5px;
 }
-.casestudiesreplycomponents .navmobiledipcopy .logo .fill16 {
+.reply_components .navmobiledipcopy .logo .fill16 {
   top                 : 17px;
   height              : 1px;
   width               : 1px;
   position            : absolute;
   left                : 6px;
 }
-.casestudiesreplycomponents .navmobiledipcopy .logo .fill18 {
+.reply_components .navmobiledipcopy .logo .fill18 {
   top                 : 17px;
   height              : 1px;
   width               : 1px;
   position            : absolute;
   left                : 8px;
 }
-.casestudiesreplycomponents .navmobiledipcopy .logo .fill20 {
+.reply_components .navmobiledipcopy .logo .fill20 {
   top                 : 16px;
   height              : 1px;
   width               : 1px;
   position            : absolute;
   left                : 3px;
 }
-.casestudiesreplycomponents .navmobiledipcopy .logo .fill22 {
+.reply_components .navmobiledipcopy .logo .fill22 {
   top                 : 16px;
   height              : 1px;
   width               : 1px;
   position            : absolute;
   left                : 2px;
 }
-.casestudiesreplycomponents .navmobiledipcopy .logo .fill24 {
+.reply_components .navmobiledipcopy .logo .fill24 {
   top                 : 17px;
   height              : 1px;
   width               : 1px;
   position            : absolute;
   left                : 2px;
 }
-.casestudiesreplycomponents .navmobiledipcopy .logo .fill26 {
+.reply_components .navmobiledipcopy .logo .fill26 {
   top                 : 17px;
   height              : 1px;
   width               : 1px;
   position            : absolute;
   left                : 4px;
 }
-.casestudiesreplycomponents .navmobiledipcopy .icstar {
+.reply_components .navmobiledipcopy .icstar {
   top                 : 48px;
   height              : 24px;
   width               : 24px;
   position            : absolute;
   left                : 280px;
 }
-.casestudiesreplycomponents .navmobiledipcopy .icstar .rectangle5copy {
+.reply_components .navmobiledipcopy .icstar .rectangle5copy {
   top                 : 0px;
   height              : 24px;
   width               : 24px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .navmobiledipcopy .icstar .color17262a {
+.reply_components .navmobiledipcopy .icstar .color17262a {
   top                 : 4px;
   height              : 16px;
   width               : 16px;
   position            : absolute;
   left                : 4px;
 }
-.casestudiesreplycomponents .navmobiledipcopy .icstar .color17262a .color17262a1 {
+.reply_components .navmobiledipcopy .icstar .color17262a .color17262a1 {
   top                 : 0px;
   height              : 16px;
   width               : 16px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .navmobiledipcopy .icmorevert {
+.reply_components .navmobiledipcopy .icmorevert {
   top                 : 48px;
   height              : 24px;
   width               : 24px;
   position            : absolute;
   left                : 320px;
 }
-.casestudiesreplycomponents .navmobiledipcopy .icmorevert .shape {
+.reply_components .navmobiledipcopy .icmorevert .shape {
   top                 : 0px;
   height              : 24px;
   width               : 24px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .navmobiledipcopy .icmorevert .color17262a {
+.reply_components .navmobiledipcopy .icmorevert .color17262a {
   top                 : 4px;
   height              : 16px;
   width               : 4px;
   position            : absolute;
   left                : 10px;
 }
-.casestudiesreplycomponents .navmobiledipcopy .icmorevert .color17262a .color17262a1 {
+.reply_components .navmobiledipcopy .icmorevert .color17262a .color17262a1 {
   top                 : 0px;
   height              : 16px;
   width               : 4px;
   position            : absolute;
   left                : 0px;
 }
-.casestudiesreplycomponents .feedmobile5copy {
+.reply_components .feedmobile5copy {
     background: white;
     top: 161px;
     max-height: 220px;
@@ -2003,14 +2005,14 @@
     padding: 20px;
     box-sizing: border-box;
 }
-.casestudiesreplycomponents .feedmobile5copy .bg {
+.reply_components .feedmobile5copy .bg {
   top                 : 0px;
   height              : 192px;
   width               : 352px;
   position            : relative;
   left                : 0px;
 }
-.casestudiesreplycomponents .feedmobile5copy .brittaholtu201418hrs {
+.reply_components .feedmobile5copy .brittaholtu201418hrs {
   top                 : 0px;
   height              : auto;
   width               : auto;
@@ -2022,7 +2024,7 @@
   letter-spacing      : 0.17px;
   line-height         : 14.0px;
 }
-.casestudiesreplycomponents .feedmobile5copy .weshouldmakethis {
+.reply_components .feedmobile5copy .weshouldmakethis {
     top: 0px;
     height: auto;
     width: 194px;
@@ -2035,7 +2037,7 @@
     line-height: 1.5;
     margin-top: 20px; 
 }
-.casestudiesreplycomponents .feedmobile5copy .raspberrypie {
+.reply_components .feedmobile5copy .raspberrypie {
     top: 0px;
     height: auto;
     width: auto;
@@ -2049,7 +2051,7 @@
     /* line-height: 16.0px; */
     margin-top: 10px;
 }
-.casestudiesreplycomponents .feedmobile5copy .recipetotry {
+.reply_components .feedmobile5copy .recipetotry {
     margin-top: 10px;
     height: auto;
     width: auto;
@@ -2061,7 +2063,7 @@
     margin-bottom: 20px;
     text-align: left;
 }
-.casestudiesreplycomponents .feedmobile5copy .img {
+.reply_components .feedmobile5copy .img {
     top: 90px;
   height              : 96px;
   width               : 96px;
@@ -2069,14 +2071,14 @@
   left                : 12px;
   object-fit          : cover;
 }
-.casestudiesreplycomponents .feedmobile5copy .avatar {
+.reply_components .feedmobile5copy .avatar {
   top                 : 15px;
   height              : 38px;
   width               : 38px;
   position            : absolute;
   left                : 299px;
 }
-.casestudiesreplycomponents .feedmobile5copy .avatar .avatar1 {
+.reply_components .feedmobile5copy .avatar .avatar1 {
   top                 : 0px;
   height              : 38px;
   width               : 38px;
@@ -2189,4 +2191,17 @@
   -ms-transform: rotate(0);
   -webkit-transform: rotate(0);
   transform: rotate(0)
+}
+
+
+#font_title{
+  text-align: center;
+    top: 155px;
+    width: 352px;
+    position: absolute;
+    left: 200px;
+    box-shadow:none !important;
+}
+.reply_components>div>div{
+  box-shadow:0vh 0vh 7px rgba(60, 64, 67, 0.33)
 }

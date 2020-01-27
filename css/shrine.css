@@ -15,7 +15,6 @@
                 width: 100%;
                 height: 240px;
                 box-sizing: border-box;
-                background-image: url(img/clothes_1.png);
                 background-size: cover;
             }
             .shrine .overline{
@@ -54,7 +53,8 @@
                 line-height: 50px;
             }
             .shrine .dropdown_button{
-                background-image: url(dropdown.svg);
+                /*background-image: url(dropdown.svg);*/
+                /*background-image: url(dropdown.svg);*/
                 background-size: 40px;
                 background-repeat: no-repeat;
                 background-position: right;
@@ -135,12 +135,10 @@
             .shrine .img_wrapper div:nth-child(1) .img{
                 height: 250px;
                 width: 100%;
-                background-image: url(img/clothes_2.png);
                 background-size: cover;
             }
             .shrine .img_wrapper div:nth-child(2) .img{
                 height: 250px;
                 width: 100%;
-                background-image: url(img/clothes_3.png);
                 background-size: cover;
             }

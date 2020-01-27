@@ -24,6 +24,7 @@ body{
     left: 0;
     z-index: 10;
 }
+#saveimage_wrapper,
 #fontlist_wrapper{
     float: left;
     display: inline-block;
@@ -32,10 +33,13 @@ body{
     z-index: 10;
     position: relative;
 }
+#saveimage_wrapper{
+    float: right;
+}
 .select_layout{
     float: left;
     color: white;
-    background: #0086ea;
+    background: #61bbff;
     display: inline-block;
     top: 0;
     border-radius: 22px;
@@ -56,8 +60,16 @@ body{
     text-decoration: none;
     vertical-align: top;
     float: right;
-    margin-right: 24px;
+    margin-right: 16px;
+    transition: 0.3s
 }
+.select_layout:hover{
+    background:#0086ea; 
+}
+.select_layout_selected{
+    background:#0086ea; 
+}
+#save,
 #select_fonts{
     display: inline-block;
     white-space: nowrap;
@@ -73,7 +85,8 @@ body{
     position: relative;
     margin-bottom: 10px;
     box-sizing: border-box;
-    background-image: url(dropdown.svg);
+    background-image: url(dropdown.svg); 
+    /*background-image: url(dropdown.svg);*/
     background-size: 40px;
     background-repeat: no-repeat;
     background-position: right;
@@ -82,6 +95,7 @@ body{
 #select_fonts img{
     width: 10px
 }
+#savelist,
 #objectlist_wrapper{
     padding-top: 10px;
     box-shadow: 0px 0px 3px 3px rgba(60, 64, 67, 0.33);
@@ -107,6 +121,7 @@ body{
 .ps-scrollbar-x-rail,.ps-scrollbar-y-rail{
     pointer-events: none;
 }
+#savelist>div,
 #objectlist_wrapper .fontlist{
     font-size: 14px;
     line-height: 40px;
@@ -114,6 +129,7 @@ body{
     box-sizing: border-box;
     cursor: pointer;
 }
+#savelist>div:hover,
 #objectlist_wrapper .fontlist:hover{
     background: #d2d2d2;
     cursor: pointer;
@@ -145,6 +161,11 @@ body{
     vertical-align: top;
     float: right;
     margin-right: 24px;
+}
+#saveimage_wrapper:hover #savelist{
+    pointer-events: all;
+    opacity: 1;
+    height: 160px;
 }
 #googlefont:hover{
     background: #d2d2d2;
@@ -372,11 +393,19 @@ tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption
 #objectlist_wrapper{
     transition: opacity 0.1s ease-in
 }
+.container{
+    display: none;
+}
+.selected_container{
+    display: block !important;
+}
 #container_2{background-color:rgb(230, 230, 230)}
 #container_1,
 #container_2,
 #container_3,
-#container_4{
+#container_4,
+#container_5,
+#container_6{
     /*background-image: url('bgs/3.png');*/
     background-size: contain;
     background-position: center;
@@ -385,34 +414,40 @@ tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption
     margin-top: 60px;
     position: absolute;
     display: none;
+} 
+.zindex{
+    z-index: 1 !important
 }
 #container_1{
-    display: block;
+    /*display: block;*/
 }
 #container_2>div,
 #container_3>div,
-#container_4{
+#container_4,
+#container_5>div,
+#container_6{
     position: absolute;
     width: 100%;
     height: 100%
 }
 #container_2>div>div,
 #container_3>div>div,
-#container_4>div{
+#container_4>div,
+#container_5>div>div,
+#container_6>div{
     left: 50%;
     top: 50%;
     position: absolute;
 }
-.reply_device,
-.basil_device,
-.topics_device,
-.reply_pattern,
-.basil_pattern,
-.topics_pattern{
+.template{
+    display: none;
     opacity: 0
 }
 .showable{
-    opacity: 1
+    display: block !important;
+}
+.shown{
+    opacity: 1 !important
 }
 
 #sketch_wrapper{
@@ -423,9 +458,10 @@ tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption
     position: relative;
     background-color: #EDEDED;
 }
-#select_sketch_frame,
+#select_single_frame,
 #select_layout_pattern_frame,
-#select_layout_device_frame{
+#select_layout_device_frame,
+#select_layout_desktop_frame{
     transform: translateX(-50%) translateY(-100%);
     position: absolute;
     vertical-align: top;
@@ -437,13 +473,14 @@ tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption
     z-index: 100000;
     }
 #select_layout_device_frame,
-#select_layout_pattern_frame{
-    left: 50vw;
+#select_layout_pattern_frame,
+#select_layout_desktop_frame{
+    left: 25vw;
 }
-.sketch{}
-.select_sketch,
+.select_single,
 .select_layout_pattern,
-.select_layout_device{ 
+.select_layout_device,
+.select_layout_desktop{ 
     vertical-align: middle;
     position: relative;
     height: 25px;
@@ -463,7 +500,7 @@ tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption
     padding-right: 1px;
     box-sizing: border-box;
 }
-.select_sketch:hover{
+.select_single:hover{
     opacity: 0.75;
 }
 
@@ -566,8 +603,23 @@ tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption
     box-shadow:0vh 0vh 7px rgba(60, 64, 67, 0.33), 0vh 0vh 0px 100vh #feeae6 !importants
 }
 
-
-
+#container_5 #template_1{
+    background-color: #b4c1cc
+    
+}
+#container_5 #template_2{
+    background-color:#DEF3E5
+    
+}
+#container_5 #template_3{
+    background-color: #b4c1cc
+    
+}
+#container_5 #template_1>div,
+#container_5 #template_2>div,
+#container_5 #template_3>div{
+    box-shadow:0vh 0vh 7px rgba(60, 64, 67, 0.33)
+}
 
 @-webkit-keyframes loading {
     0% {width: 0%;}
@@ -589,4 +641,11 @@ tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption
 .fadedown{
     transform:translateY(10px);
 }
+
+
+.hidewhencapture{
+    display: none !important
+} 
+
+
             /*------------sketch_3-----------*/

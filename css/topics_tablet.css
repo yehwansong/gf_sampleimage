@@ -4,7 +4,7 @@
     color: #ffffff !important;
 }
 .topics_tablet  {
-  background-image: url(../bgs/5.png);
+  /*background-image: url(../bgs/5.png);*/
   background-size: contain;
   top                 : 0px;
   height              : 780px;

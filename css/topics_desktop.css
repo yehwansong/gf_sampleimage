@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik:500,700');
 
 .topics_desktop  {
-  background-image: url(../bgs/4.png);
+  /*background-image: url(../bgs/4.png);*/
   background-size: contain;
   top                 : 0px;
   height              : 780px;
