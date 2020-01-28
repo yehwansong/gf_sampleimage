@@ -23,51 +23,53 @@ function hasClass( target, className ) {
 
 
 window.onload = function () {
-
     // select_sketch()
     // function select_sketch(){
     $(document).ready(function(){
+    $('.select_template').click(function(){
+    })
+
         $('#select_single_1').click(function(){
         console.log(1)
              $('.select_single').removeClass('selected')
+             $('#container_1 .selectable').removeClass('selected')
              $(this).addClass('selected')
-             $('.sketch').removeClass('selected')
-             $('#sketch_1').addClass('selected')
+             $('#container_1 #template_1').addClass('selected')
         })
         $('#select_single_2').click(function(){
         console.log(1)
              $('.select_single').removeClass('selected')
+             $('#container_1 .selectable').removeClass('selected')
              $(this).addClass('selected')
-             $('.sketch').removeClass('selected')
-             $('#sketch_2').addClass('selected')
+             $('#container_1 #template_2').addClass('selected')
         })
         $('#select_single_3').click(function(){
         console.log(1)
              $('.select_single').removeClass('selected')
+             $('#container_1 .selectable').removeClass('selected')
              $(this).addClass('selected')
-             $('.sketch').removeClass('selected')
-             $('#sketch_3').addClass('selected')
+             $('#container_1 #template_3').addClass('selected')
         })
         $('#select_single_4').click(function(){
         console.log(1)
              $('.select_single').removeClass('selected')
+             $('#container_1 .selectable').removeClass('selected')
              $(this).addClass('selected')
-             $('.sketch').removeClass('selected')
-             $('#sketch_4').addClass('selected')
+             $('#container_1 #template_4').addClass('selected')
         })
         $('#select_single_5').click(function(){
         console.log(1)
              $('.select_single').removeClass('selected')
+             $('#container_1 .selectable').removeClass('selected')
              $(this).addClass('selected')
-             $('.sketch').removeClass('selected')
-             $('#sketch_5').addClass('selected')
+             $('#container_1 #template_5').addClass('selected')
         })
         $('#select_single_6').click(function(){
         console.log(1)
              $('.select_single').removeClass('selected')
+             $('#container_1 .selectable').removeClass('selected')
              $(this).addClass('selected')
-             $('.sketch').removeClass('selected')
-             $('#sketch_6').addClass('selected')
+             $('#container_1 #template_6').addClass('selected')
         })
 
 
@@ -240,7 +242,6 @@ window.onload = function () {
         // if singleapp
         sort_sketch(family,category)
         change_table(family,category)
-        show_layouts(family,category)
         change_title(family,category)
 
 
@@ -305,6 +306,7 @@ window.onload = function () {
 // //////singleapp//////
 
 
+// when user selects font step_3 -- change title for layout6
     function change_title(family,category){
         $('#main_font_title').text(family)
         $('#sub_font_title').text(family)
@@ -316,7 +318,7 @@ window.onload = function () {
             }
         setTimeout(function(){$('#container_6 .bodytext').css({'margin-top': $('#font_title').actual('height')+20 })},1000)
     }
-// when user selects font step_3 -- change table font
+// when user selects font step_3 -- change table font for layout1
     function change_table(family,category){
         $('td.x_3').html('Regular')
         $('td.x_2').html(family)
@@ -361,27 +363,13 @@ window.onload = function () {
         $('#container_'+$(this).attr('id').split('_')[2]).addClass('selected_container')
     });
 
-    function show_layouts(family,category){
-    }
-
-
     function sort_sketch(family,category){
         $('.selected').removeClass('selected')
         $('.selectable').removeClass('selectable')
-        $('.sketch').removeClass('selectable_sketch')
-        $('.select_single').removeClass('selectable')
-        $('.select_single').removeClass('selectable_select_sketch')
         if(category == 'handwriting'){
             for (var i = handwriting_subcat.length - 1; i >= 0; i--) {
                 if(String(handwriting_subcat[i][0]) === String(family)){
-                    console.log('.sketch.display_'+handwriting_subcat[i][1])
                     $('.display_'+handwriting_subcat[i][1]).addClass('selectable')
-                    $('.sketch.display_'+handwriting_subcat[i][1]).addClass('selectable selectable_sketch')
-                    $('.select_single.display_'+handwriting_subcat[i][1]).addClass('selectable selectable_select_sketch')
-
-                    $('#container_2 #template_2').addClass('selected')
-                    $('#container_3 #template_2').addClass('selected')
-                    $('#container_5 #template_2').addClass('selected')
                 }
             }
         }else if(category == 'display'){
@@ -389,155 +377,116 @@ window.onload = function () {
                 if(display_subcat[i][0] === family){
                     console.log($('.sketch.display_'+display_subcat[i][1]))
                     $('.display_'+display_subcat[i][1]).addClass('selectable')
-                    $('.sketch.display_'+display_subcat[i][1]).addClass('selectable_sketch')
-                    $('.select_single.display_'+display_subcat[i][1]).addClass('selectable_select_sketch')
-                    
-                    $('#container_2 #template_2').addClass('selected')
-                    $('#container_3 #template_2').addClass('selected')
-                    $('#container_5 #template_2').addClass('selected')
                 }
             }
         }else if(category == 'serif'){
-            console.log('1')
             if(exists(serif_subcat, family) || family.split(' ')[family.split(' ').length-1] === 'sc'){
-            console.log('2')
                     $('.display_1').addClass('selectable')
-                    $('.sketch.display_1').addClass('selectable_sketch')
-                    $('.select_single.display_1').addClass('selectable_select_sketch')
-                    
-                $('#container_2 #template_2').addClass('selected')
-                $('#container_3 #template_2').addClass('selected')
-                $('#container_5 #template_2').addClass('selected')
             }else{
             console.log('3')
                 $('.text').addClass('selectable')
-                $('.sketch.text').addClass('selectable selectable_sketch')
-                $('.select_single.text').addClass('selectable selectable_select_sketch')
-
-                $('#container_2 #template_1').addClass('selected')
-                $('#container_3 #template_1').addClass('selected')
-                $('#container_5 #template_1').addClass('selected')
             }
         }else{
-            console.log('4')
             if(exists(sansserif_subcat, family) || exists(mono_subcat,family) || family.split(' ')[family.split(' ').length-1] === 'sc'){
-            console.log('5')
                     $('.display_1').addClass('selectable')
-                    $('.sketch.display_1').addClass('selectable selectable_sketch')
-                    $('.select_single.display_1').addClass('selectable selectable_select_sketch')
-                    
-                    $('#container_2 #template_2').addClass('selected')
-                    $('#container_3 #template_2').addClass('selected')
-                    $('#container_5 #template_2').addClass('selected')
             }else{
-            console.log($('#container_5 #template_1'))
-                $('#container_5 #template_1').addClass('selected')
-            console.log($('#container_5 #template_1'))
-                $('#container_5 #template_1').addClass('asdfadfasf')
-
                 $('.text').addClass('selectable')
-                $('.sketch.text').addClass('selectable selectable_sketch')
-                $('.select_single.text').addClass('selectable selectable_select_sketch')
-                $('.sketch.utility').addClass('selectable selectable_sketch')
-                $('.select_single.utility').addClass('selectable selectable_select_sketch')
-
-                $('#container_2 #template_1').addClass('selected')
-                $('#container_3 #template_1').addClass('selected')
+                $('.utility').addClass('selectable')
             }
         }
         init_select_sketch()
     }
 
     function init_select_sketch(){
-        if($('.selectable').length > 0){
-            var selectable_sketch = document.getElementsByClassName('selectable_sketch')
-            var selectable_select_sketch = document.getElementsByClassName('selectable_select_sketch')
-            var random = Math.floor(Math.random() * selectable_select_sketch.length)
-            $('#container_1 .selected').removeClass('selected')
-            selectable_sketch[random].classList.add('selected');
-            selectable_select_sketch[random].classList.add('selected');
-        }else{
-            setTimeout(function(){init_select_sketch()}, 500);
+        for (var i = $('.container').length - 1; i >= 0; i--) {
+            if($('.selectable').length > 0){
+                var random = Math.floor(Math.random() * $('#container_'+ (i+1) +' .template.selectable').length)
+                $('#container_'+ (i+1) +' .selected').removeClass('selected')
+                $('#container_'+ (i+1) +' .template.selectable').eq(random).addClass('selected');
+                $('#container_'+ (i+1) +' .select_template.selectable').eq(random).addClass('selected');
+            }else{
+                setTimeout(function(){init_select_sketch()}, 500);
+            }
         }
     }
 
 
-// fullload()
-function fullload(){
-    if($('#sketch_3').length > 0){
-        grouping()
-    }else{
-        setTimeout(function(){fullload()}, 500);
-    }
-}
-    function grouping(){
-        $('#sketch_wrapper .h1').hover(function(){ 
-            // $(this).addClass('hovered')
-            $('.table .h1').parent().addClass('hovered') }, function(){ $('.hovered').removeClass('hovered') })
-        $('#sketch_wrapper .h2').hover(function(){ 
-            // $(this).addClass('hovered')
-            $('.table .h2').parent().addClass('hovered') }, function(){ $('.hovered').removeClass('hovered') })
-        $('#sketch_wrapper .h3').hover(function(){ 
-            // $(this).addClass('hovered')
-            $('.table .h3').parent().addClass('hovered') }, function(){ $('.hovered').removeClass('hovered') })
-        $('#sketch_wrapper .h4').hover(function(){ 
-            // $(this).addClass('hovered')
-            $('.table .h4').parent().addClass('hovered') }, function(){ $('.hovered').removeClass('hovered') })
-        $('#sketch_wrapper .h5').hover(function(){ 
-            // $(this).addClass('hovered')
-            $('.table .h5').parent().addClass('hovered') }, function(){ $('.hovered').removeClass('hovered') })
-        $('#sketch_wrapper .h6').hover(function(){ 
-            // $(this).addClass('hovered')
-            $('.table .h6').parent().addClass('hovered') }, function(){ $('.hovered').removeClass('hovered') })
+// // fullload()
+// function fullload(){
+//     if($('#sketch_3').length > 0){
+//         grouping()
+//     }else{
+//         setTimeout(function(){fullload()}, 500);
+//     }
+// }
+//     function grouping(){
+//         $('#sketch_wrapper .h1').hover(function(){ 
+//             // $(this).addClass('hovered')
+//             $('.table .h1').parent().addClass('hovered') }, function(){ $('.hovered').removeClass('hovered') })
+//         $('#sketch_wrapper .h2').hover(function(){ 
+//             // $(this).addClass('hovered')
+//             $('.table .h2').parent().addClass('hovered') }, function(){ $('.hovered').removeClass('hovered') })
+//         $('#sketch_wrapper .h3').hover(function(){ 
+//             // $(this).addClass('hovered')
+//             $('.table .h3').parent().addClass('hovered') }, function(){ $('.hovered').removeClass('hovered') })
+//         $('#sketch_wrapper .h4').hover(function(){ 
+//             // $(this).addClass('hovered')
+//             $('.table .h4').parent().addClass('hovered') }, function(){ $('.hovered').removeClass('hovered') })
+//         $('#sketch_wrapper .h5').hover(function(){ 
+//             // $(this).addClass('hovered')
+//             $('.table .h5').parent().addClass('hovered') }, function(){ $('.hovered').removeClass('hovered') })
+//         $('#sketch_wrapper .h6').hover(function(){ 
+//             // $(this).addClass('hovered')
+//             $('.table .h6').parent().addClass('hovered') }, function(){ $('.hovered').removeClass('hovered') })
 
-        $('#sketch_wrapper .subtitle1').hover(function(){ 
-            // $(this).addClass('hovered')
-            $('.table .subtitle1').parent().addClass('hovered') }, function(){ $('.hovered').removeClass('hovered') })
-        $('#sketch_wrapper .subtitle2').hover(function(){ 
-            // $(this).addClass('hovered')
-            $('.table .subtitle2').parent().addClass('hovered') }, function(){ $('.hovered').removeClass('hovered') })
+//         $('#sketch_wrapper .subtitle1').hover(function(){ 
+//             // $(this).addClass('hovered')
+//             $('.table .subtitle1').parent().addClass('hovered') }, function(){ $('.hovered').removeClass('hovered') })
+//         $('#sketch_wrapper .subtitle2').hover(function(){ 
+//             // $(this).addClass('hovered')
+//             $('.table .subtitle2').parent().addClass('hovered') }, function(){ $('.hovered').removeClass('hovered') })
 
-        $('#sketch_wrapper .body1').hover(function(){ 
-            // $(this).addClass('hovered')
-            $('.table .body1').parent().addClass('hovered') }, function(){ $('.hovered').removeClass('hovered') })
-        $('#sketch_wrapper .body2').hover(function(){ 
-            // $(this).addClass('hovered')
-            $('.table .body2').parent().addClass('hovered') }, function(){ $('.hovered').removeClass('hovered') })
-        $('#sketch_wrapper .button').hover(function(){ 
-            // $(this).addClass('hovered')
-            $('.table .button').parent().addClass('hovered') }, function(){ $('.hovered').removeClass('hovered') })
-        $('#sketch_wrapper .caption').hover(function(){ 
-            // $(this).addClass('hovered')
-            $('.table .caption').parent().addClass('hovered') }, function(){ $('.hovered').removeClass('hovered') })
-        $('#sketch_wrapper .overline').hover(function(){ 
-            // $(this).addClass('hovered')
-            $('.table .overline').parent().addClass('hovered') }, function(){ $('.hovered').removeClass('hovered') 
-            })
+//         $('#sketch_wrapper .body1').hover(function(){ 
+//             // $(this).addClass('hovered')
+//             $('.table .body1').parent().addClass('hovered') }, function(){ $('.hovered').removeClass('hovered') })
+//         $('#sketch_wrapper .body2').hover(function(){ 
+//             // $(this).addClass('hovered')
+//             $('.table .body2').parent().addClass('hovered') }, function(){ $('.hovered').removeClass('hovered') })
+//         $('#sketch_wrapper .button').hover(function(){ 
+//             // $(this).addClass('hovered')
+//             $('.table .button').parent().addClass('hovered') }, function(){ $('.hovered').removeClass('hovered') })
+//         $('#sketch_wrapper .caption').hover(function(){ 
+//             // $(this).addClass('hovered')
+//             $('.table .caption').parent().addClass('hovered') }, function(){ $('.hovered').removeClass('hovered') })
+//         $('#sketch_wrapper .overline').hover(function(){ 
+//             // $(this).addClass('hovered')
+//             $('.table .overline').parent().addClass('hovered') }, function(){ $('.hovered').removeClass('hovered') 
+//             })
 
-        $('.table tr').hover(function(){ 
-            var hoveredelement = $(this).find('.x_1').attr('class').split(' ')[1]
-                // $(this).addClass('hovered')
-                document.getElementById('sketch_wrapper').getElementsByClassName(hoveredelement)[0].classList.add("hovered");
-            },function(){
-                // $(this).removeClass('hovered') 
-                $('.hovered').removeClass('hovered')
-            })
-        $('.table tr').click(function(){ 
-            var hoveredelement = $(this).find('.x_1').attr('class').split(' ')[1]
-            $('.selected').removeClass('selected')
-            $('#select_single_'+document.getElementById('sketch_wrapper').getElementsByClassName(hoveredelement)[0].closest('.sketch').getAttribute('id').split('_')[1]).addClass('selected')
-            $('.sketch').removeClass('selected')
-            document.getElementById('sketch_wrapper').getElementsByClassName(hoveredelement)[0].closest('.sketch').classList.add('selected')
-            document.getElementById('sketch_wrapper').getElementsByClassName(hoveredelement)[0].closest('.sketch').scrollTo(0,document.getElementById('sketch_wrapper').getElementsByClassName(hoveredelement)[0].offsetTop - 30)
-        })
-    }
+//         $('.table tr').hover(function(){ 
+//             var hoveredelement = $(this).find('.x_1').attr('class').split(' ')[1]
+//                 // $(this).addClass('hovered')
+//                 document.getElementById('sketch_wrapper').getElementsByClassName(hoveredelement)[0].classList.add("hovered");
+//             },function(){
+//                 // $(this).removeClass('hovered') 
+//                 $('.hovered').removeClass('hovered')
+//             })
+//         $('.table tr').click(function(){ 
+//             var hoveredelement = $(this).find('.x_1').attr('class').split(' ')[1]
+//             $('.selected').removeClass('selected')
+//             $('#select_single_'+document.getElementById('sketch_wrapper').getElementsByClassName(hoveredelement)[0].closest('.sketch').getAttribute('id').split('_')[1]).addClass('selected')
+//             $('.sketch').removeClass('selected')
+//             document.getElementById('sketch_wrapper').getElementsByClassName(hoveredelement)[0].closest('.sketch').classList.add('selected')
+//             document.getElementById('sketch_wrapper').getElementsByClassName(hoveredelement)[0].closest('.sketch').scrollTo(0,document.getElementById('sketch_wrapper').getElementsByClassName(hoveredelement)[0].offsetTop - 30)
+//         })
+//     }
 
 
 
 $('#saveasimage_png_bg').click(function(){ 
     $('.selectable').addClass('hidewhencapture')
     $('.selected').removeClass('hidewhencapture')
-        html2canvas(document.querySelector("#container_1")).then(canvas => {
+        html2canvas(document.querySelector(".selected_container")).then(canvas => {
             document.body.appendChild(canvas)
             var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
             window.location.href=image; // it will save locally

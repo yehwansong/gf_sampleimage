@@ -424,6 +424,7 @@ tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption
 #container_1{
     /*display: block;*/
 }
+#container_1>div,
 #container_2>div,
 #container_3>div,
 #container_4,
@@ -444,13 +445,15 @@ tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption
 }
 .template{
     display: none;
-    opacity: 0
+    opacity: 0;
+    position: absolute;
 }
 .showable{
     display: block !important;
 }
 .shown{
-    opacity: 1 !important
+    opacity: 1 !important;
+
 }
 
 #sketch_wrapper{
@@ -474,6 +477,8 @@ tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption
     left: 25vw;
     /* top: -50px; */
     z-index: 100000;
+    width: auto !important;
+    height: 60px !important;
     }
 #select_layout_device_frame,
 #select_layout_pattern_frame,
@@ -530,7 +535,6 @@ tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption
 }
 .sketch{
     background-color: white;
-    display: none;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -538,8 +542,6 @@ tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     overflow:hidden;
-    opacity: 0;
-    pointer-events: none;
     transition: opacity 0.5s
 
 } 
