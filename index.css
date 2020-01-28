@@ -186,7 +186,7 @@ body{
     box-shadow: 0vh 0vh 0.8vh #ededed;
     width: 50%;
     float: left;
-    height: calc(52.3vw - 60px);
+    height: 52.3vw;
     z-index: 1000;
     position: relative;
 }
@@ -199,7 +199,7 @@ body{
     /* margin-top: calc(50% + 20px); */
     transform: translateY(-50%);
     margin-left: 10px;
-    margin-top: calc(50vh - 30px);
+    margin-top: 26.15vw;
     position: absolute;
     height: 100%;
     display: flex;
@@ -460,7 +460,7 @@ tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption
     overflow: hidden;
     width: 50%;
     float: left;
-    height: calc(52.3vw - 60px);
+    height: 52.3vw;
     position: relative;
     background-color: #EDEDED;
 }

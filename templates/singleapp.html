@@ -15,6 +15,15 @@
           crossorigin="anonymous"></script>
         </meta>
         <style type="text/css">
+            .device-shadow{
+                position: absolute;
+                width: 360px;
+                height: 640px;
+                overflow: hidden;
+                box-shadow: 0vh 0vh 7px rgba(60, 64, 67, 0.33);
+                left: 50%;
+                top: 50%;
+                transform: translateX(-50%) translateY(-50%);}
         </style>
         <script type="text/javascript">
         </script>
@@ -23,7 +32,7 @@
         <div class='singleapp'>
             <div id="sketch_wrapper">
               <div id="sketch_frame">
-                
+                <div class="device-shadow"></div>
                   <div id="sketch" class="sketch">
                   </div>
               </div>
