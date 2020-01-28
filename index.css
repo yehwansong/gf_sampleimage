@@ -186,7 +186,7 @@ body{
     box-shadow: 0vh 0vh 0.8vh #ededed;
     width: 50%;
     float: left;
-    height: calc(100vh - 60px);
+    height: calc(52.3vw - 60px);
     z-index: 1000;
     position: relative;
 }
@@ -412,8 +412,8 @@ tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption
     /*background-image: url('bgs/3.png');*/
     background-size: contain;
     background-position: center;
-    width: 100%;
-    height: calc(100% - 60px);
+    width: 100vw;
+    height: 52.3vw;
     margin-top: 60px;
     position: absolute;
     display: none;
@@ -460,7 +460,7 @@ tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption
     overflow: hidden;
     width: 50%;
     float: left;
-    height: calc(100vh - 60px);
+    height: calc(52.3vw - 60px);
     position: relative;
     background-color: #EDEDED;
 }
@@ -651,6 +651,9 @@ tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption
 .hidewhencapture{
     display: none !important
 } 
+.hideoverflow{
+    overflow: hidden;
+}
 
 
             /*------------sketch_3-----------*/
