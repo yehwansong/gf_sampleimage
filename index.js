@@ -320,29 +320,35 @@ window.onload = function () {
     }
 // when user selects font step_3 -- change table font for layout1
     function change_table(family,category){
-        $('td.x_3').html('Regular')
-        $('td.x_2').html(family)
-        var SC = family.split(' ')[family.split(' ').length-1]
-        if(category === 'display' || category === 'handwriting' || SC === 'SC') {
-            $('.y_7 .x_2').html(default_font)
-            $('.y_8 .x_2').html(default_font)
-            $('.y_9 .x_2').html(default_font)
-            $('.y_10 .x_2').html(default_font)
-            $('.y_11 .x_2').html(default_font)
-            $('.y_12 .x_2').html(default_font)
-            $('.y_13 .x_2').html(default_font)
-            $('.y_8 .x_3').html('Medium')
-            $('.y_11 .x_3').html('Medium')
+        if($('.x_2').length>1){
+            console.log('table')
+            console.log(family)
+            $('.x_3').html('Regular')
+            $('.x_2').html(family)
+            var SC = family.split(' ')[family.split(' ').length-1]
+            if(category === 'display' || category === 'handwriting' || SC === 'SC') {
+                $('.y_7 .x_2').html(default_font)
+                $('.y_8 .x_2').html(default_font)
+                $('.y_9 .x_2').html(default_font)
+                $('.y_10 .x_2').html(default_font)
+                $('.y_11 .x_2').html(default_font)
+                $('.y_12 .x_2').html(default_font)
+                $('.y_13 .x_2').html(default_font)
+                $('.y_8 .x_3').html('Medium')
+                $('.y_11 .x_3').html('Medium')
+            }else{
+            }
+            if(hasMedium){
+                $('.y_6 .x_3').html('Medium')
+                $('.y_8 .x_3').html('Medium')
+                $('.y_11 .x_3').html('Medium')
+            }
+            if(hasLight){
+                $('.y_1 .x_3').html('Light')
+                $('.y_2 .x_3').html('Light')
+            }
         }else{
-        }
-        if(hasMedium){
-            $('.y_6 .x_3').html('Medium')
-            $('.y_8 .x_3').html('Medium')
-            $('.y_11 .x_3').html('Medium')
-        }
-        if(hasLight){
-            $('.y_1 .x_3').html('Light')
-            $('.y_2 .x_3').html('Light')
+            setTimeout(function(){change_table(family,category)},300)
         }
     }
 // if table is too narrow(fond is superwide)remove 'heading'

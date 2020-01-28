@@ -589,23 +589,23 @@ tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption
     box-sizing: border-box;
     background-color: #DEF3E5
 }
-#sketch_1{
-    box-shadow:0vh 0vh 7px rgba(60, 64, 67, 0.33), 0vh 0vh 0px 100vh rgb(237, 237, 237)
+#template_1 #sketch{
+    background-color:rgb(237, 237, 237)
 }
-#sketch_2{
-    box-shadow:0vh 0vh 7px rgba(60, 64, 67, 0.45), 0vh 0vh 0px 100vh #f5d7e6
+#template_2 #sketch{
+    background-color:#f5d7e6
 }
-#sketch_3{
-    box-shadow:0vh 0vh 7px rgba(60, 64, 67, 0.33), 0vh 0vh 0px 100vh rgb(237, 237, 237) !importants
+#template_3 #sketch{
+    background-color:rgb(237, 237, 237) !important
 }
-#sketch_4{
-    box-shadow:0vh 0vh 7px rgba(60, 64, 67, 0.33), 0vh 0vh 0px 100vh #def3e5 !importants
+#template_4 #sketch{
+    background-color:#def3e5 !important
 }
-#sketch_5{
+#template_5 #sketch{
     background-color: #FFF583
 }
-#sketch_6{
-    box-shadow:0vh 0vh 7px rgba(60, 64, 67, 0.33), 0vh 0vh 0px 100vh #feeae6 !importants
+#template_6 #sketch{
+    background-color:#feeae6 !important
 }
 
 #container_5 #template_1{

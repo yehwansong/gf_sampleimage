@@ -91,7 +91,7 @@ $('document').ready(function(){
         $( "#container_2 #template_1" ).addClass('text')
         $( "#container_2 #select_layout_pattern_1" ).addClass('text')
 
-        $( "#container_2>#template_2" ).load( "templates/basil_pattern.html .basil_pattern",function(data){
+        $( "#container_2>#template_2" ).load( "templates/reply_pattern.html .reply_pattern",function(data){
             $('#container_2> #template_2 #contaier_1').load( "templates/basil_single_1.html .basil_single_1")
             $('#container_2> #template_2 #contaier_2').load( "templates/basil_single_4.html .basil_single_4")
             $('#container_2> #template_2 #contaier_3').load( "templates/basil_single_3.html .basil_single_3")
@@ -100,7 +100,7 @@ $('document').ready(function(){
         $( "#container_2 #template_2" ).addClass('display_1 display_2 display_3 display_6 display_4 display_5')
         $( "#container_2 #select_layout_pattern_2" ).addClass('display_1 display_2 display_3 display_6 display_4 display_5')
 
-        $( "#container_2>#template_3" ).load( "templates/topics_pattern.html .topics_pattern",function(data){
+        $( "#container_2>#template_3" ).load( "templates/reply_pattern.html .reply_pattern",function(data){
             $('#container_2>#template_3 #contaier_1').load( "templates/topics_single_1.html .topics_single_1")
             $('#container_2>#template_3 #contaier_2').load( "templates/topics_single_2.html .topics_single_2")
             $('#container_2>#template_3 #contaier_3').load( "templates/topics_single_3.html .topics_single_3")
