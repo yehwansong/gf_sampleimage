@@ -398,6 +398,7 @@ tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption
 }
 .container{
     display: none;
+    transform-origin: left top
 }
 .selected_container{
     display: block !important;
@@ -418,6 +419,12 @@ tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption
     position: absolute;
     display: none;
 } 
+canvas{
+    position: fixed;
+    left: 0;
+     width: 600px !important; 
+    height: 314px !important;
+    top: 6vh}
 .zindex{
     z-index: 1 !important
 }
@@ -432,7 +439,7 @@ tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption
 #container_6{
     position: absolute;
     width: 100%;
-    height: 100%
+    height: 100%;
 }
 #container_2>div>div,
 #container_3>div>div,
@@ -442,6 +449,9 @@ tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption
     left: 50%;
     top: 50%;
     position: absolute;
+}
+#container_2 .template{
+    overflow: hidden;
 }
 .template{
     display: none;
@@ -534,7 +544,6 @@ tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption
     transform: translateX(-50%) translateY(-50%);\
 }
 .sketch{
-    background-color: white;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -589,22 +598,22 @@ tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption
     box-sizing: border-box;
     background-color: #DEF3E5
 }
-#template_1 #sketch{
+#template_1 #sketch_wrapper{
     background-color:rgb(237, 237, 237)
 }
-#template_2 #sketch{
+#template_2 #sketch_wrapper{
     background-color:#f5d7e6
 }
-#template_3 #sketch{
+#template_3 #sketch_wrapper{
     background-color:rgb(237, 237, 237) !important
 }
-#template_4 #sketch{
+#template_4 #sketch_wrapper{
     background-color:#def3e5 !important
 }
-#template_5 #sketch{
+#template_5 #sketch_wrapper{
     background-color: #FFF583
 }
-#template_6 #sketch{
+#template_6 #sketch_wrapper{
     background-color:#feeae6 !important
 }
 
@@ -655,5 +664,65 @@ tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption
     overflow: hidden;
 }
 
-
+.sketch *{
+    box-shadow: none !important
+}
             /*------------sketch_3-----------*/
+
+            #container_2 *{
+                box-shadow: none !important
+            }
+
+
+.device-shadow{
+                z-index: 1;
+                position: absolute;
+                width: 430px;
+                height: 710px;
+                overflow: hidden;
+                background-image: url(img2/deviceshadow-01.png);
+                background-size: 100% 100%;
+                background-position: center;
+            }
+            #container_1 .device-shadow{
+                z-index: 1;
+                position: absolute;
+                overflow: hidden;
+                left: calc(50%);
+                top: calc(50%);
+                transform: translateX(-50%) translateY(-50%);
+                background-image: url(img2/deviceshadow-01.png);
+                background-size: 100% 100%;
+                background-position: center;
+            }
+            .sketch,
+            .contaier{
+                z-index: 2
+            }
+
+
+#container_2 .device-shadow_1{  
+background-color: transparent!important;         
+    transform: translate(-420px, 0px) scaleX(1.2) scaleY(1.125);
+}
+#container_2 .device-shadow_2{ 
+    background-color:transparent !important;
+    transform: translate(0px, -340px) scaleX(1.2) scaleY(1.125);
+}
+#container_2 .device-shadow_3{ 
+    background-color:transparent !important;
+    transform: translate(420px, 0px) scaleX(1.2) scaleY(1.125);
+}
+#container_2 .device-shadow_4{ 
+    background-color: transparent;
+    transform: translate(0px, 340px) scaleX(1.2) scaleY(1.125);
+    background-color:transparent !important;
+}
+
+
+
+.rotate{
+    transform: rotate(0) !important
+}
+
+

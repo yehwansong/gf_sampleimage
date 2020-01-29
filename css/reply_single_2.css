@@ -2852,16 +2852,3 @@
     height: 100%;
     position: absolute;
 }
-            .rotate>div:nth-child(1) {
-                transform: translate(-420px, 0px);
-            }
-            .rotate>div:nth-child(2) {
-    transform: translate(0px, -340px);
-            }
-            .rotate>div:nth-child(3) {
-
-    transform: translate(420px, 0px);
-}
-            .rotate>div:nth-child(4) {
-    transform: translate(0px, 340px);
-            }

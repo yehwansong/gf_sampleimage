@@ -183,20 +183,20 @@ $('document').ready(function(){
     function resize(){
         if($('#container_3>div>div').length>0 && $('#container_2>div>div').length>0 ){
             if ($('.container').outerWidth()>$('.container').outerHeight()*2){
-                $('#container_2>div>div').css({transform:'translate(-50%, -50%) scale('+$('.container').outerHeight()/$('#container_2>div>div').outerHeight()+')'})
-                $('#container_3>div>div').css({transform:'translate(-50%, -50%) scale('+$('.container').outerHeight()/$('#container_3>div>div').outerHeight()+')'})
-                $('#container_4>div').css({transform:'translate(-50%, -50%) scale('+$('.container').outerHeight()/$('#container_4>div').outerHeight()+')'})
-                $('#container_5>div>div').css({transform:'translate(-50%, -50%) scale('+$('.container').outerHeight()/$('#container_5>div>div').outerHeight()*0.8+')'})
-                $('#container_6>div').css({transform:'translate(-50%, -50%) scale('+$('.container').outerHeight()/$('#container_4>div').outerHeight()+')'})
+                $('#container_2>div>div').css({transform:'translate(-50%,-50%) scale('+$('.container').outerHeight()/$('#container_2>div>div').outerHeight()+') rotate(-45deg)'})
+                $('#container_3>div>div').css({transform:'translate(-50%,-50%) scale('+$('.container').outerHeight()/$('#container_3>div>div').outerHeight()+')'})
+                $('#container_4>div').css({transform:'translate(-50%,-50%) scale('+$('.container').outerHeight()/$('#container_4>div').outerHeight()+')'})
+                $('#container_5>div>div').css({transform:'translate(-50%,-50%) scale('+$('.container').outerHeight()/$('#container_5>div>div').outerHeight()*0.8+')'})
+                $('#container_6>div').css({transform:'translate(-50%,-50%) scale('+$('.container').outerHeight()/$('#container_4>div').outerHeight()+')'})
             }else{
         console.log($('#reply_pattern').outerWidth(true))
         console.log($('.container').outerWidth(true))
         console.log($('.container').outerWidth(true)/$('#container_2>div>div').outerWidth(true))
-                $('#container_2>div>div').css({transform:'translate(-50%, -50%) scale('+$('.container').outerWidth()/$('#container_2>div>div').outerWidth()+')'})
-                $('#container_3>div>div').css({transform:'translate(-50%, -50%) scale('+$('.container').outerWidth()/$('#container_3>div>div').outerWidth()+')'})
-                $('#container_4>div').css({transform:'translate(-50%, -50%) scale('+$('.container').outerWidth()/$('#container_4>div').outerWidth()+')'})
-                $('#container_5>div>div').css({transform:'translate(-50%, -50%) scale('+$('.container').outerWidth()/$('#container_5>div>div').outerWidth()*0.8+')'})
-                $('#container_6>div').css({transform:'translate(-50%, -50%) scale('+$('.container').outerWidth()/$('#container_4>div').outerWidth()+')'})
+                $('#container_2>div>div').css({transform:'translate(-50%,-50%) scale('+$('.container').outerWidth()/$('#container_2>div>div').outerWidth()+') rotate(-45deg)'})
+                $('#container_3>div>div').css({transform:'translate(-50%,-50%) scale('+$('.container').outerWidth()/$('#container_3>div>div').outerWidth()+')'})
+                $('#container_4>div').css({transform:'translate(-50%,-50%) scale('+$('.container').outerWidth()/$('#container_4>div').outerWidth()+')'})
+                $('#container_5>div>div').css({transform:'translate(-50%,-50%) scale('+$('.container').outerWidth()/$('#container_5>div>div').outerWidth()*0.8+')'})
+                $('#container_6>div').css({transform:'translate(-50%,-50%) scale('+$('.container').outerWidth()/$('#container_4>div').outerWidth()+')'})
             }
         }else{
             setTimeout(function(){resize()}, 300);

@@ -490,29 +490,46 @@ function resize_bfcapture(cap_w, cap_h){
     $(".selected_container").css({transform : 'scale('+Math.min(cap_w/$('.container').outerWidth(), cap_h/$('.container').outerHeight())+')'})
 }
 $('.saveasimage').click(function(){ 
+
+// var node = document.getElementsByClassName('selected_container')[0];
+// console.log(node)
+// domtoimage.toPng(node)
+//     .then(function (dataUrl) {
+//         var img = new Image();
+//         img.src = dataUrl;
+//         document.body.appendChild(img);
+//     })
+//     .catch(function (error) {
+//         console.error('oops, something went wrong!', error);
+//     });
+
+
     var format =(this).id.split('_')[1]
     var cap_w = (this).id.split('_')[2]
     var cap_h = (this).id.split('_')[3]
     resize_bfcapture(cap_w, cap_h)
     $('.selectable').addClass('hidewhencapture')
     $('.selected').removeClass('hidewhencapture')
+    console.log(cap_w)
+    console.log(cap_h)
         html2canvas(document.querySelector(".selected_container"),{
-              width: cap_w,
-              height: cap_h}).then(canvas => {
+            // dpi: 72,
+              width: cap_w ,
+              height: cap_h ,
+    scale:1
+          }).then(canvas => {
             document.body.appendChild(canvas)
-            // var image = canvas.toDataURL("image/"+format+"").replace("image/"+format+"", "image/octet-stream");
-            // window.location.href=image; // it will save locally
                 var link = document.createElement("a");
                 document.body.appendChild(link);
                 link.download = "sdfds."+format;
                 link.href = canvas.toDataURL("image/"+format+"").replace("image/"+format+"", "image/octet-stream");
                 link.target = '_blank';
                 link.click();
-        });
     $('.selected').removeClass('hideoverflow')
     $('.hidewhencapture').removeClass('hidewhencapture')
     $(".selected_container").css({transform : 'scale(1)'})
     $('canvas').remove()
+        });
 })
 
 
