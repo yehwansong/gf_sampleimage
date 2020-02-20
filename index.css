@@ -35,7 +35,27 @@ body{
 }
 #saveimage_wrapper{
     float: right;
+    right: 24px;
+    border-radius: 20px
 }
+.title{
+    line-height: 40px;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding-left: 16px;
+    padding-right: 60px;
+    display: inline-block;
+    float: left;
+    text-transform: uppercase;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    }
 .select_layout{
     float: left;
     color: white;
@@ -59,7 +79,7 @@ body{
     cursor: pointer;
     text-decoration: none;
     vertical-align: top;
-    float: right;
+    float: left;
     margin-right: 16px;
     transition: 0.3s
 }
@@ -81,16 +101,21 @@ body{
     text-transform: uppercase;
     font-size: 14px;
     padding-left: 16px;
-    padding-right: 60px;
+    padding-right: 40px;
     position: relative;
     margin-bottom: 10px;
     box-sizing: border-box;
-    background-image: url(dropdown.svg); 
-    /*background-image: url(dropdown.svg);*/
+    background-image: url(dropdown.svg);
+    /* background-image: url(dropdown.svg); */
     background-size: 40px;
     background-repeat: no-repeat;
     background-position: right;
     display: inline-block;
+}
+#save{
+     color: white; 
+    background-color: #0086ea;
+    border-radius: 20px
 }
 #select_fonts img{
     width: 10px
@@ -138,8 +163,13 @@ body{
     cursor: pointer;
 }
 #googlefont{
-    color: white;
-    background: #0086ea;
+    background-image: url(arrow.svg);
+    /* background-image: url(dropdown.svg); */
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: right;
+    /* color: white; */
+    /* background: #0086ea; */
     display: inline-block;
     top: 0;
     /* position: absolute; */
@@ -151,7 +181,7 @@ body{
     /* text-transform: uppercase; */
     font-size: 14px;
     padding-left: 16px;
-    padding-right: 16px;
+    padding-right: 32px;
     margin-bottom: 10px;
     box-sizing: border-box;
     /* background-image: url(dropdown.svg); */
@@ -162,8 +192,8 @@ body{
     cursor: pointer;
     text-decoration: none;
     vertical-align: top;
-    float: right;
-    margin-right: 24px;
+    float: left;
+    margin-right: 16px;
 }
 #saveimage_wrapper:hover #savelist{
     pointer-events: all;
@@ -171,7 +201,7 @@ body{
     height: 160px;
 }
 #googlefont:hover{
-    background: #d2d2d2;
+    background-color: #d2d2d2;
 }
 
 
@@ -478,13 +508,13 @@ canvas{
 #select_layout_pattern_frame,
 #select_layout_device_frame,
 #select_layout_desktop_frame{
-    transform: translateX(-50%) translateY(-100%);
+    transform: translateX(0%) translateY(-100%);
     position: absolute;
     vertical-align: top;
     height: 60px;
     display: inline-block;
     overflow: hidden;
-    left: 25vw;
+    left: 56.5vw;
     /* top: -50px; */
     z-index: 100000;
     width: auto !important;
@@ -493,7 +523,7 @@ canvas{
 #select_layout_device_frame,
 #select_layout_pattern_frame,
 #select_layout_desktop_frame{
-    left: 25vw;
+    left: 56.5vw;
 }
 .select_single,
 .select_layout_pattern,
