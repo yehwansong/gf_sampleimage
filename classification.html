@@ -217,31 +217,25 @@ function exists(arr, search) {
     function add_frame_2(){
         for (var i = display_subcat.length - 1; i >= 0; i--) {
             if(display_subcat[i][1] === '1'){
-                $('#display_3').append('<a class="display elem" target="_blank" href="index.html#'+display_subcat[i][0].replace(/ /g, `+`)+'"  style="font-family:'+display_subcat[i][0]+'" >'+display_subcat[i][0]+'</a>')
+                $('#display_1').append('<a class="display elem" target="_blank" href="index.html#'+display_subcat[i][0].replace(/ /g, `+`)+'"  style="font-family:'+display_subcat[i][0]+'" >'+display_subcat[i][0]+'</a>')
             }
             if(display_subcat[i][1] === '2'){
                 $('#display_2').append('<a class="display expressive elem" target="_blank" href="index.html#'+display_subcat[i][0].replace(/ /g, `+`)+'"  style="font-family:'+display_subcat[i][0]+'">'+display_subcat[i][0]+'</a>')
             }
             if(display_subcat[i][1] === '3'){
-                $('#display_1').append('<a class="display superwide elem"  target="_blank" href="index.html#'+display_subcat[i][0].replace(/ /g, `+`)+'"  style="font-family:'+display_subcat[i][0]+'">'+display_subcat[i][0]+'</a>')
-            }
-            if(display_subcat[i][1] === '4'){
-                $('#display_1').append('<a class="display supernarrow elem"  target="_blank" href="index.html#'+display_subcat[i][0].replace(/ /g, `+`)+'"  style="font-family:'+display_subcat[i][0]+'">'+display_subcat[i][0]+'</a>')
-            }
-            if(display_subcat[i][1] === '5'){
-                $('#display_1').append('<a class="display imageFont elem"  target="_blank" href="index.html#'+display_subcat[i][0].replace(/ /g, `+`)+'"  style="font-family:'+display_subcat[i][0]+'">'+display_subcat[i][0]+'</a>')
+                $('#display_3').append('<a class="display superwide elem"  target="_blank" href="index.html#'+display_subcat[i][0].replace(/ /g, `+`)+'"  style="font-family:'+display_subcat[i][0]+'">'+display_subcat[i][0]+'</a>')
             }
             // load_font(display_subcat[i][0],i)
         }
         for (var j = handwriting_subcat.length - 1; j >= 0; j--) {
             if(handwriting_subcat[j][1] === '1'){
-                $('#display_3').append('<a target="_blank" class="handwriting elem" href="index.html#'+handwriting_subcat[j][0].replace(/ /g, `+`)+'"  style="font-family:'+handwriting_subcat[j][0]+'">'+handwriting_subcat[j][0]+'</a>')
+                $('#display_1').append('<a target="_blank" class="handwriting elem" href="index.html#'+handwriting_subcat[j][0].replace(/ /g, `+`)+'"  style="font-family:'+handwriting_subcat[j][0]+'">'+handwriting_subcat[j][0]+'</a>')
             }
             if(handwriting_subcat[j][1] === '2'){
                 $('#display_2').append('<a target="_blank" class="handwriting expressive elem" href="index.html#'+handwriting_subcat[j][0].replace(/ /g, `+`)+'"  style="font-family:'+handwriting_subcat[j][0]+'>'+handwriting_subcat[j][0]+'</a>')
             }
-            if(handwriting_subcat[j][1] === '6'){
-                $('#display_1').append('<a target="_blank" class="handwriting strongHandwriting elem" href="index.html#'+handwriting_subcat[j][0].replace(/ /g, `+`)+'"  style="font-family:'+handwriting_subcat[j][0]+'">'+handwriting_subcat[j][0]+'</a>')
+            if(handwriting_subcat[j][1] === '3'){
+                $('#display_3').append('<a target="_blank" class="handwriting strongHandwriting elem" href="index.html#'+handwriting_subcat[j][0].replace(/ /g, `+`)+'"  style="font-family:'+handwriting_subcat[j][0]+'">'+handwriting_subcat[j][0]+'</a>')
             }
         }
 
@@ -249,37 +243,28 @@ function exists(arr, search) {
 
         for (var j = serif_subcat.length - 1; j >= 0; j--) {
             if(serif_subcat[j][1] === '3'){
-                $('#display_1').append('<a target="_blank" class="serif superwide elem" href="index.html#'+serif_subcat[j][0].replace(/ /g, `+`)+'"  style="font-family:'+serif_subcat[j][0]+'">'+serif_subcat[j][0]+'</a>')
-            }
-            if(serif_subcat[j][1] === '4'){
-                $('#display_1').append('<a target="_blank" class="serif supernarrow elem" href="index.html#'+serif_subcat[j][0].replace(/ /g, `+`)+'"  style="font-family:'+serif_subcat[j][0]+'">'+serif_subcat[j][0]+'</a>')
+                $('#display_3').append('<a target="_blank" class="serif superwide elem" href="index.html#'+serif_subcat[j][0].replace(/ /g, `+`)+'"  style="font-family:'+serif_subcat[j][0]+'">'+serif_subcat[j][0]+'</a>')
             }
             if(serif_subcat[j][1] === '2'){
-                $('#display_3').append('<a target="_blank" class="serif expressive elem" href="index.html#'+serif_subcat[j][0].replace(/ /g, `+`)+'"  style="font-family:'+serif_subcat[j][0]+'">'+serif_subcat[j][0]+'</a>')
+                $('#display_1').append('<a target="_blank" class="serif expressive elem" href="index.html#'+serif_subcat[j][0].replace(/ /g, `+`)+'"  style="font-family:'+serif_subcat[j][0]+'">'+serif_subcat[j][0]+'</a>')
             }
         }
 
         for (var j = sansserif_subcat.length - 1; j >= 0; j--) {
             if(sansserif_subcat[j][1] === '3'){
-                $('#display_1').append('<a target="_blank" class="sansserif superwide elem" href="index.html#'+sansserif_subcat[j][0].replace(/ /g, `+`)+'"  style="font-family:'+sansserif_subcat[j][0]+'">'+sansserif_subcat[j][0]+'</a>')
+                $('#display_3').append('<a target="_blank" class="sansserif superwide elem" href="index.html#'+sansserif_subcat[j][0].replace(/ /g, `+`)+'"  style="font-family:'+sansserif_subcat[j][0]+'">'+sansserif_subcat[j][0]+'</a>')
             }
-            if(sansserif_subcat[j][1] === '4'){
-                $('#display_1').append('<a target="_blank" class="sansserif supernarrow elem" href="index.html#'+sansserif_subcat[j][0].replace(/ /g, `+`)+'"  style="font-family:'+sansserif_subcat[j][0]+'">'+sansserif_subcat[j][0]+'</a>')
-            }
-            if(sansserif_subcat[j][1] === '2'){
-                $('#display_3').append('<a target="_blank" class="sansserif expressive elem" href="index.html#'+sansserif_subcat[j][0].replace(/ /g, `+`)+'"  style="font-family:'+sansserif_subcat[j][0]+'">'+sansserif_subcat[j][0]+'</a>')
+            if(sansserif_subcat[j][1] === '1'){
+                $('#display_1').append('<a target="_blank" class="sansserif expressive elem" href="index.html#'+sansserif_subcat[j][0].replace(/ /g, `+`)+'"  style="font-family:'+sansserif_subcat[j][0]+'">'+sansserif_subcat[j][0]+'</a>')
             }
         }
         
         for (var j = mono_subcat.length - 1; j >= 0; j--) {
             if(mono_subcat[j][1] === '3'){
-                $('#display_1').append('<a target="_blank" class="mono superwide elem" href="index.html#'+mono_subcat[j][0].replace(/ /g, `+`)+'"  style="font-family:'+mono_subcat[j][0]+'">'+mono_subcat[j][0]+'</a>')
+                $('#display_3').append('<a target="_blank" class="mono superwide elem" href="index.html#'+mono_subcat[j][0].replace(/ /g, `+`)+'"  style="font-family:'+mono_subcat[j][0]+'">'+mono_subcat[j][0]+'</a>')
             }
-            if(mono_subcat[j][1] === '4'){
-                $('#display_1').append('<a target="_blank" class="mono supernarrow elem" href="index.html#'+mono_subcat[j][0].replace(/ /g, `+`)+'"  style="font-family:'+mono_subcat[j][0]+'">'+mono_subcat[j][0]+'</a>')
-            }
-            if(mono_subcat[j][1] === '2'){
-                $('#display_3').append('<a target="_blank" class="mono expressive elem" href="index.html#'+mono_subcat[j][0].replace(/ /g, `+`)+'"  style="font-family:'+mono_subcat[j][0]+'">'+mono_subcat[j][0]+'</a>')
+            if(mono_subcat[j][1] === '1'){
+                $('#display_1').append('<a target="_blank" class="mono expressive elem" href="index.html#'+mono_subcat[j][0].replace(/ /g, `+`)+'"  style="font-family:'+mono_subcat[j][0]+'">'+mono_subcat[j][0]+'</a>')
             }
         }
         
@@ -533,9 +518,9 @@ for (var i = font_category_array.length - 1; i >= 0; i--) {
           <div class= 'display'>display&nbsp;&nbsp;<input type="checkbox" id="display_cb"></div>
           <div class= 'handwriting'>handwriting&nbsp;&nbsp;<input type="checkbox" id="handwriting_cb"></div>
         </div>
-        <div id="display_1"></div>
-        <div id="display_2"></div>
         <div id="display_3"></div>
+        <div id="display_2"></div>
+        <div id="display_1"></div>
         <div id="text"></div>
         <div id="utility"></div>
     </div>

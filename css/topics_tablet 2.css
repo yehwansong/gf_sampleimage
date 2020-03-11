@@ -1,0 +1,634 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:500,700');
+.topics_tablet * {
+    line-height: 1;
+    color: #ffffff !important;
+}
+.topics_tablet  {
+  /*background-image: url(../bgs/5.png);*/
+  background-size: contain;
+  top                 : 0px;
+  height              : 780px;
+  width               : 1065px;
+  position            : relative;
+  margin              : 0;
+  left                : 0px;
+}
+.topics_tablet  .owlcopy3 {
+  background-color    : rgb(36, 35, 22);
+  top                 : 0px;
+  height              : 780px;
+  width               : 1065px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  overflow            : hidden;
+}
+.topics_tablet  .owlcopy3 .mask {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 780px;
+  width               : 1065px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.topics_tablet  .owlcopy3 .comfab {
+    background-color: rgba(255,255,255,0.0);
+    bottom: 30px;
+    height: 58px;
+    width: 52px;
+    position: absolute;
+    margin: 0;
+    right: 30px;
+}
+.topics_tablet  .owlcopy3 .comfab .color0235ff {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 58px;
+  width               : 52px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.topics_tablet  .owlcopy3 .comfab .color0235ff .color0235ff1 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 58px;
+  width               : 52px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.topics_tablet  .owlcopy3 .comfab .iccompass {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 17px;
+  height              : 17px;
+  width               : 17px;
+  position            : absolute;
+  margin              : 0;
+  left                : 17px;
+}
+.topics_tablet  .owlcopy3 .comfab .iccompass .rectangle {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 17px;
+  width               : 17px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.topics_tablet  .owlcopy3 .comfab .iccompass .fill161 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 1px;
+  height              : 14px;
+  width               : 14px;
+  position            : absolute;
+  margin              : 0;
+  left                : 1px;
+}
+.topics_tablet  .owlcopy3 .topic1 {
+    background-color: rgba(255,255,255,0.0);
+    margin-top: 40px;
+    height: 72px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    padding-right: 110px;
+    display: flex;
+    float: right;
+
+  }
+.topics_tablet  .owlcopy3 .topic1 div{
+    background:rgb(47, 46, 33);
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin-right: 20px
+  }
+.topics_tablet  .owlcopy3 .topic1 .artscrafts {
+  background-color    : rgba(255,255,255,0.0);
+  margin-top                : 17px;
+  height              : auto;
+  width               : auto;
+  position            : relative;
+  margin-left                 : 88px;
+  opacity             : 0.87;
+  font-family         : "Rubik", Helvetica, Arial, serif;
+  font-weight         : 500;
+  font-style          : normal;
+  font-size           : 16.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : left;
+  letter-spacing      : 0.5px;
+  line-height         : 19.0px;
+  white-space: nowrap;
+    display: inline-block;
+    overflow: hidden;
+}
+.topics_tablet  .owlcopy3 .topic1 .a121 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 41px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 88px;
+  opacity             : 0.6;
+  font-family         : "Rubik", Helvetica, Arial, serif;
+  font-weight         : 500;
+  font-style          : normal;
+  font-size           : 12.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : left;
+  line-height         : 14.0px;
+}
+.topics_tablet  .owlcopy3 .topic1 .thumb {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 72px;
+  width               : 72px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.topics_tablet  .owlcopy3 .topic1 .thumb .rectangle4 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 72px;
+  width               : 72px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  object-fit          : cover;
+}
+.topics_tablet  .owlcopy3 .topic3 {
+    background-color: rgba(255,255,255,0.0);
+    margin-top: 20px;
+    height: 72px;
+    position: relative;
+    padding-right: 110px;
+    display: inline-block;
+    overflow: hidden;
+    display: flex;
+    float: right;
+
+  }
+.topics_tablet  .owlcopy3 .topic3 div{
+    background:rgb(47, 46, 33);
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin-right: 20px
+  }
+.topics_tablet  .owlcopy3 .topic3 .fill88copy {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 72px;
+  width               : 112px;
+  position            : absolute;
+  margin              : 0;
+  left                : 72px;
+}
+.topics_tablet  .owlcopy3 .topic3 .business {
+  background-color    : rgba(255,255,255,0.0);
+  margin-top                 : 17px;
+  height              : auto;
+  width               : auto;
+  position            : relative;
+  margin-left                : 88px;
+  opacity             : 0.87;
+  font-family         : "Rubik", Helvetica, Arial, serif;
+  font-weight         : 500;
+  font-style          : normal;
+  font-size           : 16.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : left;
+  letter-spacing      : 0.5px;
+  line-height         : 19.0px;
+  white-space: nowrap;
+  display: inline-block;
+  overflow: hidden;
+}
+.topics_tablet  .owlcopy3 .topic3 .a78 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 41px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 88px;
+  opacity             : 0.6;
+  font-family         : "Rubik", Helvetica, Arial, serif;
+  font-weight         : 500;
+  font-style          : normal;
+  font-size           : 12.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : left;
+  line-height         : 14.0px;
+}
+.topics_tablet  .owlcopy3 .topic3 .icdots {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 42px;
+  height              : 12px;
+  width               : 12px;
+  position            : absolute;
+  margin              : 0;
+  left                : 88px;
+}
+.topics_tablet  .owlcopy3 .topic3 .thumb {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 72px;
+  width               : 72px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.topics_tablet  .owlcopy3 .topic3 .thumb .rectangle4 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 72px;
+  width               : 72px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  object-fit          : cover;
+}
+.topics_tablet  .owlcopy3 .topic5 {
+  background-color    : rgba(255,255,255,0.0);
+  margin-top                 : 20px;
+  height              : 72px;
+  position            : relative;
+  margin-right         : 110px;
+  display: inline-block;
+  overflow: hidden;
+    display: flex;
+    float: right;
+
+  }
+.topics_tablet  .owlcopy3 .topic5 div{
+    background:rgb(47, 46, 33);
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+    float: right;
+  }
+.topics_tablet  .owlcopy3 .topic5 .fill88copy {
+  background-color    : rgba(255,255,255,0.0);
+  margin-top                 : 0px;
+  height              : 72px;
+  width               : 104px;
+  position            : relative;
+  margin              : 0;
+  margin-left                : 72px;
+  display: inline-block;
+  overflow: hidden;
+}
+.topics_tablet  .owlcopy3 .topic5 .culinary {
+  background-color    : rgba(255,255,255,0.0);
+  margin-top                 : 13px;
+  height              : auto;
+  width               : auto;
+  position            : relative;
+  margin-right: 20px;
+  margin-left                : 88px;
+  opacity             : 0.87;
+  font-family         : "Rubik", Helvetica, Arial, serif;
+  font-weight         : 500;
+  font-style          : normal;
+  font-size           : 16.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : left;
+  letter-spacing      : 0.5px;
+  line-height         : 19.0px;
+  white-space: nowrap;
+}
+.topics_tablet  .owlcopy3 .topic5 .a118 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 41px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 88px;
+  opacity             : 0.6;
+  font-family         : "Rubik", Helvetica, Arial, serif;
+  font-weight         : 500;
+  font-style          : normal;
+  font-size           : 12.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : left;
+  line-height         : 14.0px;
+}
+.topics_tablet  .owlcopy3 .topic5 .icdots {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 42px;
+  height              : 12px;
+  width               : 12px;
+  position            : absolute;
+  margin              : 0;
+  left                : 88px;
+}
+.topics_tablet  .owlcopy3 .topic5 .thumb {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 72px;
+  width               : 72px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.topics_tablet  .owlcopy3 .topic5 .thumb .rectangle4{
+    background-color: rgba(255,255,255,0.0);
+    top: 0px;
+    height: 72px;
+    width: 72px;
+    position: absolute;
+    margin: 0;
+    left: 0px;
+    object-fit: cover;
+}
+.topics_tablet  .owlcopy3 .choosetopicsthati {
+    background-color: rgba(255,255,255,0.0);
+    margin-top: 150px;
+    height: auto;
+    width: 100%;
+    position: relative;
+    padding-right: 130px;
+    font-size: 55.0px;
+    color: rgba(255, 255, 255, 0.87);
+    text-align: right;
+    line-height: 36.0px;
+    box-sizing: border-box;
+    padding-left: 130px;
+    line-height: 1.2;
+}
+.topics_tablet  .owlcopy3 .icgear {
+  background-color    : rgba(255,255,255,0.0);
+  top                 :75px;
+  height              : 24px;
+  width               : 24px;
+  position            : absolute;
+  margin              : 0;
+    right: 50px;
+  overflow            : hidden;
+  opacity             : 0.6;
+}
+.topics_tablet  .owlcopy3 .icgear .background {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 24px;
+  width               : 24px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.topics_tablet  .owlcopy3 .icgear .color000 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 2px;
+  height              : 20px;
+  width               : 20px;
+  position            : absolute;
+  margin              : 0;
+  left                : 2px;
+}
+.topics_tablet  .owlcopy3 .icgear .color000 .color0001 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 20px;
+  width               : 20px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.topics_tablet  .owlcopy3 .sysowlyellow {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 24px;
+  width               : 360px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  overflow            : hidden;
+}
+.topics_tablet  .owlcopy3 .sysowlyellow .background {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 24px;
+  width               : 360px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.topics_tablet  .owlcopy3 .sysowlyellow .fill47 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 24px;
+  width               : 360px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.topics_tablet  .owlcopy3 .sysowlyellow .rectangle7 {
+  background-color    : rgba(143, 143, 143, 1.0);
+  top                 : 7px;
+  height              : 10px;
+  width               : 10px;
+  position            : absolute;
+  margin              : 0;
+  left                : 324px;
+  border-radius       : 5px;
+}
+.topics_tablet  .owlcopy3 .sysowlyellow .triangle {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 7px;
+  height              : 10px;
+  width               : 12px;
+  position            : absolute;
+  margin              : 0;
+  left                : 340px;
+}
+.topics_tablet  .owlcopy3 .sysowlyellow .rectangle7copy {
+  background-color    : rgba(143, 143, 143, 1.0);
+  top                 : 7px;
+  height              : 10px;
+  width               : 10px;
+  position            : absolute;
+  margin              : 0;
+  left                : 306px;
+}
+.topics_tablet  .logoowlwhite {
+    transform: scale(1.7);
+    background-color: rgba(255,255,255,0.0);
+    top: 70px;
+    height: 40px;
+    width: 104px;
+    position: absolute;
+    margin: 0;
+    left: 22px;
+    transform-origin: left;
+}
+.topics_tablet  .logoowlwhite .page1 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 40px;
+  width               : 104px;
+  position            : relative;
+  margin              : 0;
+  left                : 0px;
+}
+.topics_tablet  .logoowlwhite .page1 .group8 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 40px;
+  width               : 47px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.topics_tablet  .logoowlwhite .page1 .group8 .fill1 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 8px;
+  height              : 13px;
+  width               : 13px;
+  position            : absolute;
+  margin              : 0;
+  left                : 30px;
+}
+.topics_tablet  .logoowlwhite .page1 .group8 .fill3 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 34px;
+  width               : 37px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.topics_tablet  .logoowlwhite .page1 .group8 .group7 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 14px;
+  height              : 26px;
+  width               : 27px;
+  position            : absolute;
+  margin              : 0;
+  left                : 20px;
+}
+.topics_tablet  .logoowlwhite .page1 .group8 .group7 .group71 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 26px;
+  width               : 27px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+}
+.topics_tablet  .logoowlwhite .page1 .fill9 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 15px;
+  height              : 25px;
+  width               : 37px;
+  position            : absolute;
+  margin              : 0;
+  left                : 47px;
+}
+.topics_tablet  .logoowlwhite .page1 .fill10 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 15px;
+  height              : 25px;
+  width               : 16px;
+  position            : absolute;
+  margin              : 0;
+  left                : 87px;
+}
+.topics_tablet  .logoowlwhite .page1 .fill11 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 23px;
+  height              : 7px;
+  width               : 7px;
+  position            : absolute;
+  margin              : 0;
+  left                : 30px;
+}
+/* .anima-animate-appear prefix for appear animations */
+.anima-animate-appear {
+  opacity             : 0;
+  display             : block;
+  -webkit-animation   : anima-reveal 0.3s ease-in-out 1 normal forwards;
+  -moz-animation      : anima-reveal 0.3s ease-in 1 normal forwards;
+  -o-animation        : anima-reveal 0.3s ease-in-out 1 normal forwards;
+  animation           : anima-reveal 0.3s ease-in-out 1 normal forwards;
+}
+.anima-animate-disappear {
+  opacity             : 1;
+  display             : block;
+  -webkit-animation   : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+  -moz-animation      : anima-reveal 0.3s ease-in 1 normal forwards;
+  -o-animation        : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+  animation           : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+}
+.anima-animate-nodelay {
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay  : 0;
+  animation-delay     : 0;
+}
+@-webkit-keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@-moz-keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@-o-keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}

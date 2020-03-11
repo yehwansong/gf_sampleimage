@@ -24,10 +24,11 @@ body{
     left: 0;
     z-index: 10;
 }
+#categorylist_wrapper,
 #saveimage_wrapper,
 #fontlist_wrapper{
     float: left;
-    display: inline-block;
+    display: inlinfe-block;
     min-height: 100%;
     position: relative;
     z-index: 10;
@@ -50,7 +51,7 @@ body{
     text-transform: uppercase;
     font-size: 14px;
     padding-left: 16px;
-    padding-right: 16px;
+    padding-right: 8px;
     position: relative;
     margin-bottom: 10px;
     box-sizing: border-box;
@@ -65,11 +66,11 @@ body{
     border-radius: 22px;
     margin-top: 10px;
     z-index: 10;
-    height: 40px;
-    line-height: 40px;
+    height: 36px;
+    line-height: 36px;
     font-size: 14px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 14px;
+    padding-right: 14px;
     margin-bottom: 10px;
     box-sizing: border-box;
     background-size: 40px;
@@ -80,8 +81,8 @@ body{
     text-decoration: none;
     vertical-align: top;
     float: left;
-    margin-right: 16px;
-    transition: 0.3s
+    margin-right: 8px;
+    transition: 0.3s;
 }
 .select_layout:hover{
     background:#0086ea; 
@@ -90,16 +91,17 @@ body{
     background:#0086ea; 
 }
 #save,
-#select_fonts{
+#select_fonts,
+#select_category{
     display: inline-block;
     white-space: nowrap;
     border-radius: 6px;
-    margin-top: 10px;
+    margin-top: 13px;
     z-index: 10;
-    height: 40px;
-    line-height: 40px;
-    text-transform: uppercase;
-    font-size: 14px;
+    height: 32px;
+    line-height: 30px;
+    text-transform: capitalize;
+    font-size: 13px;
     padding-left: 16px;
     padding-right: 40px;
     position: relative;
@@ -111,17 +113,28 @@ body{
     background-repeat: no-repeat;
     background-position: right;
     display: inline-block;
+    border: 1px solid #a9a9a9;
+    border-radius: 20px;
 }
+#categorylist_wrapper,
+#fontlist_wrapper{
+    padding-right:8px;}
+    #select_layout_wrapper,#select_design_wrapper{
+    padding-left: 32px;
+
+    overflow: hidden;
+    /* clear: both; */
+    width: auto;
+    float: left;
+    }
 #save{
-    background-image: url(dropdown_w.svg);
-     color: white; 
-    background-color: #0086ea;
-    border-radius: 20px
+    border: none;
 }
 #select_fonts img{
     width: 10px
 }
 #savelist,
+#categorylist,
 #objectlist_wrapper{
     padding-top: 10px;
     box-shadow: 0px 0px 3px 3px rgba(60, 64, 67, 0.33);
@@ -133,7 +146,7 @@ body{
     height: 0px;
     margin-top: -10px;
     z-index: 100;
-    position: relative;
+    position: absolute;
     border-radius: 6px;
 }
 #fontlist_wrapper:hover #objectlist_wrapper{
@@ -147,6 +160,7 @@ body{
 .ps-scrollbar-x-rail,.ps-scrollbar-y-rail{
     pointer-events: none;
 }
+#categorylist>div,
 #savelist>div,
 #objectlist_wrapper .fontlist{
     font-size: 14px;
@@ -159,7 +173,8 @@ body{
     padding-right: 20px;
 }
 #savelist>div:hover,
-#objectlist_wrapper .fontlist:hover{
+#objectlist_wrapper .fontlist:hover,
+#categorylist>div:hover{
     background: #d2d2d2;
     cursor: pointer;
 }
@@ -193,13 +208,18 @@ body{
     cursor: pointer;
     text-decoration: none;
     vertical-align: top;
-    float: left;
+    float: right;
     margin-right: 16px;
 }
 #saveimage_wrapper:hover #savelist{
     pointer-events: all;
     opacity: 1;
     height: 160px;
+}
+#categorylist_wrapper:hover #categorylist{
+    pointer-events: all;
+    opacity: 1;
+    height: auto;
 }
 #googlefont:hover{
     background-color: #d2d2d2;
@@ -401,7 +421,7 @@ letter-spacing: 1.5px;
     border-bottom: 0px solid gray !important
 }
 tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption,.overline,
-#googlefont, #select_fonts{
+#googlefont, #select_fonts, #select_category{
     transition: background-color 0.1s ease-in
 }
     .table>div{
@@ -424,12 +444,21 @@ tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption
 /*----------------------------sketch----------------------------*/
 /*----------------------------sketch----------------------------*/
 /*----------------------------sketch----------------------------*/
+#container_7>div{
+    /*background-image:url(temp.png);*/
+    background-size: contain;
+}
+
+
 #objectlist_wrapper{
     transition: opacity 0.1s ease-in
 }
 .container{
     display: none;
     transform-origin: left top
+}
+.select_template_frame{
+    display: none !important;
 }
 .selected_container{
     display: block !important;
@@ -440,7 +469,8 @@ tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption
 #container_3,
 #container_4,
 #container_5,
-#container_6{
+#container_6,
+#container_7{
     /*background-image: url('bgs/3.png');*/
     background-size: contain;
     background-position: center;
@@ -467,7 +497,8 @@ canvas{
 #container_3>div,
 #container_4,
 #container_5>div,
-#container_6{
+#container_6,
+#container_7{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -476,7 +507,8 @@ canvas{
 #container_3>div>div,
 #container_4>div,
 #container_5>div>div,
-#container_6>div{
+#container_6>div,
+#container_7>div{
     left: 50%;
     top: 50%;
     position: absolute;
@@ -505,12 +537,11 @@ canvas{
     position: relative;
     background-color: #EDEDED;
 }
-#select_single_frame,
-#select_layout_pattern_frame,
-#select_layout_device_frame,
-#select_layout_desktop_frame{
-    transform: translateX(0%) translateY(-100%);
-    position: absolute;
+#select_template_single_frame,
+#select_template_pattern_frame,
+#select_template_device_frame,
+#select_template_desktop_frame{
+    /*transform: translateX(0%) translateY(-100%);*/
     vertical-align: top;
     height: 60px;
     display: inline-block;
@@ -521,15 +552,15 @@ canvas{
     width: auto !important;
     height: 60px !important;
     }
-#select_layout_device_frame,
-#select_layout_pattern_frame,
-#select_layout_desktop_frame{
+#select_template_device_frame,
+#select_template_pattern_frame,
+#select_template_desktop_frame{
     left: 56.5vw;
 }
-.select_single,
-.select_layout_pattern,
-.select_layout_device,
-.select_layout_desktop{ 
+.select_template_single,
+.select_template_pattern,
+.select_template_device,
+.select_template_desktop{ 
     vertical-align: middle;
     position: relative;
     height: 25px;
@@ -549,7 +580,7 @@ canvas{
     padding-right: 1px;
     box-sizing: border-box;
 }
-.select_single:hover{
+.select_template_single:hover{
     opacity: 0.75;
 }
 

@@ -748,7 +748,7 @@
   text-align          : left;
   letter-spacing      : 0.18px;
   line-height         : 19.0px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .reply_components .group {
     background-color: rgba(238, 241, 243, 1.0);
