@@ -1,6 +1,7 @@
 body, div, input, select, button {
-    font-family: 'Roboto mono', sans-serif;
-    margin: 0
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    font-weight: 500;
 }
 body{
     overflow: hidden;
@@ -12,13 +13,13 @@ body{
     color: #4a4a4a;
 }
 #top {
-    box-shadow: 0px 0px 4px 4px rgba(60, 64, 67, 0.33);
+    border-bottom: 1px solid gainsboro;
     box-sizing: border-box;
     display: inline-block;
     padding-left: 24px;
-    height: 60px;
+    height: 55px;
     width: 100vw;
-    background: #EDEDED;
+    background: #ffffff;
     position: relative;
     float: left;
     left: 0;
@@ -95,17 +96,17 @@ body{
 #select_category{
     display: inline-block;
     white-space: nowrap;
-    border-radius: 6px;
-    margin-top: 13px;
+    /* border-radius: 6px; */
+    /* margin-top: 8px; */
     z-index: 10;
-    height: 32px;
-    line-height: 30px;
+    height: 55px;
+    line-height: 55px;
     text-transform: capitalize;
-    font-size: 13px;
-    padding-left: 16px;
+    font-size: 14px;
+    padding-left: 20px;
     padding-right: 40px;
     position: relative;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     box-sizing: border-box;
     background-image: url(dropdown.svg);
     /* background-image: url(dropdown.svg); */
@@ -113,8 +114,10 @@ body{
     background-repeat: no-repeat;
     background-position: right;
     display: inline-block;
-    border: 1px solid #a9a9a9;
-    border-radius: 20px;
+    /* border: 1px solid #a9a9a9; */
+    border-top-left-radius: 5px;
+    /* background-color: #f0f0f0; */
+    border-top-right-radius: 5px;
 }
 #categorylist_wrapper,
 #fontlist_wrapper{
@@ -133,16 +136,15 @@ body{
 #select_fonts img{
     width: 10px
 }
-#savelist,
-#categorylist,
-#objectlist_wrapper{
+#savelist, #categorylist, #objectlist_wrapper {
+    padding-bottom: 10px;
     padding-top: 10px;
-    box-shadow: 0px 0px 3px 3px rgba(60, 64, 67, 0.33);
-     opacity: 0; 
+    box-shadow: 0px 0px 3px 1px rgba(60, 64, 67, 0.33);
+    opacity: 0;
     overflow: hidden;
     background: #ffffff;
     cursor: pointer;
-     pointer-events: none; 
+    pointer-events: none;
     height: 0px;
     margin-top: -10px;
     z-index: 100;
@@ -164,10 +166,11 @@ body{
 #savelist>div,
 #objectlist_wrapper .fontlist{
     font-size: 14px;
-    line-height: 40px;
+    line-height: 30px;
     padding-left: 20px;
     box-sizing: border-box;
     cursor: pointer;
+    padding-right: 20px;
 }
 #savelist>div{
     padding-right: 20px;
@@ -444,11 +447,22 @@ tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption
 /*----------------------------sketch----------------------------*/
 /*----------------------------sketch----------------------------*/
 /*----------------------------sketch----------------------------*/
-#container_7>div{
+#container_8>div{
     /*background-image:url(temp.png);*/
     background-size: contain;
+    background-color: #f1f0f0;
+}
+#container_8>div>div{
+}
+#container_8>div>.info{
+    left: 0%;
+    transform-origin: left top;
+    position: absolute;
 }
 
+#container_8 .template{
+    pointer-events: none;
+}
 
 #objectlist_wrapper{
     transition: opacity 0.1s ease-in
@@ -470,13 +484,14 @@ tr, .h1,.h2,.h3,.h4,.h5,.h6,.subtitle1,.subtitle2,.body1,.body2,.button,.caption
 #container_4,
 #container_5,
 #container_6,
-#container_7{
+#container_7,
+#container_8{
     /*background-image: url('bgs/3.png');*/
     background-size: contain;
     background-position: center;
     width: 100vw;
     height: 52.3vw;
-    margin-top: 60px;
+    margin-top: 55px;
     position: absolute;
     display: none;
 } 
@@ -498,17 +513,23 @@ canvas{
 #container_4,
 #container_5>div,
 #container_6,
-#container_7{
+#container_7,
+#container_8>div{
     position: absolute;
     width: 100%;
     height: 100%;
+}
+#container_8>div{
+    width: 1280px;
+    height:640px;
 }
 #container_2>div>div,
 #container_3>div>div,
 #container_4>div,
 #container_5>div>div,
 #container_6>div,
-#container_7>div{
+#container_7>div,
+#container_8>div{
     left: 50%;
     top: 50%;
     position: absolute;
@@ -560,7 +581,8 @@ canvas{
 .select_template_single,
 .select_template_pattern,
 .select_template_device,
-.select_template_desktop{ 
+.select_template_desktop,
+.select_template_single_info{ 
     vertical-align: middle;
     position: relative;
     height: 25px;
@@ -635,7 +657,84 @@ canvas{
 
 
 
+.app_column{
+    width: 55%;
+    float: left;
+    position: absolute;
+    left: 45%;
+}
+.info_column{
+    width: 100%;
+    float: left;
+    position: absolute;
+    z-index: 1000;
+}
+.info .table_text{
+    left: 20%;
+    height: 100%;
+    position: absolute;
+}
+.info .table_text>div{
+    position: absolute;
+    bottom: 0
+}
+.info .table_title,
+.info .table_text{
+    float: left;
+}
+.info>div{
+    overflow: hidden;
+}
+.info .table_title {
+    width: 20%;
+}
+.info .y_1{position: absolute; display: none; border-bottom:1px dotted #cccccc;}
+.info .y_2{position: absolute; display: none; border-bottom:1px dotted #cccccc;}
+.info .y_3{position: absolute; display: none; border-bottom:1px dotted #cccccc;}
+.info .y_4{position: absolute; display: none; border-bottom:1px dotted #cccccc;}
+.info .y_5{position: absolute; display: none; border-bottom:1px dotted #cccccc;}
+.info .y_6{position: absolute; display: none; border-bottom:1px dotted #cccccc;}
+.info .y_7{position: absolute; display: none; border-bottom:1px dotted #cccccc;}
+.info .y_8{position: absolute; display: none; border-bottom:1px dotted #cccccc;}
+.info .y_9{position: absolute; display: none; border-bottom:1px dotted #cccccc;}
+.info .y_10{position: absolute; display: none; border-bottom:1px dotted #cccccc;}
+.info .y_11{position: absolute; display: none; border-bottom:1px dotted #cccccc;}
+.info .y_12{position: absolute; display: none; border-bottom:1px dotted #cccccc;}
+.info .y_13{position: absolute; display: none; border-bottom:1px dotted #cccccc;}
 
+#template_1 .y_4{display: block;
+                    width: 100%}
+#template_1 .y_9{display: block;
+                    width: 100%}
+#template_2 .y_3{display: block;
+                    width: 100%}
+#template_2 .y_8{display: block;
+                    width: 100%;}
+#template_3 .y_4{display: block;
+                    width: 100%;
+                    top: 320px;}
+#template_3 .y_9{display: block;
+                    width: 100%;
+                    top: 403px;}
+#template_4 .y_3{display: block;
+                    top: 50px;
+                    width: 100%}
+#template_4 .y_9{display: block;
+                    width: 100%;
+    top: 135px;}
+#template_5 .y_5{display: block;
+                    width: 100%}
+#template_5 .y_9{display: block;
+                    width: 100%}
+#template_6 .y_5{display: block;
+                    width: 100%}
+#template_6 .y_10{display: block;
+                    width: 100%;
+                    top: 320px;}
+#template_7 .y_5{display: block;
+                    width: 100%}
+#template_7 .y_7{display: block;
+                    width: 100%}
 /*----------------------------sketch_each----------------------------*/
 /*----------------------------sketch_each----------------------------*/
 /*----------------------------sketch_each----------------------------*/
@@ -677,6 +776,9 @@ canvas{
 }
 #template_6 #sketch_wrapper{
     background-color:#feeae6 !important
+}
+#template_8 #sketch{
+
 }
 
 #container_5 #template_1{

@@ -133,6 +133,56 @@ window.onload = function () {
         })
 
 
+        $('#select_template_single_info_1').click(function(){
+        console.log('1')
+             $('.select_template_single_info').removeClass('selected')
+             $('#container_8 .selectable').removeClass('selected')
+             $(this).addClass('selected')
+             $('#container_8 #template_1').addClass('selected')
+        })
+        $('#select_template_single_info_2').click(function(){
+        console.log('1')
+             $('.select_template_single_info').removeClass('selected')
+             $('#container_8 .selectable').removeClass('selected')
+             $(this).addClass('selected')
+             $('#container_8 #template_2').addClass('selected')
+        })
+        $('#select_template_single_info_3').click(function(){
+        console.log('1')
+             $('.select_template_single_info').removeClass('selected')
+             $('#container_8 .selectable').removeClass('selected')
+             $(this).addClass('selected')
+             $('#container_8 #template_3').addClass('selected')
+        })
+        $('#select_template_single_info_4').click(function(){
+        console.log('1')
+             $('.select_template_single_info').removeClass('selected')
+             $('#container_8 .selectable').removeClass('selected')
+             $(this).addClass('selected')
+             $('#container_8 #template_4').addClass('selected')
+        })
+        $('#select_template_single_info_5').click(function(){
+        console.log('1')
+             $('.select_template_single_info').removeClass('selected')
+             $('#container_8 .selectable').removeClass('selected')
+             $(this).addClass('selected')
+             $('#container_8 #template_5').addClass('selected')
+        })
+        $('#select_template_single_info_6').click(function(){
+        console.log('1')
+             $('.select_template_single_info').removeClass('selected')
+             $('#container_8 .selectable').removeClass('selected')
+             $(this).addClass('selected')
+             $('#container_8 #template_6').addClass('selected')
+        })
+        $('#select_template_single_info_7').click(function(){
+        console.log('1')
+             $('.select_template_single_info').removeClass('selected')
+             $('#container_8 .selectable').removeClass('selected')
+             $(this).addClass('selected')
+             $('#container_8 #template_7').addClass('selected')
+        })
+
     })
     // }
 
@@ -361,18 +411,24 @@ window.onload = function () {
 // when user selects font step_3 -- change title for layout6
     function change_title(family,category){
         $('.sub_font_title').text(family)
+        $('.main_font_title').text(family)
+        $('.paring_font_title>span').text(default_font)
         var SC = family.split(' ')[family.split(' ').length-1]
         if(category === 'display' || category === 'handwriting') {
         $('.sub_font_title').show()
             }else{
         $('.sub_font_title').hide()
             }
-        setTimeout(function(){$('#container_6 .bodytext').css({'margin-top': $('#font_title').actual('height')+20 })},1000)
-        console.log($('.highschoolreunion').outerHeight())
-        console.log($('.main_font_title').outerHeight())
-        $('.reply_componentssidetitle .font_title').css({'margin-top':$('.highschoolreunion').outerHeight()})
-        $('.main_font_title').text(family)
+        setTimeout(function(){font_title_pos()},1000)
     }
+    function font_title_pos(){
+        $('#container_6 .bodytext').css({'margin-top': $('#font_title').actual('height')+20 })
+        $('.reply_componentssidetitle .font_title').css({'margin-top':$('.highschoolreunion').outerHeight()})
+    }
+
+
+
+
 // when user selects font step_3 -- change table font for layout1
     function change_table(family,category){
         if($('.x_2').length>1){
@@ -408,8 +464,6 @@ window.onload = function () {
     }
 // if table is too narrow(fond is superwide)remove 'heading'
     function show_heading(){
-        console.log($('.y_1 .x_1').height())
-        console.log($('.y_2 .x_1').outerHeight())
         if ($('.y_1 .x_1').height()/2>$('.y_2 .x_1').outerHeight()){
             $('.headline').hide()
         }else{

@@ -184,7 +184,82 @@ $('document').ready(function(){
   // -------------------------------------------------------------------------------
         $( "#container_7" ).load( "templates/reply_components_sidetitle.html .reply_components")
 
+  // -------------------------------------------------------------------------------
 
+    $('#select_design_wrapper').append('\
+        <div id="select_template_single_frame" class="select_template_frame_8 select_template_frame">\
+            <div id="select_template_single_info_1" class="select_template_8 select_template select_template_single_info">1</div>\
+            <div id="select_template_single_info_2" class="select_template_8 select_template select_template_single_info">2</div>\
+            <div id="select_template_single_info_3" class="select_template_8 select_template select_template_single_info">3</div>\
+            <div id="select_template_single_info_4" class="select_template_8 select_template select_template_single_info">4</div>\
+            <div id="select_template_single_info_5" class="select_template_8 select_template select_template_single_info">5</div>\
+            <div id="select_template_single_info_6" class="select_template_8 select_template select_template_single_info">6</div>\
+            <div id="select_template_single_info_7" class="select_template_8 select_template select_template_single_info">7</div>\
+        </div>\
+        ')
+    $('#container_8').append('\
+            <div id="template_1" class="template">1</div>\
+            <div id="template_2" class="template">2</div>\
+            <div id="template_3" class="template">3</div>\
+            <div id="template_4" class="template">4</div>\
+            <div id="template_5" class="template">4</div>\
+            <div id="template_6" class="template">4</div>\
+            <div id="template_7" class="template">7</div>')
+
+        $( "#container_8>#template_1" ).load( "templates/single_info.html .single_info",function(data){
+            $( "#container_8>#template_1 .app_column" ).load( "templates/reply_singleapp.html .reply")
+            $( "#container_8>#template_1 .info_column" ).load( "templates/single_info_column.html .info")
+            $( "#container_8>#template_1 .info_column" ).addClass('reply_info')
+            $( "#container_8 #template_1" ).addClass('text')
+            $( "#select_template_single_info_1" ).addClass('text')
+        })
+        add_pf_1()
+        $( "#container_8>#template_2" ).load( "templates/single_info.html .single_info",function(data){
+            $( "#container_8>#template_2 .app_column" ).load( "templates/crane_singleapp.html .crane")
+            $( "#container_8>#template_2 .info_column" ).load( "templates/single_info_column.html .info")
+            $( "#container_8>#template_2 .info_column" ).addClass('crane_info')
+            $( "#container_8 #template_2" ).addClass('utility')
+            $( "#select_template_single_info_2" ).addClass('utility')
+        })
+        $( "#container_8>#template_3" ).load( "templates/single_info.html .single_info",function(data){
+            $( "#container_8>#template_3 .app_column" ).load( "templates/fortnightly_singleapp.html .fortnightly")
+            $( "#container_8>#template_3 .info_column" ).load( "templates/single_info_column.html .info")
+            $( "#container_8>#template_3 .info_column" ).addClass('fortnightly_info')
+            $( "#container_8 #template_3" ).addClass('text display_1')
+            $( "#select_template_single_info_3" ).addClass('text display_1')
+        })
+        add_pf_3()
+        $( "#container_8>#template_4" ).load( "templates/single_info.html .single_info",function(data){
+            $( "#container_8>#template_4 .app_column" ).load( "templates/basil_single_1.html .basil_single_1")
+            $( "#container_8>#template_4 .info_column" ).load( "templates/single_info_column.html .info")
+            $( "#container_8>#template_4 .info_column" ).addClass('basil_info')
+            $( "#container_8 #template_4" ).addClass('display_1 display_2')
+            $( "#select_template_single_info_4" ).addClass('display_1 display_2')
+        })
+        $( "#container_8>#template_5" ).load( "templates/single_info.html .single_info",function(data){
+            $( "#container_8>#template_5 .app_column" ).load( "templates/owl_singleapp.html .owl")
+            $( "#container_8>#template_5 .info_column" ).load( "templates/single_info_column.html .info")
+            $( "#container_8>#template_5 .info_column" ).addClass('owl_info')
+            $( "#container_8 #template_5" ).addClass('text display_1 display_2')
+            $( "#select_template_single_info_5" ).addClass('text display_1 display_2')
+        })
+        add_pf_5()
+        $( "#container_8>#template_6" ).load( "templates/single_info.html .single_info",function(data){
+            $( "#container_8>#template_6 .app_column" ).load( "templates/shrine_singleapp.html .shrine")
+            $( "#container_8>#template_6 .info_column" ).load( "templates/single_info_column.html .info")
+            $( "#container_8>#template_6 .info_column" ).addClass('shrine_info')
+            $( "#container_8 #template_6" ).addClass('utility')
+            $( "#select_template_single_info_6" ).addClass('utility')
+        })
+        add_pf_6()
+        $( "#container_8>#template_7" ).load( "templates/single_info.html .single_info",function(data){
+            $( "#container_8>#template_7 .app_column" ).load( "templates/topics_single_1.html .topics_single_1")
+            $( "#container_8>#template_7 .info_column" ).load( "templates/single_info_column.html .info")
+            $( "#container_8>#template_7 .info_column" ).addClass('topics_info')
+            $( "#container_8 #template_7" ).addClass('display_3 display_6 display_4 display_5')
+            $( "#select_template_single_info_7" ).addClass('display_3 display_6 display_4 display_5')
+        })
+        // -=>perfectscrollbar
 
 
 
@@ -204,16 +279,15 @@ $('document').ready(function(){
                 $('#container_5>div>div').css({transform:'translate(-50%,-50%) scale('+$('.container').outerHeight()/$('#container_5>div>div').outerHeight()*0.8+')'})
                 $('#container_6>div').css({transform:'translate(-50%,-50%) scale('+$('.container').outerHeight()/$('#container_4>div').outerHeight()+')'})
                 $('#container_7>div').css({transform:'translate(-50%,-50%) scale('+$('.container').outerHeight()/$('#container_4>div').outerHeight()+')'})
+                $('#container_8>div').css({transform:'translate(-50%,-50%) scale('+$('.container').outerHeight()/$('#container_8>div').outerHeight()+')'})
             }else{
-        console.log($('#reply_pattern').outerWidth(true))
-        console.log($('.container').outerWidth(true))
-        console.log($('.container').outerWidth(true)/$('#container_2>div>div').outerWidth(true))
                 $('#container_2>div>div').css({transform:'translate(-50%,-50%) scale('+$('.container').outerWidth()/$('#container_2>div>div').outerWidth()+') rotate(-45deg)'})
                 $('#container_3>div>div').css({transform:'translate(-50%,-50%) scale('+$('.container').outerWidth()/$('#container_3>div>div').outerWidth()+')'})
                 $('#container_4>div').css({transform:'translate(-50%,-50%) scale('+$('.container').outerWidth()/$('#container_4>div').outerWidth()+')'})
                 $('#container_5>div>div').css({transform:'translate(-50%,-50%) scale('+$('.container').outerWidth()/$('#container_5>div>div').outerWidth()*0.8+')'})
                 $('#container_6>div').css({transform:'translate(-50%,-50%) scale('+$('.container').outerWidth()/$('#container_4>div').outerWidth()+')'})
                 $('#container_7>div').css({transform:'translate(-50%,-50%) scale('+$('.container').outerWidth()/$('#container_4>div').outerWidth()+')'})
+                $('#container_8>div').css({transform:'translate(-50%,-50%) scale('+$('.container').outerWidth()/$('#container_8>div').outerWidth()+')'})
             }
         }else{
             setTimeout(function(){resize()}, 300);
