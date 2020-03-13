@@ -710,25 +710,33 @@ canvas{
                     width: 100%;
     top: 90px;
     border-bottom:1px solid #cccccc;}
+#container_8 #template_1 .y_4 *{
+    color:black;}
 #container_8 #template_1 .y_9{display: block;
                     width: 100%;
     top: 195px;
     border-bottom:1px solid #cccccc;}
+#container_8 #template_1 .y_9 *{
+    color:black;}
 #container_8 #template_1 .y_10{display: block;
                     width: 100%;
-    top: 295px;}
+    top: 295px;
+    opacity: 0.3}
 #container_8 #template_1 .y_10 .table_title{opacity: 0}
 #container_8 #template_1 .y_11{display: block;
                     width: 100%;
-    top: 395px;}
+    top: 395px;
+    opacity: 0.3}
 #container_8 #template_1 .y_11 .table_title{opacity: 0}
 #container_8 #template_1 .y_12{display: block;
                     width: 100%;
-    top: 495px;}
+    top: 495px;
+    opacity: 0.3}
 #container_8 #template_1 .y_12 .table_title{opacity: 0}
 #container_8 #template_1 .y_13{display: block;
                     width: 100%;
-    top: 495px;}
+    top: 495px;
+    opacity: 0.3}
 #container_8 #template_1 .y_13 .table_title{opacity: 0}
 
 
@@ -738,10 +746,14 @@ canvas{
                     width: 100%;
     top: 178px;
     border-bottom:1px solid #cccccc;}
+#container_8 #template_2 .y_3 *{
+    color:black;}
 #container_8 #template_2 .y_8{display: block;
                     width: 100%;
     top: 432.5px;
     border-bottom:1px solid #cccccc;}
+#container_8 #template_2 .y_8 *{
+    color:black;}
 
 
 
@@ -751,17 +763,23 @@ canvas{
                     width: 100%;
     top: 310px;
     border-bottom:1px solid #cccccc;}
+#container_8 #template_3 .y_4 *{
+    color:black;}
 #container_8 #template_3 .y_9{display: block;
                     width: 100%;
     top: 568px;
     border-bottom:1px solid #cccccc;}
+#container_8 #template_3 .y_9 *{
+    color:black;}
 #container_8 #template_3 .y_3{display: block;
                     width: 100%;
-    top: 210px;}
+    top: 210px;
+    opacity: 0.3}
 #container_8 #template_3 .y_3 .table_title{opacity: 0}
 #container_8 #template_3 .y_2{display: block;
                     width: 100%;
-    top: 110px;}
+    top: 110px;
+    opacity: 0.3}
 #container_8 #template_3 .y_2 .table_title{opacity: 0}
 
 
@@ -772,25 +790,33 @@ canvas{
                     width: 100%;
     top: 113px;
     border-bottom:1px solid #cccccc;}
+#container_8 #template_4 .y_3 *{
+    color:black;}
 #container_8 #template_4 .y_9{display: block;
                     width: 100%;
     top: 199px;
     border-bottom:1px solid #cccccc;}
+#container_8 #template_4 .y_9 *{
+    color:black;}
 #container_8 #template_4 .y_10{display: block;
                     width: 100%;
-    top: 300px;}
+    top: 300px;
+    opacity: 0.3}
 #container_8 #template_4 .y_10 .table_title{opacity: 0}
 #container_8 #template_4 .y_11{display: block;
                     width: 100%;
-    top: 400px;}
+    top: 400px;
+    opacity: 0.3}
 #container_8 #template_4 .y_11 .table_title{opacity: 0}
 #container_8 #template_4 .y_12{display: block;
                     width: 100%;
-    top: 500px;}
+    top: 500px;
+    opacity: 0.3}
 #container_8 #template_4 .y_12 .table_title{opacity: 0}
 #container_8 #template_4 .y_13{display: block;
                     width: 100%;
-    top: 600px;}
+    top: 600px;
+    opacity: 0.3}
 #container_8 #template_4 .y_13 .table_title{opacity: 0}
 
 
@@ -801,31 +827,33 @@ canvas{
                     width: 100%;
     top: 384px;
     border-bottom:1px solid #cccccc;}
+#container_8 #template_5 .y_5 *{
+    color:black;}
 #container_8 #template_5 .y_9{display: block;
                     width: 100%;
     top: 469px;
     border-bottom:1px solid #cccccc;}
-#container_8 #template_5 .y_9{display: block;
-                    width: 100%;
-    top: 469px;
-    border-bottom:1px solid #cccccc;}
+#container_8 #template_5 .y_9 *{
+    color:black;}
 #container_8 #template_5 .y_4{display: block;
                     width: 100%;
-    top: 285px;}
+    top: 285px;
+    opacity: 0.3}
 #container_8 #template_5 .y_4 .table_title{opacity: 0}
 #container_8 #template_5 .y_3{display: block;
                     width: 100%;
-    top: 185px;}
-#container_8 #template_5 .y_3 .table_title{
-    opacity: 0
-}
+    top: 185px;
+    opacity: 0.3}
+#container_8 #template_5 .y_3 .table_title{opacity: 0}
 #container_8 #template_5 .y_2{display: block;
                     width: 100%;
-    top: 85px;}
+    top: 85px;
+    opacity: 0.3}
 #container_8 #template_5 .y_2 .table_title{opacity: 0}
 #container_8 #template_5 .y_10{display: block;
                     width: 100%;
-    top: 569px;}
+    top: 569px;
+    opacity: 0.3}
 #container_8 #template_5 .y_10 .table_title{opacity: 0}
 
 
@@ -838,29 +866,38 @@ canvas{
                     width: 100%;
     top: 310px;
     border-bottom:1px solid #cccccc;}
+#container_8 #template_6 .y_5 *{
+    color:black;}
 #container_8 #template_6 .y_10{display: block;
                     width: 100%;
     top: 365px;
     border-bottom:1px solid #cccccc;}
+#container_8 #template_6 .y_10 *{
+    color:black;}
 #container_8 #template_6 .y_11{display: block;
                     width: 100%;
-    top: 465px;}
+    top: 465px;
+    opacity: 0.3}
 #container_8 #template_6 .y_11 .table_title{opacity: 0}
 #container_8 #template_6 .y_12{display: block;
                     width: 100%;
-    top: 565px;}
+    top: 565px;
+    opacity: 0.3}
 #container_8 #template_6 .y_12 .table_title{opacity: 0}
 #container_8 #template_6 .y_13{display: block;
                     width: 100%;
-    top: 565px;}
+    top: 565px;
+    opacity: 0.3}
 #container_8 #template_6 .y_13 .table_title{opacity: 0}
 #container_8 #template_6 .y_4{display: block;
                     width: 100%;
-    top: 210px;}
+    top: 210px;
+    opacity: 0.3}
 #container_8 #template_6 .y_4 .table_title{opacity: 0}
 #container_8 #template_6 .y_3{display: block;
                     width: 100%;
-    top: 110px;}
+    top: 110px;
+    opacity: 0.3}
 #container_8 #template_6 .y_3 .table_title{opacity: 0}
 
 
