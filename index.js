@@ -232,6 +232,7 @@ $(document).ready(function(){
             FontsInUseObject.setAttribute("class",'fontlist '+FontsInUseArray[i].family.replace(/ /g, `_`))
             if(FontsInUseArray[i].category === 'serif'){
                 FontsInUseObject.setAttribute("class",'fontlist font_text '+FontsInUseArray[i].family.replace(/ /g, `_`))
+                // select_font(selected)
             }
             if(FontsInUseArray[i].category === 'sans-serif'){
                 FontsInUseObject.setAttribute("class",'fontlist font_text font_utility '+FontsInUseArray[i].family.replace(/ /g, `_`))
@@ -284,10 +285,11 @@ $(document).ready(function(){
     select_category()
     function select_category(){
         $('#categorylist>div').click(function(){
+            var sel_cat = '.font_'+$(this).attr("class").split('select_')[1].split(' ')[0]
             $('#select_category').html($(this).html())
             $('.fontlist').hide()
-            $('.font_'+$(this).attr("class").split('select_')[1].split(' ')[0]).show()
-            console.log($('.font_'+$(this).attr("class").split('select_')[1].split(' ')[0]))
+            $(sel_cat).show()
+            select_font($(sel_cat).eq(Math.floor(Math.random()*$(sel_cat).length)))
         })
     }
 
@@ -513,6 +515,13 @@ $(document).ready(function(){
         $('.selected_container').removeClass('selected_container')
         $('.select_template_frame_'+$(this).attr('id').split('_')[2]).addClass('selected_container')
         $('#container_'+$(this).attr('id').split('_')[2]).addClass('selected_container')
+        if($(this).attr('id').split('_')[2] == 4||
+            $(this).attr('id').split('_')[2] == 6||
+            $(this).attr('id').split('_')[2] == 7){
+            $('#select_design_wrapper .title').hide()
+        }else{
+            $('#select_design_wrapper .title').show()
+        }
         // $('.select_template_'+$(this).attr('id').split('_')[2]).addClass('showable')
     });
 

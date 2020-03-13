@@ -1,5 +1,6 @@
 .reply_componentssidetitle .bodytext{
-    left: 310px;
+    left: 320px;
+    width: 360px;
 }
 .reply_componentssidetitle .feedmobile5copy{
     left: 720px;
@@ -24,7 +25,7 @@
     top: 180px;
     margin-top: 80px;
     transform: translateY(-100%);
-    width: 860px;
+    width: 880px;
     border-bottom: 1px dotted #4a4a4a;
     z-index: 10000;
     padding-left: 120px;
@@ -40,4 +41,8 @@
     line-height: 24px;
     border-bottom:1px dotted #4a4a4a; 
     box-sizing: border-box
+}
+
+.reply_componentssidetitle .syslgtbk .syslgtbk1 .fill47 {
+    background-color: #a2afba;
 }
