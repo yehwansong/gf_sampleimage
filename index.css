@@ -39,7 +39,7 @@ body{
 #saveimage_wrapper{
     float: right;
     right: 24px;
-    border-radius: 20px
+    border-radius: 6px
 }
 .title{
     line-height: 55px;
@@ -87,7 +87,7 @@ body{
     transition: 0.3s;
 }
 .select_layout:hover{
-    background:#0086ea; 
+    background:#0086ea;  
 }
 .select_layout_selected{
     background:#0086ea; 
@@ -116,9 +116,9 @@ body{
     background-position: right;
     display: inline-block;
     /* border: 1px solid #a9a9a9; */
-    border-top-left-radius: 5px;
+    border-top-left-radius: 6px;
     /* background-color: #f0f0f0; */
-    border-top-right-radius: 5px;
+    border-top-right-radius: 6px;
 }
 #categorylist_wrapper,
 #fontlist_wrapper{
@@ -157,8 +157,17 @@ body{
     opacity: 1;
     height: 420px;
 }
+#categorylist_wrapper:hover #select_category{
+    background-color: #cecece !important;
+}
+#saveimage_wrapper:hover #save{
+    background-color: #cecece !important;
+}
+#fontlist_wrapper:hover #select_category{
+    background-color: #cecece !important;
+}
 #fontlist_wrapper:hover #select_fonts{
-    background-color: #cecece;
+    background-color: #cecece !important;
 }
 .ps-scrollbar-x-rail,.ps-scrollbar-y-rail{
     pointer-events: none;
@@ -184,6 +193,7 @@ body{
     cursor: pointer;
 }
 #googlefont{
+    /* z-index: 1000000 !important; */
     background-image: url(arrow.svg);
     /* background-image: url(dropdown.svg); */
     background-size: 40px;
@@ -194,7 +204,7 @@ body{
     display: inline-block;
     top: 0;
     /* position: absolute; */
-    border-radius: 22px;
+    /* border-radius: 6px; */
     margin-top: 0;
     z-index: 10;
     height: 55px;
@@ -208,7 +218,7 @@ body{
     /* background-image: url(dropdown.svg); */
     background-size: 40px;
     background-repeat: no-repeat;
-    background-position: right 36%;
+    background-position: right 5px;
     display: inline-block;
     cursor: pointer;
     text-decoration: none;
@@ -227,7 +237,7 @@ body{
     height: auto;
 }
 #googlefont:hover{
-    background-color: #d2d2d2;
+    border-bottom: 6px solid #0086ea;
 }
 
 
