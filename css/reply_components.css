@@ -740,10 +740,10 @@
 .reply_components .highschoolreunion {
   margin-top                 : 10px;
   height              : auto;
-  width               : auto;
+  width               : 290px;
   position            : relative;
     left: 85px;
-  opacity             : 0.6;
+  opacity             : 1;
   color               : rgba(23, 38, 42, 1.0);
   text-align          : left;
   letter-spacing      : 0.18px;
@@ -986,7 +986,7 @@
   margin-top: 0;
   margin-left: 20px;
   font-size: 16px;
-  color: #828282!important;
+  color: rgba(23, 38, 42, 1.0)!important;
   text-align: left;
   letter-spacing: -.05px;
   line-height: 24px;
@@ -1001,7 +1001,7 @@
   position: relative;
   margin-left: 20px;
   margin-top: 20px;
-  color: #4d4d4d;
+  color: #1f1f1f;
   text-align: left;
   letter-spacing: .4px;
   line-height: 40px;

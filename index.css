@@ -10,8 +10,9 @@ body{
 }
 *{
     line-height: 1;
-    color: #4a4a4a;
+    color: #000;
 }
+.container_1{background: white}
 #top {
     border-bottom: 1px solid gainsboro;
     box-sizing: border-box;
@@ -41,7 +42,7 @@ body{
     border-radius: 20px
 }
 .title{
-    line-height: 40px;
+    line-height: 55px;
     text-transform: uppercase;
     font-size: 14px;
     padding-left: 16px;
@@ -54,9 +55,9 @@ body{
     padding-left: 16px;
     padding-right: 8px;
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     box-sizing: border-box;
-    margin-top: 10px;
+    margin-top: 0px;
     }
 .select_layout{
     float: left;
@@ -65,7 +66,7 @@ body{
     display: inline-block;
     top: 0;
     border-radius: 22px;
-    margin-top: 10px;
+    margin-top: 9px;
     z-index: 10;
     height: 36px;
     line-height: 36px;
@@ -194,20 +195,20 @@ body{
     top: 0;
     /* position: absolute; */
     border-radius: 22px;
-    margin-top: 10px;
+    margin-top: 0;
     z-index: 10;
-    height: 40px;
-    line-height: 40px;
+    height: 55px;
+    line-height: 55px;
     /* text-transform: uppercase; */
     font-size: 14px;
     padding-left: 16px;
-    padding-right: 32px;
-    margin-bottom: 10px;
+    padding-right: 40px;
+    margin-bottom: 0px;
     box-sizing: border-box;
     /* background-image: url(dropdown.svg); */
     background-size: 40px;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: right 36%;
     display: inline-block;
     cursor: pointer;
     text-decoration: none;
@@ -218,7 +219,7 @@ body{
 #saveimage_wrapper:hover #savelist{
     pointer-events: all;
     opacity: 1;
-    height: 160px;
+    height: 120px;
 }
 #categorylist_wrapper:hover #categorylist{
     pointer-events: all;
@@ -292,6 +293,13 @@ body{
 .x_1{
     border-left: 1px dotted #cccccc;
 }
+.vertical_line{
+    border-bottom: none;
+    border-left: 1px solid #ededed;
+    height: 100%;
+    position: absolute;
+    left: 10%;
+    top: 0;}
 .table .y{
     width: 100%;
 }
@@ -603,7 +611,7 @@ canvas{
     color: white !important;
     display: none;
     float: left;
-    top: 17.5px;
+    top: 15px;
     margin-left: 8px;
     padding-right: 1px;
     box-sizing: border-box;

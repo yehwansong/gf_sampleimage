@@ -585,15 +585,14 @@ $('.saveasimage').click(function(){
     resize_bfcapture(cap_w, cap_h)
     $('.selectable').addClass('hidewhencapture')
     $('.selected').removeClass('hidewhencapture')
-    console.log(cap_w)
-    console.log(cap_h)
-        html2canvas(document.querySelector(".selected_container"),{
-            // dpi: 72,
-              width: cap_w ,
-              height: cap_h ,
-    scale:1
+    console.log($('.container.selected_container').attr('id'))
+        html2canvas(document.querySelector("#"+$('.container.selected_container').attr('id')),{
+            dpi: 72,
+                width: cap_w ,
+                height: cap_h ,
+                scale:1
           }).then(canvas => {
-            document.body.appendChild(canvas)
+                document.body.appendChild(canvas)
                 var link = document.createElement("a");
                 document.body.appendChild(link);
                 link.download = "sdfds."+format;

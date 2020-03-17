@@ -120,24 +120,26 @@
   transform: rotate(0deg);
 }
 .basil_desktop .title {
-  background-color: rgba(255, 255, 255, 0);
-  /* top: 135px; */
-  height: auto;
-  width: 156px;
-  /* margin: 0; */
-  /* left: 245px; */
-  -ms-transform: rotate(0deg);
-  /* -webkit-transform: rotate(0deg); */
-  /* transform: rotate(0deg); */
-  /* font-family: "AppleSystemUIFont", Helvetica, Arial, serif; */
-  font-size: 18.0px;
-  text-align: center;
-  letter-spacing: 0.28px;
-  color: #356859;
-  line-height: 1.4;
-  padding-top: 20px;
-  padding-bottom: 30px;
-  width: 300px;
+    background-color: rgba(255, 255, 255, 0);
+    /* top: 135px; */
+    height: auto;
+    width: 156px;
+    /* margin: 0; */
+    /* left: 245px; */
+    -ms-transform: rotate(0deg);
+    /* -webkit-transform: rotate(0deg); */
+    /* transform: rotate(0deg); */
+    /* font-family: "AppleSystemUIFont", Helvetica, Arial, serif; */
+    font-size: 18.0px;
+    text-align: center;
+    letter-spacing: 0.28px;
+    color: #356859;
+    line-height: 1.4;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    width: 300px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 .basil_desktop .img1 {
   background-color: rgba(255, 255, 255, 0);
@@ -679,6 +681,9 @@
   width: 666px;
   position: relative;
   display: flex;
+}
+.basil_desktop .row_2 .elem{
+    width: 330px;
 }
 .basil_desktop .row_3 {
   width: 999px;
