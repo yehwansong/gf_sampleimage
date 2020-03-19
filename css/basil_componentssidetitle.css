@@ -1,0 +1,51 @@
+.basil_componentssidetitle .basil_single_1{
+    top: 145px;
+    left: 280px;
+    z-index: 1000000;
+}
+.basil_componentssidetitle .basil_single_3{
+    top: -535px;
+    left: 280px;
+}
+.basil_componentssidetitle .basil_single_4{
+    left: 685px;
+    top: -300px;
+}
+
+.basil_componentssidetitle{
+    width: 1120px;
+    height: 650px;
+    background: #DEF3E5;
+
+}
+.basil_componentssidetitle #font_title {
+    text-align: left;
+    left: -120px;
+    top: 180px;
+    margin-top: 80px;
+    transform: translateY(-100%);
+    width: 760px;
+    border-bottom: 1px dotted #8a96a0;
+    z-index: 10000;
+    /*padding-left: 120px;*/
+    padding-right: 350px;
+    box-sizing: border-box;
+}
+.basil_componentssidetitle .main_font_title{
+    color:rgba(253, 85, 35, 1);
+
+}
+.basil_componentssidetitle .paring_font_title{
+    padding-left: 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding-top:58px;
+    line-height: 24px;
+    border-bottom: 1px dotted #8a96a0;
+    box-sizing: border-box;
+    color: rgba(53, 104, 89, 1)
+}
+.basil_componentssidetitle .paring_font_title span{
+    color: rgba(53, 104, 89, 1)
+}
