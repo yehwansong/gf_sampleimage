@@ -45,7 +45,7 @@ $('document').ready(function(){
         })
         add_pf_3()
         $( "#container_1>#template_4" ).load( "templates/singleapp.html .singleapp",function(data){
-            $( "#container_1>#template_4 #sketch" ).load( "templates/basil_single_1.html .basil_single_1")
+            $( "#container_1>#template_4 #sketch" ).load( "templates/basil_single_4.html .basil_single_4")
             $( "#container_1 #template_4" ).addClass('display_1 display_2')
             $( "#select_template_single_4" ).addClass('display_1 display_2')
             $( "#container_1>#template_4 #table_wrapper" ).load( "templates/table.html .table")
@@ -182,7 +182,21 @@ $('document').ready(function(){
   // -------------------------------------------------------------------------------
         $( "#container_6" ).load( "templates/reply_components_title.html .reply_components")
   // -------------------------------------------------------------------------------
-        $( "#container_7" ).load( "templates/reply_components_sidetitle.html .reply_components")
+        $('#select_design_wrapper').append('\
+            <span id="select_template_components_sidetitle_frame" class="select_template_frame_7 select_template_frame">\
+                <span id="select_template_components_sidetitle_1" class="select_template_7 select_template select_template_components_sidetitle">1</span>\
+                <span id="select_template_components_sidetitle_2" class="select_template_7 select_template select_template_components_sidetitle">2</span>\
+            </span>\
+        ')
+        $( "#container_7").append('\
+                <div id="template_1" class="template">1</div>\
+                <div id="template_2" class="template">2</div>')
+        $( "#container_7 #template_1" ).load( "templates/reply_components_sidetitle.html .reply_components")
+        $( "#container_7 #template_1" ).addClass('text utility display_1 display_2 display_3 display_6 display_4 display_5')
+        $( "#container_7 #template_2" ).load( "templates/basil_components_sidetitle.html .basil_components")
+        $( "#container_7 #template_2" ).addClass('text utility display_1 display_2 display_3 display_6 display_4 display_5')
+        $( "#select_template_components_sidetitle_1" ).addClass('text utility display_1 display_2 display_3 display_6 display_4 display_5')
+        $( "#select_template_components_sidetitle_2" ).addClass('text utility display_1 display_2 display_3 display_6 display_4 display_5')
 
   // -------------------------------------------------------------------------------
 

@@ -114,6 +114,20 @@ $(document).ready(function(){
         })
 
 
+        $('#select_template_components_sidetitle_1').click(function(){
+             $('.select_template_components_sidetitle').removeClass('selected')
+             $('#container_7 .selectable').removeClass('selected')
+             $(this).addClass('selected')
+             $('#container_7 #template_1').addClass('selected')
+        })
+        $('#select_template_components_sidetitle_2').click(function(){
+             $('.select_template_components_sidetitle').removeClass('selected')
+             $('#container_7 .selectable').removeClass('selected')
+             $(this).addClass('selected')
+             $('#container_7 #template_2').addClass('selected')
+        })
+
+
 
         $('#select_template_desktop_1').click(function(){
              $('.select_template_desktop').removeClass('selected')

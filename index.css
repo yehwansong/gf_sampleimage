@@ -585,7 +585,8 @@ canvas{
 #select_template_single_frame,
 #select_template_pattern_frame,
 #select_template_device_frame,
-#select_template_desktop_frame{
+#select_template_desktop_frame,
+#select_template_components_sidetitle_frame{
     /*transform: translateX(0%) translateY(-100%);*/
     vertical-align: top;
     height: 60px;
@@ -606,7 +607,8 @@ canvas{
 .select_template_pattern,
 .select_template_device,
 .select_template_desktop,
-.select_template_single_info{ 
+.select_template_single_info,
+.select_template_components_sidetitle{ 
     vertical-align: middle;
     position: relative;
     height: 25px;
