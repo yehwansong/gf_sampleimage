@@ -1,8 +1,8 @@
 // this page archives display subcategory
 // as a default fonts are text/utility but for some should be classified display_1, display_2, display_3
 // 1  : display1
-// 3  : extremlywide 
-// 4  : extremlynarrow
+// 3  : extremelywide 
+// 4  : extremelynarrow
 // 5  : imagefont
 // 6  : imagefont
 // [family , display_number]
